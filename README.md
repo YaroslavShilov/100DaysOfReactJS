@@ -1,6 +1,6 @@
 # #100DaysOfCode
 
-#day 0
+# day 0
  First of all, I need to recall JavaScript especially:
 - [ ] Functions are first-class citizens in JavaScript
 - [ ] bind(), apply(), and call()
