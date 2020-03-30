@@ -1,5 +1,9 @@
 # #100DaysOfCode
 
+# day 1
+ I've recalled:
+- [ ] Functions
+
 # day 0
  First of all, I need to recall JavaScript especially:
 - [ ] Functions are first-class citizens in JavaScript
