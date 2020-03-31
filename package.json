@@ -1,0 +1,19 @@
+{
+  "name": "100daysofcode",
+  "version": "1.0.0",
+  "description": "- [x] Prototypical Inheritance -> ES6 Class\r     ```javascript\r     console.log(Object); // -> ƒ Object() { [native code] }\r     console.log(Array); // -> ƒ Array() { [native code] }\r     console.log(Function); // -> ƒ Function() { [native code] }\r     ```\r     > You don’t know it, but every time you create an object literal, the JavaScript engine is effectively calling new Object(). An object literal is an object created by writing {}, as in var obj = {};. So an object literal is an implicit call to Object.\r - [x] Callbacks and Promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaroslavShilov/100DaysOfCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaroslavShilov/100DaysOfCode/issues"
+  },
+  "homepage": "https://github.com/YaroslavShilov/100DaysOfCode#readme"
+}
