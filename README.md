@@ -28,7 +28,7 @@
 - [x] Functional vs object-oriented programming
 
     ## React documentation
-    * tic-tac-toe
+    * install react project tic-tac-toe
 
 # day 1
  I've recalled:
