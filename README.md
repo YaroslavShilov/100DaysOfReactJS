@@ -1,8 +1,8 @@
 # #100DaysOfCode
 
 # day 3
-
-
+    * Finished a theme about tic-tac-toe game
+    * Started my simple page
 # day 2
 - [x] Prototypical Inheritance -> ES6 Class
     ```javascript
