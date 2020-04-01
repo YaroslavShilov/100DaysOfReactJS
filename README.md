@@ -1,5 +1,8 @@
 # #100DaysOfCode
 
+# day 3
+
+
 # day 2
 - [x] Prototypical Inheritance -> ES6 Class
     ```javascript
