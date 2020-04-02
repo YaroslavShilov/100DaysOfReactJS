@@ -1,5 +1,8 @@
 # #100DaysOfCode
 
+# day 4
+	* Video course. Lesson 10 ready
+
 # day 3
     * Finished a theme about tic-tac-toe game
     * Started my simple page
