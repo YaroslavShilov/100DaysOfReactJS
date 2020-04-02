@@ -2,6 +2,14 @@
 
 # day 4
 	* Video course. Lesson 10 ready
+	* Start work on 'hackernews'
+
+## hackernews
+ - [x] define more variables and render them in your JSX (use a complex object to represent an user with a first name and last name)
+ - [x] read more about JSX
+ - [x] read more about React components, elements and instances
+ - [ ] read about React lists and keys
+ - [ ] recap the standard built-in array functionalities in JS
 
 # day 3
     * Finished a theme about tic-tac-toe game
