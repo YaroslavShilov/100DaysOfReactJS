@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Theme_lists_and_keys() {
+function Lists_and_keys() {
 	
 	//BEGIN Number list
 	function ListItem(props) {
@@ -8,31 +8,31 @@ function Theme_lists_and_keys() {
 	}
 
 	function NumberList(props) {
-		
 		const numbers = props.numbers;
-		const list = numbers.map((item) => {
-			return (
-				<ListItem key={item.toString()} value={item} />
-			)
-		});
-		return <ul>{list}</ul>
+		return (
+			<ul>
+				{
+					numbers.map(item => <ListItem key={item.toString()} value={item}/>)
+				}
+			</ul>
+		)
+		
 	}
 	const numbers = [1,2,3,4,5];
 	//END Number list
 	
 	//BEGIN Blog
 	function Blog(props) {
-		const posts = props.posts;
-
+		/** @namespace props.postsData */
+		const postsData = props.postsData;
+		
 		const sidebar = (
 			<ul>
-				{posts.map((post) => {
-					return (
-						<li key={post.id}>
-							{post.title}
-						</li>
-					)
-				})}
+				{postsData.map(post => 
+					<li key={post.id}>
+						{post.title}
+					</li>
+				)}
 			</ul>
 		);
 		
@@ -45,11 +45,8 @@ function Theme_lists_and_keys() {
 			)
 		}
 
-		const content = posts.map((post)=>{
-			return (
-				<Post key={post.id} id={post.id} title={post.title}/>
-			);
-		});
+		
+		const content = postsData.map(post => <Post key={post.id} id={post.id} title={post.title}/>);
 
 		return (
 			<div>
@@ -71,9 +68,9 @@ function Theme_lists_and_keys() {
 	return (
 		<div>
 			<NumberList numbers={numbers} />
-			<Blog posts={posts} />
+			<Blog postsData={posts} />
 		</div>
 	);
 }
 
-export default Theme_lists_and_keys;
+export default Lists_and_keys;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ThemeJSX() {
+function JSX() {
 	function formatName(user) {
 		return user.firstName + ' ' + user.lastName;
 	}
@@ -23,4 +23,4 @@ function ThemeJSX() {
 	);
 }
 
-export default ThemeJSX;
+export default JSX;

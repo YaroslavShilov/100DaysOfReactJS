@@ -25,7 +25,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				
-				{list.map(function (item) {
+				{list.map(item => {
 					
 					return (
 						<div key={item.objectID}>
