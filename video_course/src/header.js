@@ -1,16 +1,11 @@
 import React from 'react';
 
-function Header() {
-	return (
-		<div className="header">
-			<ul>
-				<li>header</li>
-				<li>header</li>
-				<li>header</li>
-				<li>header</li>
-			</ul>
-		</div>
-	);
+const Header = () => {
+  return (<div>
+    <a href='#s'>Home</a> - 
+    <a href='#s'>News Feed</a> - 
+    <a href='#s'>Messages</a> - 
+  </div>);
 }
 
 export default Header;
