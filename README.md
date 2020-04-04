@@ -1,13 +1,17 @@
 # #100DaysOfCode
 
+# day 6
+ - [x] Read about ES6 classes
+ - [ ] Read about JavaScript fundamentals before learning React
+ 
+ 
 # day 5
 
 	* Video course. Lesson 13 ready
  - [x] read about React lists and keys
  - [x] recap the standard built-in array functionalities in JS
  - [x] Read about ES6 arrow functions
- - [ ] Read about JavaScript fundamentals before learning React
- - [ ] Read about ES6 classes
+
  
 
 # day 4
@@ -21,6 +25,8 @@
 # day 3
     * Finished a theme about tic-tac-toe game
     * Started my simple page
+    
+    
 # day 2
 - [x] Prototypical Inheritance -> ES6 Class
     ```javascript
@@ -51,6 +57,7 @@
     ## React documentation
     * install react project tic-tac-toe
 
+
 # day 1
  I've recalled:
 - [x] Functions
@@ -72,6 +79,7 @@
     > * A JavaScript method is a property containing a function definition.
     > * Methods are functions stored as object properties.
 - [x] Array Methods
+
 
 # day 0
  First of all, I need to recall JavaScript especially:

@@ -77,7 +77,7 @@
 			this.x = x;
 			this.y = y;
 		}
-		
+
 		static distance(a, b) {
 			const dx = a.x - b.x;
 			const dy = a.y - b.y;
@@ -85,9 +85,52 @@
 		}
 	}
 	const p1 = new Point(5, 5);
-	const p2  = new Point(10, 10);
+	const p2 = new Point(10, 10);
+
+	//console.log(Point.distance(p1, p2));
+}	
 	
-	console.log(Point.distance(p1, p2));
+{
+	class Characters {
+		constructor(firstname, secondname) {
+			this.firstname = firstname;
+			this.secondname = secondname;
+		}
+		
+		static names(onePerson, twoPerson) {
+			const first = `${onePerson.firstname} ${onePerson.secondname}`;
+			const second = `${twoPerson.firstname} ${twoPerson.secondname}`;
+			return `${first} ||| ${second}`
+		}
+	}
+	
+	const first = new Characters('John', 'Locke');
+	const second = new Characters('Sawyer', 'James Ford');
+	
+	//console.log(Characters.names(first, second));
+}
+
+{
+	class Animal {
+		constructor(name) {
+			this.name = name;
+		}
+		
+		speak() {
+			console.log(this.name + ' sound');
+		}
+	}
+	
+	class Dog extends Animal {
+			speak() {
+				console.log(this.name + " don't sound");
+			}
+	}
+	
+	let a = new Dog('One');
+	a.speak();
+	
+	let b = new Animal('Two');
+	b.speak();
 	
 }
-/** TODO create your own class static */ 
