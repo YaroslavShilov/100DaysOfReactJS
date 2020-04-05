@@ -1,8 +1,12 @@
 # #100DaysOfCode
 
+# day 7
+	* Video course. Lesson 16 ready
+ - [ ] Read about JavaScript fundamentals before learning React
+ 
 # day 6
  - [x] Read about ES6 classes
- - [ ] Read about JavaScript fundamentals before learning React
+ 
  
  
 # day 5
