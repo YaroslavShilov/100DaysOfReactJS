@@ -10,3 +10,7 @@
     grid-template-columns: 2fr 10fr;
     /* grid-gap: 10px; */
 }
+.app-wrapper_content {
+	grid-area: c;
+	background-color: cornflowerblue;
+}
