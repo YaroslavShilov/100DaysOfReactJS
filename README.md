@@ -1,18 +1,40 @@
 # #100DaysOfCode
 
-# day 8
-	* Video course. Lesson 19 ready
- - [ ] Read about JavaScript fundamentals before learning React
-# day 7
+# Day 9
+```
+1. JavaScript
+   1. Conditions
+   2. Homework
+``` 
+```
+2. React video course
+   1. Props for messages
+   2. BLL
+   3. map()
+   4. Mind map
+   5. BLL to index.js
+   6. Route props to component
+   7. BLL to redux/state.js
+```
+   
+
+# Day 8
+	* Video course. Lesson 22 ready
+ - [x] Read about JavaScript fundamentals before learning React
+ - [x] Read about ES6 object initializer
+ - [x] Experiment with ES6 object initializer
+
+ 
+# Day 7
 	* Video course. Lesson 16 ready
 
  
-# day 6
+# Day 6
  - [x] Read about ES6 classes
  
  
  
-# day 5
+# Day 5
 
 	* Video course. Lesson 13 ready
  - [x] read about React lists and keys
@@ -21,7 +43,7 @@
 
  
 
-# day 4
+# Day 4
 	* Video course. Lesson 10 ready
 	* Start work on 'hackernews'
  - [x] define more variables and render them in your JSX (use a complex object to represent an user with a first name and last name)
@@ -29,12 +51,12 @@
  - [x] read more about React components, elements and instances
 
 
-# day 3
+# Day 3
     * Finished a theme about tic-tac-toe game
     * Started my simple page
     
     
-# day 2
+# Day 2
 - [x] Prototypical Inheritance -> ES6 Class
     ```javascript
     console.log(Object); // -> ƒ Object() { [native code] }
@@ -65,7 +87,7 @@
     * install react project tic-tac-toe
 
 
-# day 1
+# Day 1
  I've recalled:
 - [x] Functions
 - [x] bind()
@@ -88,7 +110,7 @@
 - [x] Array Methods
 
 
-# day 0
+# Day 0
  First of all, I need to recall JavaScript especially:
 - [ ] Functions
 - [ ] bind(), apply(), and call()
