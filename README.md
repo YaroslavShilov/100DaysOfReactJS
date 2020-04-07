@@ -15,6 +15,12 @@
    5. BLL to index.js
    6. Route props to component
    7. BLL to redux/state.js
+   8. VirtualDOM
+   9. createRef()
+   10. Callback in props
+   
+   * lesson 32 ready
+   
 ```
    
 

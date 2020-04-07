@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../render";
+
 let state = {
 	dialogsPage: {
 		dialogs: [
@@ -23,6 +25,22 @@ let state = {
 			{id: 5, liksCount:5, message: 'Are you?'},
 		],
 	},
+	sidebar: {
+		
+	}
 };
+
+export let addPost = (message)=> {
+	let newPost = {
+		id: 6,
+		message,
+		likesCount: 0,
+	};
+	
+	state.profilePage.posts.push(newPost);
+	rerenderEntireTree();
+
+};
+
 
 export default state;
