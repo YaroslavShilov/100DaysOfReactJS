@@ -16,7 +16,7 @@ const Messages = (props) => {
 		<div className={s.messages}>
 			{messagesData}
 			<div>
-				<textarea ref={newMessageElement}></textarea>
+				<textarea ref={newMessageElement}/>
 				<div>
 					<button onClick={addMessage}>Reply</button>
 				</div>

@@ -1,9 +1,28 @@
 # #100DaysOfCode
 
-# Day 9
+# Day 10
 ```
 1. JavaScript
    1. Conditions
+      1. while()
+      2. for()
+   2. Homework
+``` 
+```
+2. React video course
+   1. FLUX
+   2. Observer
+   3. store in state.js
+   4. Refactoring
+   
+   * lesson 37 ready
+   
+```
+
+# Day 9
+```
+1. JavaScript
+   1. Condition switch()
    2. Homework
 ``` 
 ```

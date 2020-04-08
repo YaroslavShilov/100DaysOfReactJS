@@ -21,8 +21,8 @@ const App = (props) => {
 				}/>
 				<Route path="/profile" render={() =>
 					<Profile
-						state={props.state.profilePage}
-					  addPost={props.addPost}
+						profilePage={props.state.profilePage}
+					  store={props.store}
 					/>
 				}/>
 			</div>
@@ -30,7 +30,8 @@ const App = (props) => {
 	);
 };
 
-//TODO lesson 33 time: 7:50
+//TODO lesson 37 time: 0
+//TODO progress: 13/52hrs
 
 
 export default App;
