@@ -16,6 +16,7 @@
    4. Refactoring
    
    * lesson 37 ready
+   * progress: 13/52hrs
    
 ```
 
