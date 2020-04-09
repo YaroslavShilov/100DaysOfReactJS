@@ -1,5 +1,5 @@
 # #100DaysOfCode
-![Image of 100DaysOfCode](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/logo.jpg)
+![Image of 100DaysOfCode](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/title/logo.jpg)
 
 # Day 11
 
@@ -186,7 +186,7 @@
 
 
 
-# Day 0
+![Image of 100DaysOfCode](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/title/day1.jpg)
  First of all, I need to recall JavaScript especially:
 - [ ] Functions
 - [ ] bind(), apply(), and call()
