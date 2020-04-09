@@ -1,4 +1,5 @@
 # #100DaysOfCode
+![Image of 100DaysOfCode](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/logo.jpg)
 
 # Day 11
 
