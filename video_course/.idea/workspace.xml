@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09490adb-2a9d-4b21-9df6-2f3164ff6265" name="Default" comment="video_course lesson 37 ready">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaScript_memories/9_more_conditions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaScript_memories/homeworks/task2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaScript_memories/homeworks/task2/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaScript_memories/homeworks/task3/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaScript_memories/homeworks/task3/script.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/debug.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/render.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/6 operators.html" afterPath="$PROJECT_DIR$/../JavaScript_memories/6_operators.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/8 conditions.js" afterPath="$PROJECT_DIR$/../JavaScript_memories/8_conditions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/Array Methods.js" afterPath="$PROJECT_DIR$/../JavaScript_memories/Array Methods.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/Object Methods.js" afterPath="$PROJECT_DIR$/../JavaScript_memories/Object Methods.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/bind.js" afterPath="$PROJECT_DIR$/../JavaScript_memories/bind.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/call.js" afterPath="$PROJECT_DIR$/../JavaScript_memories/call.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/callbacks and promisess.js" afterPath="$PROJECT_DIR$/../JavaScript_memories/callbacks and promisess.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/function.js" afterPath="$PROJECT_DIR$/../JavaScript_memories/function.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/homeworks/task1/index.html" afterPath="$PROJECT_DIR$/../JavaScript_memories/homeworks/task1/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/homeworks/task1/script.js" afterPath="$PROJECT_DIR$/../JavaScript_memories/homeworks/task1/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/lessons.txt" afterPath="$PROJECT_DIR$/../JavaScript_memories/lessons.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../recall_JS/scope and closures.js" afterPath="$PROJECT_DIR$/../JavaScript_memories/scope and closures.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.xmind" afterPath="$PROJECT_DIR$/main.xmind" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Dialogs/Messages/Messages.jsx" afterPath="$PROJECT_DIR$/src/components/Dialogs/Messages/Messages.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/state.js" afterPath="$PROJECT_DIR$/src/redux/state.js" />
-    </list>
+    <list default="true" id="09490adb-2a9d-4b21-9df6-2f3164ff6265" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,8 +50,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="425">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -190,8 +161,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="175" />
-    <option name="y" value="30" />
+    <option name="x" value="151" />
+    <option name="y" value="101" />
     <option name="width" value="1175" />
     <option name="height" value="997" />
   </component>
@@ -556,12 +527,20 @@
       <workItem from="1586250583113" duration="27000" />
       <workItem from="1586254317212" duration="17129000" />
       <workItem from="1586327253050" duration="177000" />
-      <workItem from="1586342418556" duration="11143000" />
+      <workItem from="1586342418556" duration="12245000" />
     </task>
+    <task id="LOCAL-00001" summary="video_course lesson 37 ready">
+      <created>1586365929065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586365929065</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45118000" />
+    <option name="totallyTimeSpent" value="46220000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,7 +552,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="175" y="30" width="1175" height="997" extended-state="0" />
+    <frame x="151" y="101" width="1175" height="997" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29506725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -621,6 +600,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="video_course lesson 37 ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="video_course lesson 37 ready" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1015,8 +998,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
