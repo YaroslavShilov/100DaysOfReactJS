@@ -1,5 +1,7 @@
 # #100DaysOfCode
 
+# Day 11
+
 # Day 10
 ```
 1. JavaScript
@@ -134,6 +136,45 @@
     > * A JavaScript method is a property containing a function definition.
     > * Methods are functions stored as object properties.
 - [x] Array Methods
+
+	## Типы данных JavaScript
+	### Простые типы
+	* Numbers 1,2,3
+	* String 'name'
+	* Логический тип (boolean)
+	* true / false
+	* null
+	* undefined
+	* Symbol
+	### Объекты
+	* Обычне объекты
+	#### Спец. объекты
+	* Array []
+	* function
+	* Объекты Дата
+	* Регулярные выражения
+	* Ошибки
+	
+	## Функции
+	**Функция** - нужна для вызова участка кода, который можно повторять несколько раз.
+	
+	### Function Declaration
+	```javascript
+	function name() {
+		code...	
+	}
+	```
+	> Создается до начала выполнения скрипта, **можно вызвать перед объявлением.**
+	
+	### Function Expression (функциональное выражение)
+	```javascript
+  	let name = function() {
+  		code...	
+  	}
+  ```
+  > Создается только тогда, **когда доходит поток** кода, **можно вызвать только после объявления.**
+
+
 
 
 # Day 0
