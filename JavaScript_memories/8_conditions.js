@@ -19,3 +19,15 @@ switch (num) {
 		console.log('error');
 		break;
 }
+
+function doHomework(callback) {
+	let result = false;
+	setTimeout( function(){
+		result = true
+	}, 500 );
+	callback(result);
+}
+
+doHomework(function(result) {
+	console.log(result);
+});
