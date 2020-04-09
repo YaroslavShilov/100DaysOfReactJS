@@ -1,9 +1,11 @@
 # #100DaysOfCode
 ![Image of 100DaysOfCode](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/logo.jpg)
 
-# Day 11
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/11.jpg)
 
-# Day 10
+
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/10.jpg)
+
 ```
 1. JavaScript
    1. Conditions
@@ -23,7 +25,8 @@
    
 ```
 
-# Day 9
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/9.jpg)
+
 ```
 1. JavaScript
    1. Condition switch()
@@ -47,23 +50,27 @@
 ```
    
 
-# Day 8
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/8.jpg)
+
 	* Video course. Lesson 22 ready
  - [x] Read about JavaScript fundamentals before learning React
  - [x] Read about ES6 object initializer
  - [x] Experiment with ES6 object initializer
 
  
-# Day 7
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/7.jpg)
+
 	* Video course. Lesson 16 ready
 
  
-# Day 6
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/6.jpg)
+
  - [x] Read about ES6 classes
  
  
  
-# Day 5
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/5.jpg)
+
 
 	* Video course. Lesson 13 ready
  - [x] read about React lists and keys
@@ -72,7 +79,8 @@
 
  
 
-# Day 4
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/4.jpg)
+
 	* Video course. Lesson 10 ready
 	* Start work on 'hackernews'
  - [x] define more variables and render them in your JSX (use a complex object to represent an user with a first name and last name)
@@ -80,12 +88,14 @@
  - [x] read more about React components, elements and instances
 
 
-# Day 3
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/3.jpg)
+
     * Finished a theme about tic-tac-toe game
     * Started my simple page
     
     
-# Day 2
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/2.jpg)
+
 - [x] Prototypical Inheritance -> ES6 Class
     ```javascript
     console.log(Object); // -> ƒ Object() { [native code] }
@@ -116,7 +126,8 @@
     * install react project tic-tac-toe
 
 
-# Day 1
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/1.jpg)
+
  I've recalled:
 - [x] Functions
 - [x] bind()
@@ -186,7 +197,7 @@
 
 
 
-![Image of 100DaysOfCode](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/day1.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/0.jpg)
  First of all, I need to recall JavaScript especially:
 - [ ] Functions
 - [ ] bind(), apply(), and call()
