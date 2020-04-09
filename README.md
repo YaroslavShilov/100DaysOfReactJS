@@ -161,18 +161,26 @@
 	### Function Declaration
 	```javascript
 	function name() {
-		code...	
+	  code...	
 	}
 	```
 	> Создается до начала выполнения скрипта, **можно вызвать перед объявлением.**
 	
 	### Function Expression (функциональное выражение)
 	```javascript
-  	let name = function() {
-  		code...	
-  	}
+  let name = function() {
+    code...	
+  }
   ```
   > Создается только тогда, **когда доходит поток** кода, **можно вызвать только после объявления.**
+  
+  ### Arrow Function
+  ```javascript
+  () => {
+    code...
+  }
+  ```
+  > Не имеет своего *this*
 
 
 
