@@ -1,7 +1,65 @@
-# #100DaysOfCode
 ![Image of 100DaysOfCode](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/logo.jpg)
+# List of themes
+* [Типы данных в JS](#TypesJS)
+* [Функции](#functions)
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/11.jpg)
+## Замыкания функций
+
+## Функции <a name="funcitons">
+**Функция** - нужна для вызова участка кода, который можно повторять несколько раз.
+> Имя функции как правило = глагол + то над чем должно выполняться действие
+
+```javascript
+let text = 'text'; //глобальная переменная 
+
+function showTitle(title) { //title - параметр
+	let text = 'local variable'; //локальная переменная, она не доступна вне функции
+	console.log(title);
+	console.log(text); //выведет 'local variable' т.к. поднимаясь на уровень выше, локальные переменные идут раньше глобальных
+};
+
+console.log(text); //выведет 'text' т.к. локальная переменная тут недоступна
+
+showTitle('Заголовок'); //'Заголовок' - аргумент
+```
+> Параметры - это **локальные переменные**, которым присваивается значение в момент вызова функции
+
+> Аргументы - это **значения передаваемые** в функцию при её вызове
+
+```javascript
+             //а,b - параметры
+function calc(a+b) {
+	console.log(a+b);
+};
+    //9,5 - аргументы
+calc(9,5);
+```
+
+### Типы функций
+#### Function Declaration
+```javascript
+function name() {
+  code...	
+}
+```
+> Создается до начала выполнения скрипта, **можно вызвать перед объявлением.**
+
+#### Function Expression (функциональное выражение)
+```javascript
+let name = function() {
+  code...	
+}
+```
+> Создается только тогда, **когда доходит поток** кода, **можно вызвать только после объявления.**
+
+#### Arrow Function
+```javascript
+() => {
+  code...
+}
+```
+> Не имеет своего *this*
 
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/10.jpg)
@@ -149,7 +207,7 @@
     > * Methods are functions stored as object properties.
 - [x] Array Methods
 
-	## Типы данных JavaScript
+	## Типы данных JavaScript <a name="TypesJS"></a>
 	### Простые типы
 	* Numbers 1,2,3
 	* String 'name'
@@ -166,34 +224,6 @@
 	* Объекты Дата
 	* Регулярные выражения
 	* Ошибки
-	
-	## Функции
-	**Функция** - нужна для вызова участка кода, который можно повторять несколько раз.
-	
-	### Function Declaration
-	```javascript
-	function name() {
-	  code...	
-	}
-	```
-	> Создается до начала выполнения скрипта, **можно вызвать перед объявлением.**
-	
-	### Function Expression (функциональное выражение)
-	```javascript
-  let name = function() {
-    code...	
-  }
-  ```
-  > Создается только тогда, **когда доходит поток** кода, **можно вызвать только после объявления.**
-  
-  ### Arrow Function
-  ```javascript
-  () => {
-    code...
-  }
-  ```
-  > Не имеет своего *this*
-
 
 
 
