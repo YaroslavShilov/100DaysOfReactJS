@@ -10,8 +10,160 @@
 * [Методы и Свойства](#methodsAndProperties)
 * [Callback](#callback)
 * [Регулярные выражения](#regularExpressions)
+* [Каррирование](#сurrying)
+* [Инкапсуляция](#encapsulation)
+* [ООП](#oop) (термин)
+* [JSDoc](#JSDoc)
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/12.jpg)
+```
+1. JavaScript 
+	1. Home work
+	2. Lesson 12
+```
+```
+2. React lesson 38 time: 12:00
+```
+
+## JSDoc <a name="JSDoc"></a>
+Tag | Description
+------------ | -------------
+@author      | Имя разработчика
+@constructor | Маркирует функцию как конструктор
+@deprecated  | Маркирует метод устаревшим и не рекомендуемым
+@exception   | Синоним для @throws
+@param       | Описывает аргумент функции; можно указать тип, задав его в фигурных скобках
+@private     | Означает, что метод приватный
+@return      | Описывает возвращаемое значение
+@returns     | Синоним return
+@see         | Описывает связь с другим объектом
+@this        | Задает тип объекта, на который указывает ключевое слово «this» внутри функции.
+@throws      | Описывает исключения, выбрасываемые методом
+@version     | Версия библиотеки
+
+### Examples:
+```
+/**
+ * Создает экземпляр Circle.
+ *
+ * @constructor
+ * @this  {Circle}
+ * @param {number} r - Радиус окружности.
+ */
+function Circle(r) {
+    /** @private */
+    this.radius = r;
+    
+    /** @private */
+    this.circumference = 2 * Math.PI * r;
+}
+
+/**
+ * Создает новый экземпляр Circle по диаметру.
+ *
+ * @param  {number} d - Диаметр окружности.
+ * @return {Circle} Новый объект Circle.
+ * 
+ * @static
+ */
+Circle.fromDiameter = function (d) {
+    return new Circle(d / 2);
+};
+
+/**
+ * Подсчитывает длину окружности
+ *
+ * @deprecated
+ * @this   {Circle}
+ * @return {number} Длина окружности.
+ */
+Circle.prototype.calculateCircumference = function () {
+    return 2 * Math.PI * this.radius;
+};
+
+/**
+ * Возвращает длину окружности, вычисленную заранее.
+ *
+ * @this   {Circle}
+ * @return {number} Длина окружности.
+ */
+Circle.prototype.getCircumference = function () {
+    return this.circumference;
+};
+
+/**
+ * Строковое представление объекта Circle.
+ *
+ * @override
+ * @this   {Circle}
+ * @return {string} Информация об объекте Circle.
+ */
+Circle.prototype.toString = function () {
+    return "A Circle object with radius of " + this.radius + ".";
+};
+```
+
+## ООП <a name="oop"></a>
+**ООП** - способ организации кода в единую логическую осмысленую структуру с целью оптимизации кода и обеспечении более эфективного взаимодействия всех компонентов. Так же позволяет исключить повторяемость кода, делать его более универсальным, например за счет наследования (когда один класс наследует поведение и свойства другого класса) ([Инкапсуляция](#encapsulation) хорошо показывает смысл ООП)
+
+## Инкапсуляция <a name="encapsulation"></a>
+**Инкапсуляция** - это объединение функций и данных в рамках одной структуры, внутреннее состояние которой (данные) скрыты от внешнего мира. Такие функции называют [методами](#methodsAndProperties).
+
+>  Основное различие между сокрытием данных и инкапсуляцией заключается в том, что сокрытие данных больше фокусируется на безопасности данных, а инкапсуляция - больше на скрытии сложности системы.
+
+```
+let person = {
+   _name: "Alesha",
+   _age: 108,
+   getName() {
+      //тут должно быть много сложного кода
+      return this._name;
+   },
+   getAge() {
+      //тут должно быть много сложного кода
+      return this._age;
+   }
+}
+
+console.log(person.getAge()) //108
+console.log(person.getName()) //"Alesha"
+
+```
+
+
+## Каррирование <a name="сurrying"></a>
+**Каррирование** -  это трансформация функций таким образом, чтобы они принимали аргументы не как f(a, b, c), а как f(a)(b)(c)
+
+> Создадим вспомогательную функцию **curry(f)**, которая выполняет каррирование функции **f** с двумя аргументами. Другими словами, **curry(f)** для функции **f(a, b)** трансформирует её в **f(a)(b)**.
+
+```
+function curry(f) { // curry(f) выполняет каррирование
+  return function(a) {
+    return function(b) {
+      return f(a, b);
+    };
+  };
+}
+
+// использование
+function sum(a, b) {
+  return a + b;
+}
+
+let carriedSum = curry(sum);
+
+alert( carriedSum(1)(2) ); // 3
+```
+Реализация довольна проста: это две обёртки.
+  
+* Результат curry(func) – обёртка function(a).
+* Когда она вызывается как sum(1), аргумент сохраняется в лексическом окружении и возвращается новая обёртка function(b).
+* Далее уже эта обёртка вызывается с аргументом 2 и передаёт вызов к оригинальной функции sum.
+
+
+
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/11.jpg)
 ## Регулярные выражения <a name="regularExpressions"></a>
 **Регулярные выражения** - средство для поиска и замены в строке 

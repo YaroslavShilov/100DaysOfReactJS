@@ -3,8 +3,8 @@ import s from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = (props) => {
-	const updateNewPostText = props.store.updateNewPostText.bind(props.store);
-	const addPost = props.store.addPost.bind(props.store);
+	const updateNewPostText = props.dispatch({type: 'UPDATE-NEW_POST_TEXT'});
+	const addPost = props.dispatch({"ADD-POST"});
 	const newPostText = props.profilePage.newPostText;
 	const postsData = props.profilePage.posts
 		.map(i=><Post message={i.message} like={i.likesCount} key={i.id}/>);
@@ -13,7 +13,7 @@ const MyPosts = (props) => {
 	
 	let onPostChange = () => {
 		let text = newPostElement.current.value;
-		updateNewPostText(text);
+		updateNewPostText.newText = text;
 	};
 	
 	return (

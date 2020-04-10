@@ -33,25 +33,39 @@ let store = {
 	getState() {
 		return this._state;
 	},
-	addPost() {
-		let newPost = {
-			id: 6,
-			message: this._state.profilePage.newPostText,
-			likesCount: 0,
-		};
-
-		this._state.profilePage.posts.push(newPost);
-		this._state.profilePage.newPostText = '';
-		this._callSubscriber(this._state);
-	},
-	updateNewPostText(newText) {
-		debugger
-		this._state.profilePage.newPostText = newText;
-		this._callSubscriber(this._state);
-	},
 	subscribe(observer) {
 		this._callSubscriber = observer;
 	},
+	/**
+	 * Выполняет различные действия в зависимости от переданного типа
+	 * @param {object} action - передаваеммые объект
+	 * @example
+	 * store.dispatch({
+	 *  type: 'UPDATE-NEW_POST_TEXT',
+	 *  newText: 'hello world',
+	 * })
+	 * 
+	 * 
+	 */
+	dispatch(action) {
+		if(action.type === 'ADD-POST') {
+			let newPost = {
+				id: 6,
+				message: this._state.profilePage.newPostText,
+				likesCount: 0,
+			};
+
+			this._state.profilePage.posts.push(newPost);
+			this._state.profilePage.newPostText = '';
+			this._callSubscriber(this._state);
+			
+		} 
+		else if (action.type === 'UPDATE-NEW_POST_TEXT') {
+			this._state.profilePage.newPostText = action.newText;
+			this._callSubscriber(this._state);
+		}
+	}
+	
 };
 
 

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09490adb-2a9d-4b21-9df6-2f3164ff6265" name="Default" comment="" />
+    <list default="true" id="09490adb-2a9d-4b21-9df6-2f3164ff6265" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaScript_memories/11_callback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaScript_memories/12_object.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaScript_memories/homeworks/task4/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaScript_memories/homeworks/task4/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/state.js" afterPath="$PROJECT_DIR$/src/redux/state.js" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="16" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -47,11 +58,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="state.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/redux/state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+              <folding>
+                <element signature="e#23#651#0" expanded="false" />
+                <element signature="e#1072#1318#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="379">
+              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -62,8 +86,8 @@
       <file leaf-file-name="Profile.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Profile/Profile.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="136">
+              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -72,22 +96,10 @@
       <file leaf-file-name="MyPosts.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83">
-              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state relative-caret-position="187">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="state.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/state.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-              <folding>
-                <element signature="e#23#651#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -140,11 +152,11 @@
         <option value="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx" />
         <option value="$PROJECT_DIR$/src/components/Dialogs/Messages/Messages.jsx" />
         <option value="$PROJECT_DIR$/src/render.js" />
-        <option value="$PROJECT_DIR$/src/components/Profile/Profile.jsx" />
-        <option value="$PROJECT_DIR$/src/redux/state.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/Profile/Profile.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" />
+        <option value="$PROJECT_DIR$/src/redux/state.js" />
       </list>
     </option>
   </component>
@@ -161,8 +173,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="151" />
-    <option name="y" value="101" />
+    <option name="x" value="539" />
+    <option name="y" value="75" />
     <option name="width" value="1175" />
     <option name="height" value="997" />
   </component>
@@ -184,7 +196,52 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="video_course">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="video_course">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="video_course">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="components">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -345,52 +402,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="video_course">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="video_course">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="video_course">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="components">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,6 +540,7 @@
       <workItem from="1586254317212" duration="17129000" />
       <workItem from="1586327253050" duration="177000" />
       <workItem from="1586342418556" duration="12245000" />
+      <workItem from="1586523323136" duration="6171000" />
     </task>
     <task id="LOCAL-00001" summary="video_course lesson 37 ready">
       <created>1586365929065</created>
@@ -540,7 +553,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46220000" />
+    <option name="totallyTimeSpent" value="52391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,17 +565,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="151" y="101" width="1175" height="997" extended-state="0" />
+    <frame x="539" y="75" width="1175" height="997" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29506725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2735426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28876406" sideWeight="0.5038168" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36516854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26966292" sideWeight="0.49618322" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18314607" sideWeight="0.49618322" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20706107" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -613,18 +626,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/state.js</url>
-          <line>1</line>
+          <line>51</line>
           <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -934,20 +941,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/render.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/render.js" />
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -958,50 +955,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding>
-            <element signature="e#23#651#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Profile/Profile.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="16" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/Profile.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="379">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <folding>
+            <element signature="e#23#651#0" expanded="false" />
+            <element signature="e#1072#1318#0" expanded="false" />
           </folding>
         </state>
       </provider>
