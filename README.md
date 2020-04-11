@@ -16,11 +16,18 @@
 * [JSDoc](#JSDoc)
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/13.jpg)
+```
+1. JavaScript - Array
+```
+```
+2. React lesson 38 time: 12:00
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/12.jpg)
 ```
 1. JavaScript 
 	1. Home work
-	2. Lesson 12
+	2. Object
 ```
 ```
 2. React lesson 38 time: 12:00
