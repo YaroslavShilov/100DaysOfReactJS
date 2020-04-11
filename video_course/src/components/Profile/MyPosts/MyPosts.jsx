@@ -1,21 +1,24 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post/Post';
+import {addPostActionCreator, uppDateNewPostTextActionCreator} from "../../../redux/state";
+
+
+
 
 const MyPosts = (props) => {
-	const updateNewPostText = props.dispatch({type: 'UPDATE-NEW_POST_TEXT'});
-	const addPost = props.dispatch({"ADD-POST"});
+	const addPost = () => props.dispatch(addPostActionCreator());
+	
 	const newPostText = props.profilePage.newPostText;
 	const postsData = props.profilePage.posts
 		.map(i=><Post message={i.message} like={i.likesCount} key={i.id}/>);
 	
+	
 	let newPostElement = React.createRef();
 	
 	let onPostChange = () => {
-		let text = newPostElement.current.value;
-		updateNewPostText.newText = text;
+		props.dispatch(uppDateNewPostTextActionCreator(newPostElement.current.value));
 	};
-	
 	return (
 		<div className={s.postsBlock}>
 			<h3>My posts</h3>

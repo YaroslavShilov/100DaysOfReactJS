@@ -1,3 +1,6 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW_POST_TEXT';
+
 let store = {
 	_state: {
 		dialogsPage: {
@@ -36,9 +39,25 @@ let store = {
 	subscribe(observer) {
 		this._callSubscriber = observer;
 	},
+	_addPost() {
+		let newPost = {
+			id: 6,
+			message: this._state.profilePage.newPostText,
+			likesCount: 0,
+		};
+
+		this._state.profilePage.posts.push(newPost);
+		this._state.profilePage.newPostText = '';
+		this._callSubscriber(this._state);
+	},
+	_updateNewPostText(newText) {
+		this._state.profilePage.newPostText = newText;
+		this._callSubscriber(this._state);
+	},
+	
 	/**
 	 * Выполняет различные действия в зависимости от переданного типа
-	 * @param {object} action - передаваеммые объект
+	 * @param {object} action - передаваеммый объект
 	 * @example
 	 * store.dispatch({
 	 *  type: 'UPDATE-NEW_POST_TEXT',
@@ -48,26 +67,24 @@ let store = {
 	 * 
 	 */
 	dispatch(action) {
-		if(action.type === 'ADD-POST') {
-			let newPost = {
-				id: 6,
-				message: this._state.profilePage.newPostText,
-				likesCount: 0,
-			};
-
-			this._state.profilePage.posts.push(newPost);
-			this._state.profilePage.newPostText = '';
-			this._callSubscriber(this._state);
+		if(action.type === ADD_POST) {
+			this._addPost();
 			
-		} 
-		else if (action.type === 'UPDATE-NEW_POST_TEXT') {
-			this._state.profilePage.newPostText = action.newText;
-			this._callSubscriber(this._state);
+		}
+		
+		else if (action.type === UPDATE_NEW_POST_TEXT) {
+			this._updateNewPostText(action.newText);
 		}
 	}
 	
 };
 
 
+export const addPostActionCreator = () => ({type: ADD_POST});
+
+export const uppDateNewPostTextActionCreator = text => ({
+	type: UPDATE_NEW_POST_TEXT, 
+	newText: text
+});
 
 export default store;

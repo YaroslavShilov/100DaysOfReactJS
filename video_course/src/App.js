@@ -30,8 +30,8 @@ const App = (props) => {
 	);
 };
 
-//TODO lesson 37 time: 0
-//TODO progress: 13/52hrs
+//TODO lesson 39 time: 0
+//TODO progress: 15/52hrs
 
 
 export default App;

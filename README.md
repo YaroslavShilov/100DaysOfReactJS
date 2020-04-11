@@ -21,7 +21,10 @@
 1. JavaScript - Array
 ```
 ```
-2. React lesson 38 time: 12:00
+2. React
+  1. Action creator - objact which have type
+  2. Action type
+  3. Lesson 39 ready
 ```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/12.jpg)
 ```

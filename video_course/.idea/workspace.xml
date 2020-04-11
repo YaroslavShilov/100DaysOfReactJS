@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09490adb-2a9d-4b21-9df6-2f3164ff6265" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaScript_memories/13_array.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug.log" afterPath="$PROJECT_DIR$/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/state.js" afterPath="$PROJECT_DIR$/src/redux/state.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,6 +15,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Src">
       <favorite_root url="file://$PROJECT_DIR$/src" module="video_course" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
@@ -42,8 +54,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -54,11 +66,10 @@
       <file leaf-file-name="state.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/redux/state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            <state relative-caret-position="986">
+              <caret line="87" column="3" lean-forward="true" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
               <folding>
-                <element signature="e#23#651#0" expanded="false" />
-                <element signature="e#1072#1318#0" expanded="false" />
+                <element signature="e#106#734#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -67,8 +78,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="515">
+              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="16" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -90,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+              <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -145,9 +156,9 @@
         <option value="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx" />
         <option value="$PROJECT_DIR$/src/components/Dialogs/Messages/Messages.jsx" />
         <option value="$PROJECT_DIR$/src/render.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Profile/Profile.jsx" />
+        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" />
         <option value="$PROJECT_DIR$/src/redux/state.js" />
       </list>
@@ -166,8 +177,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="539" />
-    <option name="y" value="75" />
+    <option name="x" value="45" />
+    <option name="y" value="32" />
     <option name="width" value="1175" />
     <option name="height" value="997" />
   </component>
@@ -415,6 +426,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
+    <property name="js.last.introduce.type" value="LET" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -442,7 +454,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.MyPosts.jsx">
+    <configuration default="false" name="MyPosts.jsx" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="MyPosts.jsx" working-dir="$PROJECT_DIR$/src/components/Profile/MyPosts">
+      <method />
+    </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -510,6 +525,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.MyPosts.jsx" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.MyPosts.jsx" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -534,7 +557,7 @@
       <workItem from="1586327253050" duration="177000" />
       <workItem from="1586342418556" duration="12245000" />
       <workItem from="1586523323136" duration="6197000" />
-      <workItem from="1586593881760" duration="17000" />
+      <workItem from="1586593881760" duration="5231000" />
     </task>
     <task id="LOCAL-00001" summary="video_course lesson 37 ready">
       <created>1586365929065</created>
@@ -547,7 +570,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52434000" />
+    <option name="totallyTimeSpent" value="57648000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,26 +582,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="539" y="75" width="1175" height="997" extended-state="0" />
+    <frame x="45" y="32" width="1175" height="997" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27892378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27792436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28876406" sideWeight="0.5038168" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36516854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18314607" sideWeight="0.49618322" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18314607" sideWeight="0.49618322" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20706107" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="145" y="132" width="975" height="797" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -617,31 +642,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx</url>
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
-          <line>51</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Profile/Profile.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -660,6 +666,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+            <marker date="1586182127711" expanded="true" signature="426:506" ph="..." />
+            <marker date="1586182127711" expanded="true" signature="534:616" ph="..." />
+            <marker date="1586182127711" expanded="true" signature="644:732" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -677,6 +689,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -766,6 +779,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -797,6 +811,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+            <marker date="1586182127711" expanded="true" signature="426:506" ph="..." />
+            <marker date="1586182127711" expanded="true" signature="534:616" ph="..." />
+            <marker date="1586182127711" expanded="true" signature="644:732" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -825,13 +845,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -867,6 +881,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="85" lean-forward="false" selection-start-line="5" selection-start-column="85" selection-end-line="5" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,18 +938,74 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Yaroslav/Desktop/100DaysOfCode/video_course/src/components/Profile/MyPosts/MyPosts.jsx">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx#Post#72;C:/Users/Yaroslav/Desktop/100DaysOfCode/video_course/src/components/Profile/MyPosts/MyPosts.jsx#React#7;C:/Users/Yaroslav/Desktop/100DaysOfCode/video_course/src/components/Profile/MyPosts/MyPosts.jsx#s#34;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/Profile/MyPosts/Post/Post.jsx</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="184.0" y="141.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Yaroslav/Desktop/100DaysOfCode/video_course/src/App.js">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/App.js</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/App.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.js#App.css#27;C:/Users/Yaroslav/Desktop/100DaysOfCode/video_course/src/App.js#Dialogs#204;C:/Users/Yaroslav/Desktop/100DaysOfCode/video_course/src/App.js#Header#54;C:/Users/Yaroslav/Desktop/100DaysOfCode/video_course/src/App.js#Navbar#103;C:/Users/Yaroslav/Desktop/100DaysOfCode/video_course/src/App.js#Profile#152;C:/Users/Yaroslav/Desktop/100DaysOfCode/video_course/src/App.js#React#7;C:/Users/Yaroslav/Desktop/100DaysOfCode/video_course/src/App.js#Route#257;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/Header/Header.jsx</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/Navbar/Navbar.jsx</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/Profile/Profile.jsx</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js</node>
+            <node x="" y="">Route;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="304.5" y="218.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -946,8 +1019,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="515">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="16" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -957,7 +1030,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -966,11 +1039,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/state.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        <state relative-caret-position="986">
+          <caret line="87" column="3" lean-forward="true" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
           <folding>
-            <element signature="e#23#651#0" expanded="false" />
-            <element signature="e#1072#1318#0" expanded="false" />
+            <element signature="e#106#734#0" expanded="false" />
           </folding>
         </state>
       </provider>
