@@ -1,10 +1,15 @@
 import React from 'react';
 import s from './Messages.module.css';
 import Message from "./Message/Message";
+import {Route} from "react-router-dom";
 
 const Messages = (props) => {
 	const messagesData = props.messagesData
-		.map(i=><Message message={i.message} key={i.id}/>);
+		.map(i=>{ return (
+			<Route path={`/dialogs/${i.id}`} render={() =>
+				<Message message={i.message} key={i.id}/>
+			}/>
+		)});
 	
 	let newMessageElement = React.createRef();
 	let addMessage = ()=> {
@@ -16,7 +21,8 @@ const Messages = (props) => {
 		<div className={s.messages}>
 			{messagesData}
 			<div>
-				<textarea ref={newMessageElement}/>
+				/** TODO continue to add store for textarea*/
+				<textarea ref={newMessageElement} value={newMessagesText}/>
 				<div>
 					<button onClick={addMessage}>Reply</button>
 				</div>

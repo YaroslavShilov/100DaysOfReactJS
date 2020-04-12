@@ -30,7 +30,7 @@ const App = (props) => {
 	);
 };
 
-//TODO lesson 39 time: 0
+//TODO lesson 40 time: 19:40
 //TODO progress: 15/52hrs
 
 

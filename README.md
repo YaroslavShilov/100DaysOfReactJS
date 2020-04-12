@@ -7,6 +7,7 @@
 * [Функции](#functions)
   + [Типы функций](#TypesFunctions)
   + [Замыкания](#closures)
+  + [Функция-конструктор](#functionConstructor)
 * [Методы и Свойства](#methodsAndProperties)
 * [Callback](#callback)
 * [Регулярные выражения](#regularExpressions)
@@ -16,6 +17,95 @@
 * [JSDoc](#JSDoc)
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/14.jpg)
+```
+1. JavaScript
+	1. OOP
+	2. Function-constructor
+	3. homework
+```
+```
+2. React
+  1. Route for messages
+  2. 
+  3. 
+```
+
+## Функция-конструктор <a name="functionConstructor"></a>
+
+**Функции-конструкторы** - являются обычными функциями. Но есть два соглашения:
+1. Имя функции-конструктора должно начинаться с большой буквы.
+2. Функция-конструктор должна вызываться при помощи оператора "new".
+
+```
+function User(name) {
+  this.name = name;
+  this.isAdmin = false;
+}
+
+let user = new User("Вася");
+console.log(user.name); // Вася
+```
+
+new User(...) делает примерно вот что:
+```
+function User(name) {
+  // this = {};  (неявно)
+
+  // добавляет свойства к this
+  this.name = name;
+  this.isAdmin = false;
+
+  // return this;  (неявно)
+}
+```
+То есть, результат вызова new User("Вася") – это тот же объект, что и:
+```
+let user = {
+  name: "Вася",
+  isAdmin: false
+};
+```
+
+> заметим: технически любая функция может быть использована как конструктор. То есть, каждая функция может быть вызвана при помощи оператора new, и выполнится алгоритм, указанный выше в примере. Заглавная буква в названии функции является всеобщим соглашением по именованию, она как бы подсказывает разработчику, что данная функция является функцией-конструктором, и её нужно вызывать через new.
+
+### new.target
+Используя специальное свойство new.target внутри функции, мы можем проверить, вызвана ли функция при помощи оператора new или без него.
+
+В случае, если функция вызвана при помощи new, то в new.target будет сама функция, в противном случае undefined.
+```
+function User(name) {
+  if (!new.target) { // в случае, если вы вызвали без оператора new
+    return new User(name); // ...добавим оператор new за вас
+  }
+
+  this.name = name;
+}
+
+let vasya = User("Вася"); // переадресовывает вызовы на new User
+alert(vasya.name); // Вася
+```
+### Метод в конструкторе
+```
+function User(name) {
+  this.name = name;
+
+  this.sayHi = function() {
+    alert( "Меня зовут: " + this.name );
+  };
+}
+
+let vasya = new User("Вася");
+
+vasya.sayHi(); // Меня зовут: Вася
+
+/*
+vasya = {
+   name: "Вася",
+   sayHi: function() { ... }
+}
+*/
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/13.jpg)
 ```
 1. JavaScript - Array
