@@ -2,11 +2,11 @@ import React from 'react';
 import s from './Messages.module.css';
 import Message from "./Message/Message";
 import {Route} from "react-router-dom";
-import {uppDateNewMessageTextActionCreator} from "../../../redux/state";
+import {uppDateNewMessageBodyActionCreator} from "../../../redux/state";
 
 const Messages = (props) => {
 	
-	const newMessagesText = props.dialogsPage.newMessagesText;
+	const newMessagesBody = props.dialogsPage.newMessagesBody;
 	
 	const messagesData = props.dialogsPage.messages
 		.map(i=>{ return (
@@ -18,7 +18,7 @@ const Messages = (props) => {
 	let newMessageElement = React.createRef();
 	
 	let onMessageChange = () => {
-		props.dispatch(uppDateNewMessageTextActionCreator(newMessageElement.current.value))
+		props.dispatch(uppDateNewMessageBodyActionCreator(newMessageElement.current.value))
 	};
 	
 	let addMessage = ()=> {
@@ -31,7 +31,7 @@ const Messages = (props) => {
 		<div className={s.messages}>
 			{messagesData}
 			<div>
-				<textarea ref={newMessageElement} onChange={onMessageChange} value={newMessagesText}/>
+				<textarea ref={newMessageElement} onChange={onMessageChange} value={newMessagesBody}/>
 				<div>
 					<button onClick={addMessage}>Reply</button>
 				</div>
