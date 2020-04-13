@@ -8,6 +8,7 @@
   + [Типы функций](#TypesFunctions)
   + [Замыкания](#closures)
   + [Функция-конструктор](#functionConstructor)
+  + [Class](#class)
 * [Методы и Свойства](#methodsAndProperties)
 * [Callback](#callback)
 * [Регулярные выражения](#regularExpressions)
@@ -17,6 +18,74 @@
 * [JSDoc](#JSDoc)
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/15.jpg)
+```
+1. JavaScript
+	1. Homework
+```
+```
+2. React
+  1. 
+```
+
+## Class <a name="class"></a>
+> В объектно-ориентированном программировании класс – это расширяемый шаблон кода для создания объектов, который устанавливает в них начальные значения (свойства) и реализацию поведения (методы).
+
+```
+class MyClass {
+  // методы класса
+  constructor() { ... }
+  method1() { ... }
+  method2() { ... }
+  method3() { ... }
+  ...
+}
+
+//Example 2
+class User {
+
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHi() {
+    alert(this.name);
+  }
+
+}
+
+// Использование:
+let user = new User("Иван");
+user.sayHi();
+```
+
+Вот что на самом деле делает конструкция class User {...}:
+
+Создаёт функцию с именем User, которая становится результатом объявления класса. Код функции берётся из метода constructor (она будет пустой, если такого метода нет).
+Сохраняет все методы, такие как sayHi, в User.prototype.
+При вызове метода объекта new User он будет взят из прототипа, как описано в главе F.prototype. Таким образом, объекты new User имеют доступ к методам класса.
+
+```
+class User {
+  constructor(name) { this.name = name; }
+  sayHi() { alert(this.name); }
+}
+
+// класс - это функция
+alert(typeof User); // function
+
+// ...или, если точнее, это метод constructor
+alert(User === User.prototype.constructor); // true
+
+// Методы находятся в User.prototype, например:
+alert(User.prototype.sayHi); // alert(this.name);
+
+// в прототипе ровно 2 метода
+alert(Object.getOwnPropertyNames(User.prototype)); // constructor, sayHi
+```
+
+>В отличие от обычных функций, конструктор класса не может быть вызван без new
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/14.jpg)
 ```
 1. JavaScript
@@ -27,8 +96,6 @@
 ```
 2. React
   1. Route for messages
-  2. 
-  3. 
 ```
 
 ## Функция-конструктор <a name="functionConstructor"></a>

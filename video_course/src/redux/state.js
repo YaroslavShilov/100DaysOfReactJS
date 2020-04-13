@@ -1,5 +1,6 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW_POST_TEXT';
+const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE_NEW_MESSAGE_TEXT';
 
 let store = {
 	_state: {
@@ -17,6 +18,7 @@ let store = {
 				{id: 4, message: 'you'},
 				{id: 5, message: '?'},
 			],
+			newMessagesText: 'textMessage'
 		},
 		profilePage: {
 			posts: [
@@ -54,6 +56,10 @@ let store = {
 		this._state.profilePage.newPostText = newText;
 		this._callSubscriber(this._state);
 	},
+	_updateNewMessageText(newText) {
+		this._state.dialogsPage.newMessagesText = newText;
+		this._callSubscriber(this._state);
+	},
 	
 	/**
 	 * Выполняет различные действия в зависимости от переданного типа
@@ -75,6 +81,10 @@ let store = {
 		else if (action.type === UPDATE_NEW_POST_TEXT) {
 			this._updateNewPostText(action.newText);
 		}
+		
+		else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
+			this._updateNewMessageText(action.newText);
+		}
 	}
 	
 };
@@ -85,6 +95,11 @@ export const addPostActionCreator = () => ({type: ADD_POST});
 export const uppDateNewPostTextActionCreator = text => ({
 	type: UPDATE_NEW_POST_TEXT, 
 	newText: text
+});
+
+export const uppDateNewMessageTextActionCreator = text => ({
+	type: UPDATE_NEW_MESSAGE_TEXT,
+	newText: text,
 });
 
 export default store;
