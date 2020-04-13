@@ -22,10 +22,12 @@
 ```
 1. JavaScript
 	1. Homework
+	2. JS memories ready
 ```
 ```
 2. React
-  1. 
+  1. Reducer
+  2. Redux
 ```
 
 ## Class <a name="class"></a>

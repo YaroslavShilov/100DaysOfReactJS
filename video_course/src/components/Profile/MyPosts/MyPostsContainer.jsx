@@ -1,24 +1,24 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post/Post';
+import {addPostActionCreator, uppDateNewPostTextActionCreator} from "../../../redux/profile-reducer";
 
 
 
 
 const MyPosts = (props) => {
-	const addPost = () => props.addPost();
-	
+	const addPost = () => props.addPostActionCreator();
+
 	const newPostText = props.profilePage.newPostText;
 	const postsData = props.profilePage.posts
 		.map(i=><Post message={i.message} like={i.likesCount} key={i.id}/>);
-	
-	
+
+
 	let newPostElement = React.createRef();
-	
-	let onPostChange = (e) => {
-		updateNewPostText(e.target.current.value);
+
+	let onPostChange = () => {
+		props.dispatch(uppDateNewPostTextActionCreator(newPostElement.current.value));
 	};
-	
 	return (
 		<div className={s.postsBlock}>
 			<h3>My posts</h3>

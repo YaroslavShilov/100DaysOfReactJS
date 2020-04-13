@@ -16,14 +16,13 @@ const App = (props) => {
 			<div className='app-wrapper_content'>
 				<Route path="/dialogs" render={() =>
 					<Dialogs
-						dialogsPage={props.state.dialogsPage}
-					  dispatch={props.dispatch}
+					  store={props.store}
 					/>
 				}/>
 				<Route path="/profile" render={() =>
 					<Profile
 						profilePage={props.state.profilePage}
-						dispatch={props.dispatch}
+						dispatch={props.store.dispatch.bind(props.store)}
 					/>
 				}/>
 			</div>
@@ -31,7 +30,7 @@ const App = (props) => {
 	);
 };
 
-//TODO lesson 40 time: 19:40
+//TODO lesson 43 time: 13:00
 //TODO progress: 15/52hrs
 
 

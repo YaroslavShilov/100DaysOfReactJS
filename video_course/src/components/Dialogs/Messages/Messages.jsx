@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Messages.module.css';
 import Message from "./Message/Message";
 import {Route} from "react-router-dom";
-import {uppDateNewMessageBodyActionCreator} from "../../../redux/state";
+import {uppDateNewMessageBodyActionCreator, sendMessageCreator} from "../../../redux/dialogs-reducer";
 
 const Messages = (props) => {
 	
@@ -15,15 +15,14 @@ const Messages = (props) => {
 			}/>
 		)});
 	
-	let newMessageElement = React.createRef();
 	
-	let onMessageChange = () => {
-		props.dispatch(uppDateNewMessageBodyActionCreator(newMessageElement.current.value))
+	let onMessageChange = (e) => {
+		let body = e.target.value;
+		props.dispatch(uppDateNewMessageBodyActionCreator(body))
 	};
 	
-	let addMessage = ()=> {
-		let text = newMessageElement.current.value;
-		alert(text);
+	let onSendMessageClick = ()=> {
+		props.dispatch(sendMessageCreator())
 	};
 	
 	
@@ -31,9 +30,9 @@ const Messages = (props) => {
 		<div className={s.messages}>
 			{messagesData}
 			<div>
-				<textarea ref={newMessageElement} onChange={onMessageChange} value={newMessagesBody}/>
+				<textarea onChange={onMessageChange} value={newMessagesBody} placeholder="Enter your message"/>
 				<div>
-					<button onClick={addMessage}>Reply</button>
+					<button onClick={onSendMessageClick}>Reply</button>
 				</div>
 			</div>
 		</div>
