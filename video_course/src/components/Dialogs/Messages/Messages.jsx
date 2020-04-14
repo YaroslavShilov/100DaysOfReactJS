@@ -17,7 +17,7 @@ const Messages = (props) => {
 	
 	let onMessageChange = (e) => {
 		let body = e.target.value;
-		props.uppDateNewMessageBodyActionCreator(body);
+		props.uppDateNewMessageBody(body);
 	};
 	
 	let onSendMessageClick = ()=> {

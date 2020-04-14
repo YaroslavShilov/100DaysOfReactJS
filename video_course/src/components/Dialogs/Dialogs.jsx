@@ -19,7 +19,7 @@ const Dialogs = (props) => {
 			<Messages
 				newMessagesBody={props.newMessagesBody}
 				messages={props.messages}
-				uppDateNewMessageBodyActionCreator={props.uppDateNewMessageBodyActionCreator}
+				uppDateNewMessageBody={props.uppDateNewMessageBody}
 				sendMessageCreator={props.sendMessageCreator}
 			/>
 		</div>

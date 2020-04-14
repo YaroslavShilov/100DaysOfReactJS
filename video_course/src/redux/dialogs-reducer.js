@@ -41,7 +41,7 @@ export const dialogsReducer = (state = initialState, action) => {
 	
 };
 
-export const uppDateNewMessageBodyActionCreator = text => ({
+export const uppDateNewMessageBody = text => ({
 	type: 'UPDATE_NEW_MESSAGE_BODY',
 	body: text,
 });

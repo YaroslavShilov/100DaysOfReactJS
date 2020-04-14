@@ -24,6 +24,9 @@ React
   1. container component
   2. context API
   3. start To-Do_List
+  4. connect
+  5. mapStateToProps
+  6. sendMessageCreator
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/15.jpg)
