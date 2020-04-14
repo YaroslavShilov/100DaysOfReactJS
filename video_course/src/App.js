@@ -1,29 +1,24 @@
 import React from 'react';
-import './App.css';
+import s from './App.module.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
-import Dialogs from "./components/Dialogs/Dialogs";
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import {Route} from 'react-router-dom';
 
 
 const App = (props) => {
 	return (
 
-		<div className='app-wrapper'>
+		<div className={s.appWrapper}>
 			<Header />
 			<Navbar />
-			<div className='app-wrapper_content'>
+			<div className={s.appWrapper_container}>
 				<Route path="/dialogs" render={() =>
-					<Dialogs
-					  store={props.store}
-					/>
+					<DialogsContainer store={props.store}/>
 				}/>
 				<Route path="/profile" render={() =>
-					<Profile
-						profilePage={props.state.profilePage}
-						dispatch={props.store.dispatch.bind(props.store)}
-					/>
+					<Profile store={props.store}/>
 				}/>
 			</div>
 		</div>
@@ -31,7 +26,7 @@ const App = (props) => {
 };
 
 //TODO lesson 43 time: 13:00
-//TODO progress: 15/52hrs
+//TODO progress: 17/52hrs
 
 
 export default App;

@@ -2,13 +2,12 @@ import React from 'react';
 import s from './Messages.module.css';
 import Message from "./Message/Message";
 import {Route} from "react-router-dom";
-import {uppDateNewMessageBodyActionCreator, sendMessageCreator} from "../../../redux/dialogs-reducer";
 
 const Messages = (props) => {
 	
-	const newMessagesBody = props.dialogsPage.newMessagesBody;
+	const newMessagesBody = props.newMessagesBody;
 	
-	const messagesData = props.dialogsPage.messages
+	const messagesData = props.messages
 		.map(i=>{ return (
 			<Route path={`/dialogs/${i.id}`} render={() =>
 				<Message message={i.message} key={i.id}/>
@@ -18,11 +17,11 @@ const Messages = (props) => {
 	
 	let onMessageChange = (e) => {
 		let body = e.target.value;
-		props.dispatch(uppDateNewMessageBodyActionCreator(body))
+		props.uppDateNewMessageBodyActionCreator(body);
 	};
 	
 	let onSendMessageClick = ()=> {
-		props.dispatch(sendMessageCreator())
+		props.sendMessageCreator()
 	};
 	
 	
