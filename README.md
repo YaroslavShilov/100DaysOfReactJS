@@ -18,6 +18,20 @@
 * [JSDoc](#JSDoc)
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/17.jpg)
+
+```
+Other themes
+  1. Rest parameter
+  2. Spread operators
+  3. Object destructuring
+  4. Array destructuring
+  5. Deep copy
+  6. Shallow copy
+React
+  1. 
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/16.jpg)
 ```
 React

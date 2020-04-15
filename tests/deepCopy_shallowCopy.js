@@ -1,31 +1,44 @@
-
-let a = {
-	t: '1',
-	t2: '2',
+//shallowCopy (Мелкая копия) - означает только ссылку на исходную сущность
+/*let a = {
+	name: 'name - a',
+	age: 20,
 };
 
 let b = a; //объект не копируется, а просто получает ссылку на объект
-a.t = '3';
-b.t2 = '4';
+b.name = 'name - b';
 
-console.log(a);
+console.log(a); //name - b, т.к. мы переназначили
+console.log(b);*/
+
+
+//deepCopy (Глубокая копия) - клонирует исходную сущность и создаёт новую несвязанную копию
+
+let a = {
+	name: 'name - a',
+	protocol: 'https',
+	maxPeople: 10,
+	isOnline: true,
+	people: ['alesha', 'andrey', 'dimich'],
+	classroom: {
+		teacher: {
+			name: 'dimich',
+			age: 32,
+		}
+	}
+};
+
+let b = {...a};//используя "spret operator (...), раскладываем объект на список независимых свойст в {}" копируется объект, но вложенные в него объекты остаются ССЫЛКАМИ
+
+b.name = 'name - b';
+b.isOnline = false;
+b.people.push('Marry'); //изменит и в оригинале (object a) т.к. массив это тоже объект, а b.people является просто ссылкой, по этому нужно делать через spret
+b.people = [...a.people]; //копируется объект (используем spret)
+b.people.push('Aleshenka'); //не изменит в оригинале (object a) т.к. это уже не ссылка на оригинал
+
+console.log(a); 
 console.log(b);
 
-console.log('right way ==================');
 
-let a2 = {
-	t: '1',
-	t2: '2',
-};
-
-let b2 = {
-	...a2 //копируется объект, но вложенные в него объекты остаются ссылками
-};
-
-a2.t = '3';
-b2.t2 = '4';
-
-console.log(a2);
-console.log(b2);
-
-//** TODO добавь в пример вложенные объекты */
+let arr = [1,2,3,4];
+let myArr = {...arr};
+console.log(myArr);
