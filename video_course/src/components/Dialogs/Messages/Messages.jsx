@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Messages.module.css';
 import Message from "./Message/Message";
-import {Route} from "react-router-dom";
 
 const Messages = (props) => {
 	
@@ -9,9 +8,7 @@ const Messages = (props) => {
 	
 	const messagesData = props.messages
 		.map(i=>{ return (
-			<Route path={`/dialogs/${i.id}`} render={() =>
-				<Message message={i.message} key={i.id}/>
-			}/>
+			<Message message={i.message} key={i.id}/>
 		)});
 	
 	

@@ -18,6 +18,17 @@
 * [JSDoc](#JSDoc)
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/18.jpg)
+
+```
+Other themes
+  1. Template strings
+  2. Immutable
+React
+  1. 
+```
+
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/17.jpg)
 
 ```
@@ -28,8 +39,6 @@ Other themes
   4. Array destructuring
   5. Deep copy
   6. Shallow copy
-React
-  1. 
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/16.jpg)

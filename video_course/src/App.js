@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import {Route} from 'react-router-dom';
+import UsersContainer from "./components/Users/UsersContainer";
 
 
 const App = () => {
@@ -20,12 +21,15 @@ const App = () => {
 				<Route path="/profile" render={() =>
 					<Profile/>
 				}/>
+				<Route path="/users" render={() =>
+					<UsersContainer/>
+				}/>
 			</div>
 		</div>
 	);
 };
 
-//TODO lesson 46 time: 9:25
+//TODO lesson 49 time: 46
 //TODO progress: 18/52hrs
 
 

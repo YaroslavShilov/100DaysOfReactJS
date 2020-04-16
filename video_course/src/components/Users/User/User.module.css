@@ -1,0 +1,10 @@
+.user {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.user_avatar {
+	
+};
+
+/** TODO style for users */
