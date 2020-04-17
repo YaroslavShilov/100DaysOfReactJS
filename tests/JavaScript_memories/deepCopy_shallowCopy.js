@@ -1,4 +1,4 @@
-//shallowCopy (Мелкая копия) - означает только ссылку на исходную сущность
+//shallowCopy (Мелкая копия \ поверхностная копия) - создает только ссылку на исходную сущность
 /*let a = {
 	name: 'name - a',
 	age: 20,
@@ -15,19 +15,11 @@ console.log(b);*/
 
 let a = {
 	name: 'name - a',
-	protocol: 'https',
-	maxPeople: 10,
 	isOnline: true,
 	people: ['alesha', 'andrey', 'dimich'],
-	classroom: {
-		teacher: {
-			name: 'dimich',
-			age: 32,
-		}
-	}
 };
 
-let b = {...a};//используя "spret operator (...), раскладываем объект на список независимых свойст в {}" копируется объект, но вложенные в него объекты остаются ССЫЛКАМИ
+let b = {...a};//используя "spread operator (...), раскладываем объект на список независимых свойст в {}" копируется объект, но вложенные в него объекты остаются ССЫЛКАМИ
 
 b.name = 'name - b';
 b.isOnline = false;
@@ -35,10 +27,5 @@ b.people.push('Marry'); //изменит и в оригинале (object a) т.
 b.people = [...a.people]; //копируется объект (используем spret)
 b.people.push('Aleshenka'); //не изменит в оригинале (object a) т.к. это уже не ссылка на оригинал
 
-console.log(a); 
-console.log(b);
+let newObj = JSON.parse(JSON.stringify(a)); //создаёт полную копию объекта, но не может копировать методы объекта. Так же не может делать копирование циклических объектов
 
-
-let arr = [1,2,3,4];
-let myArr = {...arr};
-console.log(myArr);

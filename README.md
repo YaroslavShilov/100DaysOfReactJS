@@ -18,6 +18,14 @@
 * [JSDoc](#JSDoc)
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/19.jpg)
+```
+Other themes
+  1. Repeat terms
+React
+  1. some code for ToDo_List
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/18.jpg)
 
 ```
@@ -25,7 +33,7 @@ Other themes
   1. Template strings
   2. Immutable
 React
-  1. 
+  1. lesson 49 ready
 ```
 
 

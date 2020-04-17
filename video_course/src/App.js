@@ -30,7 +30,7 @@ const App = () => {
 };
 
 //TODO lesson 49 time: 46
-//TODO progress: 18/52hrs
+//TODO progress: 20/52hrs
 
 
 export default App;
