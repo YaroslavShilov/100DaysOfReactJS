@@ -1,38 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppHeader from "./components/app-header/app-header";
+import SearchPanel from "./components/search-panel/search-panel";
+import TodoList from "./components/todo-list/todo-list";
+import ItemStatusFilter from './components/item-status-filter/item-status-filter';
 
-const TodoList = () => {
-	
-	const items = ["Learn React", "Learn English"];
-	return (
-		<ul>
-			<li>{items[0]}</li>
-			<li>{items[1]}</li>
-		</ul>
-	)
-};
 
-const AppHeader = () => {
-	return <h1>My Todo List</h1>
-};
-
-const SearchPanel = () => {
-	return <input type="text" placeholder="search" />
-
-};
 
 const App = () => {
+	const todoData = [
+		{label: 'Drink Coffee', important: false, id: 1},
+		{label: 'Learn React', important: true, id: 2},
+		{label: 'Learn English', important: false, id: 3},
+	];
 	
-	const loginBox = <span>Login in please</span>;
 	return (
 		<>
-		{loginBox}
 		<AppHeader/>
 		<SearchPanel/>
-		<TodoList/>
+		<ItemStatusFilter />
+		<TodoList todos={todoData}/>
 		</>
 	)
 };
+
+
 
 ReactDOM.render(
 	<App/>, document.getElementById('root')

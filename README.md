@@ -2,22 +2,12 @@
 
 ---
 ---
-# List of themes
-* [Типы данных в JS](#TypesJS)
-* [Функции](#functions)
-  + [Типы функций](#TypesFunctions)
-  + [Замыкания](#closures)
-  + [Функция-конструктор](#functionConstructor)
-  + [Class](#class)
-* [Методы и Свойства](#methodsAndProperties)
-* [Callback](#callback)
-* [Регулярные выражения](#regularExpressions)
-* [Каррирование](#сurrying)
-* [Инкапсуляция](#encapsulation)
-* [ООП](#oop) (термин)
-* [JSDoc](#JSDoc)
----
----
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/20.jpg)
+```
+React
+  1. some code for ToDo_List
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/19.jpg)
 ```
 Other themes
