@@ -7,7 +7,10 @@
 
 ```
 React
-  1. 
+  1. Rest API
+  2. Axios
+  3. Side Effect
+  4. extends React.Component
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/20.jpg)
