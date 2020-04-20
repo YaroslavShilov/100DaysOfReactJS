@@ -1,4 +1,4 @@
-import User from "./User/User";
+import Users from "./User/Users";
 import {connect} from "react-redux";
 import {followAC, setUsersAC, unfollowAC} from "../../redux/users-reducer";
 
@@ -22,6 +22,6 @@ let mapDispatchToProps = dispatch => {
 	}
 };
 
-const UsersContainer = connect(mapStateToProps, mapDispatchToProps)(User);//state приходит из redux-store, из combineReducers
+const UsersContainer = connect(mapStateToProps, mapDispatchToProps)(Users);//state приходит из redux-store, из combineReducers
 
 export default UsersContainer;

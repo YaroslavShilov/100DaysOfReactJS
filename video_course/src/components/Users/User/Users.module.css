@@ -1,0 +1,63 @@
+.user_wrap {
+	padding: 20px;
+}
+
+.user {
+	max-width: 500px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	margin-bottom: 10px;
+	padding: 10px;
+	box-shadow: 0 0 1px 0 black;
+	transition: all 0.5s ease;
+	border-radius: 3px;
+}
+.user:hover {
+	box-shadow: 0 0 1px 1px black;
+}
+.user_avatar {
+	max-width: 130px;
+}
+.user_avatar img {
+	max-width: 100%;
+	border-radius: 50%;
+}
+.user_avatar p {
+	display: flex;
+	justify-content: center;
+}
+.user_avatar button {
+	padding: 10px 20px;
+	background: tomato;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all 0.5s ease;
+	box-shadow: 0 0 0 0 black;
+
+}
+
+.user_avatar button:hover {
+	box-shadow: 0 0 2px 1px black;
+
+}
+
+.user_main {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px 10px;	
+}
+.user_name {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.user_quote {
+	margin: 0;
+}
+
+.user_cities {
+	font-size: 10px;
+}
