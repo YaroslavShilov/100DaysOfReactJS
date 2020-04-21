@@ -3,6 +3,18 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/22.jpg)
+```
+To-Do_List:
+  1. create state
+  2. use setState()
+  3. remove style
+  4. add "done" for todo-list-item
+  5. add "important" for button exclamation
+  6. change App to class App
+  7. create deleteItem()
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/21.jpg)
 
 ```
