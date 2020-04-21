@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09490adb-2a9d-4b21-9df6-2f3164ff6265" name="Default" comment="video_course lesson 37 ready">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Users/User/Users.js" afterPath="$PROJECT_DIR$/src/components/Users/User/Users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Users/User/Users.module.css" afterPath="$PROJECT_DIR$/src/components/Users/User/Users.module.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,11 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -78,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Users.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Users.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Users/User/Users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="342">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="n#!!block;n#render#0;n#Users#0" expanded="false" />
@@ -176,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/components/Users/Users.js" />
         <option value="$PROJECT_DIR$/src/components/Users/App.js" />
         <option value="$PROJECT_DIR$/src/redux/redux-store.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Users/User/User.module.css" />
         <option value="$PROJECT_DIR$/src/components/Users/User/User.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
@@ -184,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/redux/users-reducer.js" />
         <option value="$PROJECT_DIR$/src/components/Users/User/Users.module.css" />
         <option value="$PROJECT_DIR$/src/components/Users/User/Users.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -206,8 +200,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
-    <option name="y" value="8" />
+    <option name="x" value="242" />
+    <option name="y" value="34" />
     <option name="width" value="1095" />
     <option name="height" value="988" />
   </component>
@@ -671,7 +665,7 @@
       <workItem from="1587049626233" duration="40000" />
       <workItem from="1587049706080" duration="8470000" />
       <workItem from="1587111904338" duration="203000" />
-      <workItem from="1587383141750" duration="12975000" />
+      <workItem from="1587383141750" duration="13379000" />
     </task>
     <task id="LOCAL-00001" summary="video_course lesson 37 ready">
       <created>1586365929065</created>
@@ -684,7 +678,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114370000" />
+    <option name="totallyTimeSpent" value="114774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -696,7 +690,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="8" width="1095" height="988" extended-state="0" />
+    <frame x="242" y="34" width="1095" height="988" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21097445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1104,14 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1155,12 +1141,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Users/User/Users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state relative-caret-position="342">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <element signature="n#!!block;n#render#0;n#Users#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
