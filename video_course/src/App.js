@@ -29,8 +29,8 @@ const App = () => {
 	);
 };
 
-//TODO lesson 55 time: 0
-//TODO progress: 23/52hrs
+//TODO lesson 57 time: 0
+//TODO progress: 24/52hrs
 
 
 export default App;

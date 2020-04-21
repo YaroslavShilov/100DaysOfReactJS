@@ -13,6 +13,12 @@ To-Do_List:
   5. add "important" for button exclamation
   6. change App to class App
   7. create deleteItem()
+  
+Video_course
+  1. add pagination in Users
+  2. add UsersAPIComponent
+  3. move UsersAPIComponent in UsersContainer
+  4. merge UsersAPIComponent and UsersContainer
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/21.jpg)
