@@ -3,6 +3,16 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/23.jpg)
+```
+To-Do_List:
+  1. add button and function for addItem
+  2. add toggleDone for Item
+  3. add toggleImportant for Item
+Video_course
+  1. 
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/22.jpg)
 ```
 To-Do_List:
