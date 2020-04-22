@@ -13,7 +13,7 @@ const MyPosts = (props) => {
 	const onAddPost = () => props.addPost();
 	
 	let onPostChange = (e) => {
-		props.updateNewPostText(e.target.value);
+		props.uppDateNewPostText(e.target.value);
 	};
 	
 	return (

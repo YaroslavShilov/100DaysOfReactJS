@@ -10,7 +10,10 @@ To-Do_List:
   2. add toggleDone for Item
   3. add toggleImportant for Item
 Video_course
-  1. 
+  1. add preloader
+  2. change mapDispatchToProps in connect
+  3. show profile after click on image of user from Users page
+     (so far the first profile) 
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/22.jpg)

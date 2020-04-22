@@ -2,10 +2,10 @@ import React from 'react';
 import s from './App.module.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import Profile from './components/Profile/Profile';
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import {Route} from 'react-router-dom';
 import UsersContainer from "./components/Users/UsersContainer";
+import ProfileContainer from "./components/Profile/ProfileContainer";
 
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
 					<DialogsContainer/>
 				}/>
 				<Route path="/profile" render={() =>
-					<Profile/>
+					<ProfileContainer/>
 				}/>
 				<Route path="/users" render={() =>
 					<UsersContainer/>
@@ -29,8 +29,8 @@ const App = () => {
 	);
 };
 
-//TODO lesson 57 time: 0
-//TODO progress: 24/52hrs
+//TODO lesson 60 time: 7:00
+//TODO progress: 26/52hrs
 
 
 export default App;
