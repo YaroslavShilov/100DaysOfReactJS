@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './App.module.css';
+import s from './App.module.scss';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
@@ -29,7 +29,7 @@ const App = () => {
 	);
 };
 
-//TODO lesson 60 time: 7:00
+//TODO lesson 60 time: 18:00
 //TODO progress: 26/52hrs
 
 

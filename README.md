@@ -11,7 +11,7 @@ To-Do_List:
   3. add function for filter
   4. this project is ready
   
-Video_course
+Course_1
   1. 
 ```
 

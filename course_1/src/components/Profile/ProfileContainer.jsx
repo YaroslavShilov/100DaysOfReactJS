@@ -3,6 +3,7 @@ import Profile from "./Profile";
 import * as axios from 'axios';
 import {setUserProfile} from "../../redux/profile-reducer";
 import {connect} from "react-redux";
+import {withRouter} from "react-router-dom";
 
 class ProfileContainer extends Component {
 	
@@ -27,5 +28,7 @@ let mapStateToProps = (state) => ({
 	profile: state.profilePage.profile,
 });
 
+let WithUrlDataContainerComponent = withRouter(ProfileContainer);
 
-export default connect(mapStateToProps, {setUserProfile,})(ProfileContainer);
+
+export default connect(mapStateToProps, {setUserProfile})(WithUrlDataContainerComponent);
