@@ -3,6 +3,18 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/24.jpg)
+```
+To-Do_List:
+  1. add form for new item
+  2. create function for search items
+  3. add function for filter
+  4. this project is ready
+  
+Video_course
+  1. 
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/23.jpg)
 ```
 To-Do_List:
