@@ -3,6 +3,15 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/25.jpg)
+```
+StarDB:
+  1.
+  
+Course_1:
+  1. 
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/24.jpg)
 ```
 To-Do_List:
@@ -10,9 +19,6 @@ To-Do_List:
   2. create function for search items
   3. add function for filter
   4. this project is ready
-  
-Course_1
-  1. 
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/23.jpg)
