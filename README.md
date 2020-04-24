@@ -6,10 +6,14 @@
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/25.jpg)
 ```
 StarDB:
-  1.
+  1. FetchAPI
+  2. Promise
   
 Course_1:
-  1. 
+  1. props.math.params
+  2. cookie
+  3. login
+  4. auth/me
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/24.jpg)
