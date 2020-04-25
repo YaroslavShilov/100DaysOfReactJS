@@ -3,6 +3,13 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/26.jpg)
+```
+StarDB:
+  1. design
+  2. random planet
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/25.jpg)
 ```
 StarDB:
