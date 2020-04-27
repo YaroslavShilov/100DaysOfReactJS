@@ -2,6 +2,7 @@ import React from 'react';
 import userPhoto from '../../../assets/images/avatar.jpg';
 import s from './Users.module.css';
 import {NavLink} from "react-router-dom";
+import * as axios from 'axios';
 
 let Users = (props) => {
 	let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
@@ -11,12 +12,14 @@ let Users = (props) => {
 	}
 	
 	
+	
+	
 	return (
 		<div className={s.user_wrap}>
 			<ul className={s.user_pagination}>
 				{pages.map(i =>
-					<li
-						className={props.currentPage === i  && s.active}
+					<li key={i}
+						className={props.currentPage === i ? s.active : ''}
 						onClick={()=> props.onPageChanged(i) }
 					>{i}</li>
 				)}
@@ -33,8 +36,39 @@ let Users = (props) => {
 							</NavLink>
 							<p>
 								{i.followed ?
-									<button onClick={() => props.unfollow(i.id)}>Unfollow</button> :
-									<button onClick={() => props.follow(i.id)}>follow</button>
+									<button onClick={() => {
+
+										axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${i.id}`, {
+											withCredentials: true,
+											headers: {
+												"API-KEY": "245f4fb1-f95a-47ec-b534-edb4329d7ea7"
+											},
+										}).then(response =>
+										{
+											if(response.data.resultCode === 0) {
+												props.unfollow(i.id);
+											}
+
+										}).catch((err)=>console.log(err));
+									}}>Unfollow</button> :
+									<button onClick={() => {
+
+										axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${i.id}`, {}, {
+											withCredentials: true,
+											headers: {
+												"API-KEY": "245f4fb1-f95a-47ec-b534-edb4329d7ea7"
+											},
+										}).then(response => 
+										{
+											console.log(response);
+											if(response.data.resultCode === 0) {
+												props.follow(i.id);
+											}
+												
+										}).catch((err)=>console.log(err));
+										
+									
+									}}>follow</button>
 								}
 
 							</p>

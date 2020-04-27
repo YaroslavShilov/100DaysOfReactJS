@@ -3,6 +3,19 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/28.jpg)
+```
+StarDB lesson 7_1 ready
+
+ReactWarriors
+  1. add component MovieItem 
+  2. add function removeMovies
+  
+Course_1
+  1. lesson 63 ready
+  2. progress: 28/52hrs
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/27.jpg)
 ```
 ReactWarriors
@@ -532,7 +545,7 @@ console.log('text'.length)//4
 ## Замыкания<a name="closures"></a>
 **Замыкания** - это функции, ссылающиеся на независимые (свободные) переменные. Другими словами, функция, определённая в замыкании, "запоминает" окружение, в котором она была создана.
 > Независимые переменные — это все переменные, которые не были переданы как параметры и не были объявлены как локальные.
-```javascript
+```
 function createCounter() {
   let counter = 0;
   const myFunction = function() { // локальная функция
@@ -588,7 +601,7 @@ console.log(Function); // -> ƒ Function() { [native code] }
 
 > Имя функции как правило = глагол + то над чем должно выполняться действие
 
-```javascript
+```
 let text = 'text'; //глобальная переменная 
 
 function showTitle(title) { //title - параметр
@@ -605,7 +618,7 @@ showTitle('Заголовок'); //'Заголовок' - аргумент
 
 > Аргументы - это **значения передаваемые** в функцию при её вызове
 
-```javascript
+```
              //а,b - параметры
 function calc(a+b) {
 	console.log(a+b);
@@ -627,7 +640,7 @@ calc(9,5);
 
 ### Типы функций <a name="TypesFunctions"></a>
 #### Function Declaration
-```javascript
+```
 function name() {
   code...	
 }
@@ -635,7 +648,7 @@ function name() {
 > Создается до начала выполнения скрипта, **можно вызвать перед объявлением.**
 
 #### Function Expression (функциональное выражение)
-```javascript
+```
 let name = function() {
   code...	
 }
@@ -643,7 +656,7 @@ let name = function() {
 > Создается только тогда, **когда доходит поток** кода, **можно вызвать только после объявления.**
 
 #### Arrow Function
-```javascript
+```
 () => {
   code...
 }
@@ -752,13 +765,13 @@ let name = function() {
     > You don’t know it, but every time you create an object literal, the JavaScript engine is effectively calling new Object(). An object literal is an object created by writing {}, as in var obj = {};. So an object literal is an implicit call to Object.
 - [x] Callbacks and Promises
 
-    ```javascript
+  ```
     let promise = new Promise(function(resolve, reject) {
       // executor (the producing code, "singer")
     });
     resolve(value) — if the job finished successfully, with result value.
     reject(error) — if an error occurred, error is the error object.
-    ```
+  ```
 - [x] Event Loop
 - [x] Event Bubbling
 - [x] Regular Expressions
