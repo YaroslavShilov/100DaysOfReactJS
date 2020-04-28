@@ -23,7 +23,6 @@ Others
     1.2. try{} 
     1.3. catch(err){} 
     1.4. finally{}
-  
 ```
 
 
