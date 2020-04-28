@@ -4,7 +4,7 @@
 ---
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/29.jpg)
-``` 
+```  
 StarDB lesson 7_3 ready
 
 ReactWarriors
