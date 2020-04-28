@@ -3,13 +3,37 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/29.jpg)
+```
+StarDB lesson 7_3 ready
+
+ReactWarriors
+  1. add photos and style for items
+  2. add method for add movie into moviesWillWatch
+
+Others
+  1. Promise
+    1.1. then()
+    1.2. catch()
+    1.3. all()
+    1.4. race()
+    1.5. finally()
+  2. Fetch
+    1.1. Async / Await
+    1.2. try{} 
+    1.3. catch(err){} 
+    1.4. finally{}
+  
+```
+
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/28.jpg)
 ```
 StarDB lesson 7_1 ready
 
 ReactWarriors
   1. add component MovieItem 
-  2. add function removeMovies
+  2. add method removeMovies
   
 Course_1
   1. lesson 63 ready
