@@ -3,6 +3,11 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/30.jpg)
+```  
+StarDB lesson 7_6 ready
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/29.jpg)
 ```  
 StarDB lesson 7_3 ready
@@ -31,7 +36,7 @@ StarDB lesson 7_1 ready
 
 ReactWarriors
   1. add component MovieItem 
-  2. add function removeMovies
+  2. add method removeMovies
   
 Course_1
   1. lesson 63 ready
