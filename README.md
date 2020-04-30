@@ -3,6 +3,14 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/31.jpg)
+```  
+Course_2 ready - It was a bad course
+
+Others
+   1. Prototype
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/30.jpg)
 ```  
 StarDB lesson 7_6 ready
