@@ -3,6 +3,26 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/36.jpg)
+```
+I was ill
+```
+
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/35.jpg)
+```
+Chronology - add props into Chronology.jsx but I don't know how to change state. Try to do it
+```
+
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/34.jpg)
+```
+Chronology - add props into Chronology.jsx but I don't know how to change state. Try to do it
+```
+
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/33.jpg)
+```
+Chronology - try to getComics and change state
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/32.jpg)
 ```  
 Start working on Chronology
