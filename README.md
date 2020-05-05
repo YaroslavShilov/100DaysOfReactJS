@@ -3,6 +3,20 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/37.jpg)
+```
+Chronology - try to add Comics
+
+Others
+   1. State and Lifecycle
+   2. call, bind, apply
+
+ReactWarriors
+   1. add function removeMovieFromWillWatch
+
+Weather - try to use OpenWeather API
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/36.jpg)
 ```
 I was ill
