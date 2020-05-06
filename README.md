@@ -2,6 +2,19 @@
 
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/38.jpg)
+```
+Chronology - I could add Comics from API :)
+
+Others
+   1. handing events
+   2. closure
+
+ReactWarriors
+   1. use TheMovie DB
+
+Weather - this app is ready
+```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/37.jpg)
 ```
