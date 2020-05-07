@@ -1,0 +1,25 @@
+.car {
+	border: 1px solid tomato;
+	margin: 10px 0 0;
+	padding: 10px;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0, .14);
+	border-radius: 5px;
+}
+.input {
+	border: 2px solid tomato;
+}
+.input:active,
+.input:focus {
+	outline: none;
+}
+.input.green {
+	border-color: yellow;
+}
+
+.input.red {
+	border-color: red;
+}
+.input.bold {
+	border-width: 4px;
+	font-weight: bold;
+}
