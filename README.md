@@ -2,6 +2,18 @@
 
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/39.jpg)
+```
+Chronology - I can't get state in async method of object with this state
+
+Others
+   1. conditional rendering
+   2. list and keys
+   3. Event Loop
+
+ReactWarriors
+   1. add Sort movies
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/38.jpg)
 ```
 Chronology - I could add Comics from API :)
@@ -98,7 +110,7 @@ ReactWarriors
   1. add component MovieItem 
   2. add method removeMovies
   
-Course_1
+Course_1 - my level isn't enough to move on
   1. lesson 63 ready
   2. progress: 28/52hrs
 ```

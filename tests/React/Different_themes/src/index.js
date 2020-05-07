@@ -57,7 +57,7 @@ ReactDOM.render(
 //END state and lifecycle
 
 //BEGIN Handing-events
-class Toggle extends React.Component {
+/*class Toggle extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {isToggleOn: true};
@@ -82,5 +82,42 @@ class Toggle extends React.Component {
 ReactDOM.render (
 	<Toggle/>,
 	document.getElementById('root')
-)
+)*/
 //END Handing-events
+
+//BEGIN conditional rendering
+
+class LoginControl extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {isLoggedIn: false}
+	}
+	
+	handleLoginClick = () => {
+		this.setState({isLoggedIn: true})
+	}
+	
+	hadleLogoutClick = () => {
+		this.setState({isLoggedIn: false})
+	}
+	
+	render() {
+		const isLoggedIn = this.state.isLoggedIn;
+		let button;
+		if (isLoggedIn) {
+			button = <LogoutButton onClick={this.handleLoginClick} />
+		} else {
+			button = <LoginButton onClick={this.hadleLogoutClick} />
+		}
+		
+		return (
+			<div>
+				<Greeting isLoggedIn={isLoggedIn} />
+				{button}
+			</div>
+		)
+	}
+	
+}
+
+//END conditional rendering

@@ -16,7 +16,7 @@ class App extends React.Component {
 		sunset: undefined,
 		error: undefined,
 		
-	}
+	};
 	
 	gettingWeather = async (e) => {
 		e.preventDefault();
@@ -32,7 +32,7 @@ class App extends React.Component {
 				sunset: undefined,
 				error: message,
 			})
-		}
+		};
 		
 		if(city) {
 			const api_url = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
@@ -62,7 +62,7 @@ class App extends React.Component {
 		
 		
 		
-	}
+	};
 	
 	render() {
 		return (
@@ -71,7 +71,7 @@ class App extends React.Component {
 					<div className="container">
 						<div className="row">
 
-							<div className={'col-sm-5 info'}>
+							<div className='col-sm-5 info'>
 								<Info/>
 							</div>
 
