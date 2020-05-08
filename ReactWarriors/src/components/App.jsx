@@ -22,16 +22,31 @@ class App extends React.Component {
   
   componentDidMount() {
   	console.log('didMount')
+	 this.getMovies()
+	  console.log('after fetch');
+  }
+  
+  componentDidUpdate(prevProps, prevState) {
+  	console.log('didUpdate')
+	  console.log('prev', prevProps, prevState)
+	  console.log('now', this.props, this.state)
+	  
+	  if(prevState.sort_by !== this.state.sort_by) {
+	  	//we have changes sort_by
+		  this.getMovies();
+	  }
+  }
+  
+  getMovies = () => {
 	  fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=${this.state.sort_by}`)
 		  .then((response)=>{
-	  	  return response.json();
-	    })
-		  .then(data => {
-		    this.setState({
-			    movies: data.results
-		    })
+			  return response.json();
 		  })
-	  console.log('after fetch');
+		  .then(data => {
+			  this.setState({
+				  movies: data.results
+			  })
+		  })
   }
 
 	deleteMovie = movie => {

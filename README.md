@@ -2,6 +2,22 @@
 
 ---
 ---
+
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/40.jpg)
+```
+
+Others
+   1. forms
+   2. Object.create (getter, setter)
+
+ReactWarriors
+   1. show results using Sort_by
+
+Todolist_hooks - this app is ready
+
+Chronology - create reducer
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/39.jpg)
 ```
 Chronology - I can't get state in async method of object with this state
