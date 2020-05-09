@@ -2,6 +2,8 @@ import React from 'react';
 
 export class MovieTabs extends React.Component {
 	
+	//**TODO use hooks
+	
 	shouldComponentUpdate(nextProps, nextState, nextContext) {
 		console.log('nextProps', nextProps.sort_by);
 		console.log('thisProps', this.props.sort_by);

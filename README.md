@@ -5,7 +5,6 @@
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/40.jpg)
 ```
-
 Others
    1. forms
    2. Object.create (getter, setter)
