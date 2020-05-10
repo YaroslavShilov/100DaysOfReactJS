@@ -3,6 +3,11 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/41-42.jpg)
+```
+ReactWarriors - refactoring using hooks
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/40.jpg)
 ```
 Others
