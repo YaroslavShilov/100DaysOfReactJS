@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactDOM from "react-dom";
 //import App from "./App";
 
@@ -122,6 +122,7 @@ ReactDOM.render (
 //END conditional rendering
 
 //BEGIN forms
+/*
 class NameForm extends React.Component {
 	constructor(props, context) {
 		super(props, context);
@@ -214,5 +215,46 @@ class Reservation extends React.Component {
 ReactDOM.render(
 	<Reservation/>, document.getElementById('root')
 )
-
+*/
 //END forms
+
+//BEGIN lifting state up
+function BoilingVerdict({celsius}) {
+	if (celsius >= 100) {
+		return <p>Ready</p>
+	} else {
+		return <p>Isn't Ready</p>
+	}
+}
+
+function Calculator (props) {
+	const [state, setState] = useState({temperature: ''});
+	
+	const handleChange = (e) => {
+		setState({
+			...state,
+			temperature: e.target.value,
+		})
+	}
+	
+	const temperature = state.temperature;
+	
+	return (
+		<fieldset>
+			<legend>Write temperature</legend>
+			<input 
+				type="text"
+				value={temperature}
+				onChange={handleChange}
+			/>
+			<BoilingVerdict celsius={parseFloat(temperature)}/>
+		</fieldset>
+	)
+}
+
+ReactDOM.render(
+	<Calculator/>,
+	document.getElementById('root')
+)
+
+//END lifting state up

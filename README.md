@@ -3,6 +3,11 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/43.jpg)
+```
+Others
+   1. lifting state up
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/41-42.jpg)
 ```
 ReactWarriors - refactoring using hooks
