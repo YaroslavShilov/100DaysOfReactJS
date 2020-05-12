@@ -219,42 +219,91 @@ ReactDOM.render(
 //END forms
 
 //BEGIN lifting state up
-function BoilingVerdict({celsius}) {
-	if (celsius >= 100) {
-		return <p>Ready</p>
-	} else {
-		return <p>Isn't Ready</p>
-	}
+const scaleNames = {
+	c: 'Celsius',
+	f: 'Fahrenheit'
+};
+
+function toCelsius(fahrenheit) {
+	return (fahrenheit - 32) * 5 / 9;
 }
 
-function Calculator (props) {
-	const [state, setState] = useState({temperature: ''});
-	
-	const handleChange = (e) => {
-		setState({
-			...state,
-			temperature: e.target.value,
-		})
+function toFahrenheit(celsius) {
+	return (celsius * 9 / 5) + 32;
+}
+
+function tryConvert(temperature, convert) {
+	const input = parseFloat(temperature);
+	if (Number.isNaN(input)) {
+		return '';
 	}
-	
-	const temperature = state.temperature;
-	
+	const output = convert(input);
+	const rounded = Math.round(output * 1000) / 1000;
+	return rounded.toString();
+}
+
+function BoilingVerdict(props) {
+	if (props.celsius >= 100) {
+		return <p>The water would boil.</p>;
+	}
+	return <p>The water would not boil.</p>;
+}
+
+function TemperatureInput({onTemperatureChange, temperature, scale}) {
+
+	function handleChange(e) {
+		onTemperatureChange(e.target.value);
+	}
+
 	return (
 		<fieldset>
-			<legend>Write temperature</legend>
-			<input 
-				type="text"
-				value={temperature}
-				onChange={handleChange}
-			/>
-			<BoilingVerdict celsius={parseFloat(temperature)}/>
+			<legend>Enter temperature in {scaleNames[scale]}:</legend>
+			<input value={temperature}
+			       onChange={handleChange} />
 		</fieldset>
-	)
+	);
+}
+
+function Calculator() {
+	
+	const [state, setState] = useState({
+		temperature: '',
+		scale: 'c',
+	})
+
+	function handleCelsiusChange(temperature) {
+		setState({scale: 'c', temperature});
+	}
+
+	function handleFahrenheitChange(temperature) {
+		setState({scale: 'f', temperature});
+	}
+
+	const scale = state.scale;
+	const temperature = state.temperature;
+	const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;
+	const fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
+
+	return (
+		<div>
+			<TemperatureInput
+				scale="c"
+				temperature={celsius}
+				onTemperatureChange={handleCelsiusChange} />
+			<TemperatureInput
+				scale="f"
+				temperature={fahrenheit}
+				onTemperatureChange={handleFahrenheitChange} />
+			<BoilingVerdict
+				celsius={parseFloat(celsius)} />
+		</div>
+	);
 }
 
 ReactDOM.render(
-	<Calculator/>,
+	<Calculator />,
 	document.getElementById('root')
-)
+);
+
 
 //END lifting state up
