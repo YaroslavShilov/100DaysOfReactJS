@@ -219,6 +219,7 @@ ReactDOM.render(
 //END forms
 
 //BEGIN lifting state up
+/*
 const scaleNames = {
 	c: 'Celsius',
 	f: 'Fahrenheit'
@@ -304,6 +305,90 @@ ReactDOM.render(
 	<Calculator />,
 	document.getElementById('root')
 );
-
-
+*/
 //END lifting state up
+
+//BEGIN composition vs inheritance
+function FancyBorder(props) {
+	return (
+		<div className={'FancyBorder FancyBorder-' + props.color}>
+			{props.children}
+		</div>
+	);
+}
+
+function Dialog(props) {
+	return (
+		<FancyBorder color="blue">
+			<h1 className="Dialog-title">
+				{props.title}
+			</h1>
+			<p className="Dialog-message">
+				{props.message}
+			</p>
+			{props.children}
+		</FancyBorder>
+	);
+}
+
+const SignUpDialog = (props) => {
+	const [state,setState] = useState({
+		login: '',
+	})
+
+	const handleChange = (e) => {
+		setState({login: e.target.value});
+	}
+
+	const handleSignUp = () => {
+		alert(`Добро пожаловать на борт, ${state.login}!`);
+	}
+
+	return (
+		<Dialog title="Программа исследования Марса"
+		        message="Как к вам обращаться?">
+			<input value={state.login}
+			       onChange={handleChange} />
+			<button onClick={handleSignUp}>
+				Запишите меня!
+			</button>
+		</Dialog>
+	);
+}
+
+function SplitPane(props) {
+	return (
+		<div className="SplitPane">
+			<div className="SplitPane-left">
+				{props.left}
+			</div>
+			<div className="SplitPane-right">
+				{props.right}
+			</div>
+		</div>
+	)
+}
+
+function App() {
+	const Contacts = () => <h2>Contacts</h2> 
+	const Chat = () => <h2>Chat</h2>
+	
+	return (<>
+		<SignUpDialog/>
+		<SplitPane
+			left={
+				<Contacts />
+			}
+			right={
+				<Chat />
+			} 
+		/>
+	</>)
+}
+
+
+ReactDOM.render(
+	<App/>,
+	document.getElementById('root')
+);
+//END composition vs inheritance
