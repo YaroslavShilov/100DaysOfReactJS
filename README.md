@@ -8,6 +8,7 @@
 Others
    1. composition vs inheritance
    2. proxy
+Todolist v2 - start
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/44.jpg)

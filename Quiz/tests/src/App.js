@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Car from "./components/Car/Car";
+import cls from './App.module.scss';
+import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
+import Counter from "./components/Counter/Counter";
 
-class App extends React.Component {
+export const ClickedContext = React.createContext(false);
+
+export default (props) => {
 	
-	state = {
+	const [state, setState] = useState({
+		clicked: false,
 		cars: [
 			{name: 'Tesla', year: 2020,},
 			{name: 'Audi', year: 2019},
@@ -11,71 +17,86 @@ class App extends React.Component {
 		],
 		pageTitle: 'React components',
 		showCars: true,
-	}
+	})
 	
-	toggleCarsHandler = () => {
-		this.setState({showCars: !this.state.showCars})
+	const toggleCarsHandler = () => {
+		setState({...state, showCars: !state.showCars})
 	}
 
-	onChangeName = (name, index) => {
-		const car = this.state.cars[index]
+	const onChangeName = (name, index) => {
+		const car = state.cars[index]
 		car.name = name;
-		const cars = [...this.state.cars];
+		const cars = [...state.cars];
 		cars[index] = car;
-		this.setState({
+		setState({
+			...state,
 			cars,
 		})
 	}
-	deleteCar = (inx) => {
-		/*const cars = [
-			...this.state.cars.slice(0,inx), 
-			...this.state.cars.slice(++inx, this.state.cars.length)
-		]*/
-		
-		const cars = [...this.state.cars];
+	const deleteCar = (inx) => {
+		const cars = [...state.cars];
 		cars.splice(inx, 1);
-		this.setState({cars})
+		setState({...state, cars})
 	}
-	
-	render() {
-		const divStyle = {
-			textAlign: 'center',
-		}
-		
-		const cars = this.state.cars.map((car, inx) => (
-			<Car 
-				key={inx} 
-				name={car.name} 
-				year={car.year}
-				onChangeName={(e) => this.onChangeName(e.target.value, inx)}
-				onDelete={()=> this.deleteCar(inx)}
-			/>
-		));
-		
-		return (
-			<div className={divStyle}>
-				<h1>{this.state.pageTitle}</h1>
-				
-				<button onClick={this.toggleCarsHandler}>
-					{this.state.showCars
-						? 'Hide Cars'
-						: 'Show Cars'
-					}
-				</button>
-				
-				<div style={{
-					width: 400,
-					margin: 'auto',
-					paddingTop: '20px',
-				}}>
-					{
-						this.state.showCars && cars
-					}
-				</div>
-				
-			</div>
-		);
-	}	
-}
 
-export default App;
+	const divStyle = {
+		textAlign: 'center',
+	}
+
+	const cars = state.cars.map((car, inx) => (
+		<ErrorBoundary key={inx}>
+			<Car
+				name={car.name}
+				year={car.year}
+				index={inx}
+				onChangeName={(e) => onChangeName(e.target.value, inx)}
+				onDelete={()=> deleteCar(inx)}
+			/>
+		</ErrorBoundary>
+	));
+	
+	
+	useEffect((e) => {
+		//console.log('componentDidMount', state.showCars);
+		return () => {
+			//console.log('componentWillUnmount', state.showCars)
+		}
+	})
+	//console.log('render', state.showCars)
+	return (
+		<div style={divStyle}>
+			
+			<h1>{state.pageTitle}</h1>
+			<h1>{props.title}</h1>
+			
+			<ClickedContext.Provider value={state.clicked}>
+				<Counter/>
+			</ClickedContext.Provider>
+			
+
+			<button onClick={() => setState({...state, clicked: !state.clicked})}>
+				Change clicked
+			</button>
+			
+			<hr/>
+
+			<button className={cls.AppButton} onClick={toggleCarsHandler}>
+				{state.showCars
+					? 'Hide Cars'
+					: 'Show Cars'
+				}
+			</button>
+
+			<div style={{
+				width: 400,
+				margin: 'auto',
+				paddingTop: '20px',
+			}}>
+				{
+					state.showCars && cars
+				}
+			</div>
+
+		</div>
+	);
+}
