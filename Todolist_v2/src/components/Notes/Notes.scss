@@ -1,0 +1,18 @@
+.note {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	strong {
+		margin-right: 1rem;
+	}
+	&_title {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: -3px;
+	}
+	&_time {
+		font-size: 12px;
+		padding: 0;
+		margin: 2px 0 0;
+	}
+}

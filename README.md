@@ -3,6 +3,16 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/46.jpg)
+```
+Others
+   1. thinking in react
+   2. accessibility
+   3. proxy
+Todolist v2 - some code
+   (I decided to finish this app later)
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/45.jpg)
 ```
 Others
