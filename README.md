@@ -3,12 +3,25 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/47.jpg)
+```
+Others
+   1. code splitting
+
+Quiz - start app
+
+Chronology 
+   1. change class into hooks and 
+   2. I could get state and change components 
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/46.jpg)
 ```
 Others
    1. thinking in react
    2. accessibility
    3. proxy
+
 Todolist v2 - some code
    (I decided to finish this app later)
 ```
@@ -18,6 +31,7 @@ Todolist v2 - some code
 Others
    1. composition vs inheritance
    2. proxy
+
 Todolist v2 - start
 ```
 
@@ -25,6 +39,7 @@ Todolist v2 - start
 ```
 Others
    1. lifting state up
+
 ReactWarriors - ready
 ```
 

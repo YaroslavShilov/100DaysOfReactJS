@@ -309,6 +309,7 @@ ReactDOM.render(
 //END lifting state up
 
 //BEGIN composition vs inheritance
+/*
 function FancyBorder(props) {
 	return (
 		<div className={'FancyBorder FancyBorder-' + props.color}>
@@ -385,10 +386,13 @@ function App() {
 		/>
 	</>)
 }
+ */
+//END composition vs inheritance
+
+
 
 
 ReactDOM.render(
 	<App/>,
 	document.getElementById('root')
 );
-//END composition vs inheritance

@@ -11,7 +11,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-weight: normal;
+	
+	&_title {
+		font-weight: normal;
+		margin: 0;
+		padding-top: 10px;
+	}
 	small {
 		font-size: 12px;
 	}
