@@ -3,6 +3,13 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/49.jpg)
+```
+Chronology
+   1. add Logo
+   2. add body bg
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/48.jpg)
 ```
 Chronology 
