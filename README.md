@@ -2,6 +2,17 @@
 
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/50.jpg)
+```
+Quiz:
+   1. add FinishedQuiz component
+   2. add Menu
+
+Chronology
+   1. Style for Item
+   2. Delete Context
+```
+
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/49.jpg)
 ```
