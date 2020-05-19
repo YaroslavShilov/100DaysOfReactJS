@@ -2,6 +2,17 @@
 
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/51.jpg)
+```
+Quiz:
+   1. add Pages
+   2. add Route
+
+Chronology
+   1. fixed length of Item description
+   2. finished style of Item
+   3. add footer
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/50.jpg)
 ```
 Quiz:

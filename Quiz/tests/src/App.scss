@@ -1,34 +1,3 @@
-.AppButton {
-  padding: 8px 10px;
-  border: 1px solid #ccc;
-  font-weight: bold;
-  text-transform: uppercase;
-
-  &:focus, &:active {
-    outline: none;
-  }
-
-  &:hover {
-    background: #f0ff1e;
-  }
-}
-
-
-.nav {
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 20px;
-
-    li {
-      margin-right: 15px;
-    }
-  }
-}
-
 .App {
 	text-align: center;
 }
@@ -38,9 +7,18 @@
 	pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
+.AppButton {
+	padding: 8px 10px;
+	border: 1px solid #ccc;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	&:focus, &:active {
+		outline: none;
+	}
+
+	&:hover {
+		background: #f0ff1e;
 	}
 }
 
@@ -58,6 +36,37 @@
 .App-link {
 	color: #61dafb;
 }
+
+
+.nav {
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		margin: 0;
+		padding: 20px;
+	}
+	li {
+		margin-right: 15px;
+	}
+	a.active {
+		font-weight: bold;
+		color: red;
+	}
+	a.wfm-active {
+		font-weight: bold;
+		color: yellow;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+
 
 @keyframes App-logo-spin {
 	from {
