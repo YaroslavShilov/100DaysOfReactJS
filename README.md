@@ -2,6 +2,20 @@
 
 ---
 ---
+
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/53.jpg)
+```
+Quiz:
+   1. add function add Question
+   2. add function create test
+   3. use firebase
+   4. use axios
+   5. add registration usin firebase
+   6. add redux
+   7. add react-redux
+   8. add reducer
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/52.jpg)
 ```
 Quiz:

@@ -1,69 +1,30 @@
 import React, {Component} from 'react'
 import './App.scss'
-import {Route, NavLink, Switch, Redirect} from 'react-router-dom';
-import About from './About/About'
-import Cars from './Cars/Cars'
-import CarDetail from "./CarDetail/CarDetail";
 
 class App extends Component {
-	
-	state = {
-		isLoggedIn: false,
-	}
-	
-  render() {
+  state = {
+    counter: 0
+  }
 
+  updateCounter(value) {
+    this.setState({
+      counter: this.state.counter + value
+    })
+  }
+
+  render() {
     return (
-      <div>
-        <nav className="nav">
-          <ul>
-            <li>
-              <NavLink 
-	              to="/" 
-	              exact 
-	              activeClassName={'wfm-active'}
-                
-              >Home</NavLink>
-            </li>
-            <li>
-              <NavLink
-	              to="/about"
-	              activeStyle={{
-	              	color: "blue",
-	              }}
-              >About</NavLink>
-            </li>
-	          <li>
-		          <NavLink to={{
-		          	pathname: '/cars', //link
-			          search: '?a=1&b=2', //get param
-			          hash: 'wfm-hash', //anchor
-		          }}>Cars</NavLink>
-	          </li>
-          </ul>
-        </nav>
-	      
-	      <hr/>
-	      <div style={{textAlign: 'center'}}>
-		      <h3>Is logged in {this.state.isLoggedIn ? 'TRUE' : 'FALSE'}</h3>
-		      <button onClick={() => this.setState({isLoggedIn: true})}>Login</button>
-	      </div>
+      <div className={'App'}>
+        <h1>Счетчик <strong>{this.state.counter}</strong></h1>
 
         <hr/>
-	      <Switch>
-		      <Route path='/' render={() => <h1>HomePage</h1>} exact />
-		      
-		      {
-		      	this.state.isLoggedIn && <Route path='/about' component={About} />
-		      }
-	
-	        <Route path='/cars/:name' component={CarDetail} />
-	        <Route path='/cars' component={Cars} />
-	        <Redirect to={'/'}/> {/*если не будет нажной странице, отправися на эту*/}
-		      {/*<Route render={() => <h1 style={{color: 'red', textAlign: 'center'}}>404 not found</h1>} />*/}
-        </Switch>
+
+        <div className="Actions">
+          <button onClick={() => this.updateCounter(1)}>Добавить 1</button>
+          <button onClick={() => this.updateCounter(-1)}>Вычесть 1</button>
+        </div>
       </div>
-    );
+    )
   }
 }
 
