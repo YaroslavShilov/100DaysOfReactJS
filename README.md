@@ -3,6 +3,17 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/54.jpg)
+```
+Quiz:
+   1. mapStateToProps
+   2. madDispatchToProps
+   3. connect
+   4. loggerMiddleware
+   5. action creator
+   6. redux-thunk & middleware
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/53.jpg)
 ```
 Quiz:
