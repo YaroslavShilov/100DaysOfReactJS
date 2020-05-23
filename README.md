@@ -3,6 +3,15 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/55.jpg)
+```
+Quiz:
+   1. refactor using reducers
+
+Chronology:
+   1. refactor using reducers
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/54.jpg)
 ```
 Quiz:

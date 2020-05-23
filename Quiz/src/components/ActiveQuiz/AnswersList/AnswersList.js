@@ -3,6 +3,7 @@ import s from './AnswersList.module.scss'
 import AnswerItem from "./AnswerItem/AnswerItem";
 
 export default props => (
+	
 	<ul className={s.AnswersList}>
 		{props.answers.map((i,inx) => {
 			return (

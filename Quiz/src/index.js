@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import * as serviceWorker from './serviceWorker';
 import App from './App';
 import {BrowserRouter} from 'react-router-dom';
-import * as serviceWorker from './serviceWorker';
 import {compose, createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import rootReducer from "./store/reducers/rootReducer";
