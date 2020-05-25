@@ -3,11 +3,18 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/57.jpg)
+```
+Chronology - ready
+
+Quiz:
+   1. reducer for create quiz
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/56.jpg)
 ```
 Chronology:
    1. refactor using reducers
-   2. add axios
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/55.jpg)
