@@ -7,6 +7,7 @@
 ```
 Quiz:
    1. auth - ready
+   2. firebase deploy
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/57.jpg)
