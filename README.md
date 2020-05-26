@@ -5,9 +5,15 @@
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/58.jpg)
 ```
+GithubSearch - ready
+
+Animation
+   1. React transition group
+
 Quiz:
    1. auth - ready
    2. firebase deploy
+   3. application is finished
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/57.jpg)
