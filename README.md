@@ -3,6 +3,20 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/59.jpg)
+```
+Animation - ready
+
+react-testing
+   1. enzyme 
+   2. enzyme-adapter-react-16 
+   3. react-test-renderer
+
+react-hoc
+   1. hof
+   2. hoc
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/58.jpg)
 ```
 GithubSearch - ready

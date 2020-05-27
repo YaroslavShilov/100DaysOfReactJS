@@ -70,3 +70,28 @@ code {
 	}
 }
 /*END .square */
+
+/*BEGIN .orange */
+.orange {
+  &-enter {
+	  opacity: 0;
+  }
+	&-enter-active {
+		opacity: 1;
+		transition: all 1s ease;
+	}
+	&-enter-done {
+		//transform: translateX(0);
+	}
+	&-exit {
+		opacity: 1;
+	}
+	&-exit-active {
+		opacity: 0;
+		transition: all 1s ease;
+	}
+	&-exit-done {
+		opacity: 1;
+	}
+}
+/*END .orange */
