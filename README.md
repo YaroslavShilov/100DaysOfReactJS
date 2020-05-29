@@ -3,12 +3,14 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/61.jpg)
+```
+work on newsFeed
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/60.jpg)
 ```
-create new-app
+create newsFeed
 ```
-
-
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/59.jpg)
 ```
