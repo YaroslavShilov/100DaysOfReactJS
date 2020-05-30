@@ -3,6 +3,13 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/62.jpg)
+```
+newsFeed
+   1. different work
+   2. reactStrap
+   3. styled-component
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/61.jpg)
 ```
 work on newsFeed

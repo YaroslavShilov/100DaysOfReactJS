@@ -1,18 +1,16 @@
 import React from 'react';
 import './PostAddForm.css';
+import {Button, Input, InputGroup, InputGroupAddon} from "reactstrap";
 
-const PostAddForm = (props) => {
+const PostAddForm = () => {
 	return (
 		<form className={'bottom-panel d-flex'}>
-			<input 
-				type="text"
-				placeholder={'Write your thoughts'}
-				className={'form-control new-post-label'}
-			/>
-			<button
-				type={'submit'}
-				className={'btn btn-outline-secondary'}
-			>Add</button>
+			<InputGroup>
+				<Input placeholder={'Write something'} className={'new-post-label'}/>
+				<InputGroupAddon addonType="append">
+					<Button color="outline-secondary">Add</Button>
+				</InputGroupAddon>
+			</InputGroup>
 		</form>
 	);
 }

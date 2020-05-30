@@ -8,7 +8,7 @@
 	margin-right: 2px;
 }
 
-.app-list-item button {
+.app-list-item .buttons button{
 	width: 35px;
 	height: 35px;
 	margin: 3px;
@@ -16,7 +16,7 @@
 	border: none;
 	cursor: pointer;
 }
-.app-list-item button:focus {
+.app-list-item .buttons button:focus {
 	box-shadow: none;
 	outline: none;
 }
@@ -25,6 +25,12 @@
 }
 .app-list-item .btn-trash {
 	color: red;
+}
+.app-list-item .btn-edit {
+	position: relative;
+	color: cornflowerblue;
+	font-size: 18px;
+	padding-top: 5px;
 }
 .app-list-item .fa-heart {
 	width: 35px;
@@ -39,7 +45,9 @@
 }
 
 .app-list-item-label {
+	flex: 1 1 auto;
 	display: block;
+	padding-right: 20px;
 	line-height: 35px;
 	cursor: pointer;
 	user-select: none;
@@ -57,4 +65,9 @@
 
 .app-list-item.important .btn-star {
 	color: #aeaeae;
+}
+.app-list-item .edit-input {
+	height: 41px;
+	margin-right: 10px;
+	
 }

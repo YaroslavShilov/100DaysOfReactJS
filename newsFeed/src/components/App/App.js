@@ -12,6 +12,8 @@ const App = (props) => {
 		{id: 1, label: 'Going to learn React', important: true},
 		{id: 2, label: 'That is so good', important: false},
 		{id: 3, label: 'I need a break...', important: false},
+		1,
+		'test',
 	]
 	
 	return (

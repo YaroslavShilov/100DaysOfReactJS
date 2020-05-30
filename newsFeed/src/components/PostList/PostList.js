@@ -1,20 +1,33 @@
 import React from 'react';
 import './PostList.css';
 import PostListItem from "../PostListItem/PostListItem";
+import {ListGroup, ListGroupItem} from "reactstrap";
 
 const PostList = ({posts}) => {
 	
-	const elements = posts.map(post =>
-		<li key={post.id} className="list-group-item">
-			<PostListItem {...post}/>
-		</li>
+	
+	
+	const elements = posts.map(post => {
+		const {id, ...itemProps} = post
+		if(typeof(post) === 'object') {
+			return (
+				<ListGroupItem key={id}>
+					<PostListItem {...itemProps}/>
+				</ListGroupItem>
+			)
+		} else {
+			return null
+		}
+		
+	}
+		
 		
 	)
 	
 	return (
-		<ul className={'app-list list-group'}>
+		<ListGroup className={'app-list'}>
 			{elements}
-		</ul>
+		</ListGroup>
 	);
 }
 
