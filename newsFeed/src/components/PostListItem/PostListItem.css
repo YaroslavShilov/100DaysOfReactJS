@@ -8,31 +8,39 @@
 	margin-right: 2px;
 }
 
-.app-list-item .buttons button{
+.buttons button{
 	width: 35px;
 	height: 35px;
 	margin: 3px;
 	font-size: 17px;
 	border: none;
 	cursor: pointer;
+	transition: all 0.5s ease;
 }
-.app-list-item .buttons button:focus {
+.buttons button:hover {
+	background-color: #ccc;
+}
+.buttons button:focus {
 	box-shadow: none;
 	outline: none;
 }
-.app-list-item .btn-star {
+.buttons .btn-alert {
+	color: cornflowerblue;
+	margin-top: 10px;
+}
+.buttons .btn-star {
 	color: #FFD700;
 }
-.app-list-item .btn-trash {
+.buttons .btn-trash {
 	color: red;
 }
-.app-list-item .btn-edit {
+.buttons .btn-edit {
 	position: relative;
 	color: cornflowerblue;
 	font-size: 18px;
 	padding-top: 5px;
 }
-.app-list-item .fa-heart {
+.buttons .fa-heart {
 	width: 35px;
 	height: 35px;
 	text-align: center;
@@ -71,3 +79,4 @@
 	margin-right: 10px;
 	
 }
+

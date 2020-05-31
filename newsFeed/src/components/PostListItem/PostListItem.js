@@ -1,15 +1,18 @@
 import React, {useState} from 'react';
 import './PostListItem.css';
 import {Button, Input, InputGroup} from "reactstrap";
+import Alert from "../Alert/Alert";
 
 
-const PostListItem = ({label, important = false}) => {
+const PostListItem = ({label, important = false, deleteItem}) => {
 	
 	const [state, setState] = useState({
 		important,
 		like: false,
 		label,
 		change: false,
+		alert: false,
+		
 	})
 	
 	const onImportant = () => {
@@ -29,6 +32,12 @@ const PostListItem = ({label, important = false}) => {
 			...state,
 			change: !state.change,
 		})
+	}
+	const onDelete = () => {
+		setState({
+			...state, 
+			alert: !state.alert,
+		});
 	}
 	
 	//BEGIN classNames
@@ -66,9 +75,30 @@ const PostListItem = ({label, important = false}) => {
 	}
 	//END label
 	
-	
+	//BEGIN alert
+	const alert = (
+		<Alert type={'danger'}>
+			Do you really want to delete this post?
+			<div className={'d-flex justify-content-center align-items-center buttons'}>
+				<button
+					className={'btn-alert btn-sm'}
+					onClick={deleteItem}
+				>
+					<i className={'fa fa-check'}/>
+				</button>
+				<button
+					className={'btn-alert btn-sm'}
+					onClick={() => setState({...state, alert: false})}
+				>
+					<i className={'fa fa-times'}/>
+				</button>
+			</div>
+		</Alert>
+	)
+	//END alert
 
-	return (
+	return (<>
+		
 		<div className={classNames}>
 			{content}
 			
@@ -92,7 +122,11 @@ const PostListItem = ({label, important = false}) => {
 				>
 					<i className={'fa fa-edit'}/>
 				</button>
-				<button type='button' className={'btn-trash btn-sm'}>
+				<button 
+					type='button' 
+					className={'btn-trash btn-sm'}
+					onClick={onDelete}
+				>
 					<i className={'fa fa-trash-o'}/>
 				</button>
 
@@ -101,7 +135,10 @@ const PostListItem = ({label, important = false}) => {
 				
 			</div>
 		</div>
-	);
+
+		{state.alert && alert}
+		
+	</>);
 }
 
 export default PostListItem

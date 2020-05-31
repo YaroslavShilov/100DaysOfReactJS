@@ -3,7 +3,7 @@ import './PostList.css';
 import PostListItem from "../PostListItem/PostListItem";
 import {ListGroup, ListGroupItem} from "reactstrap";
 
-const PostList = ({posts}) => {
+const PostList = ({posts, deleteItem}) => {
 	
 	
 	
@@ -12,7 +12,9 @@ const PostList = ({posts}) => {
 		if(typeof(post) === 'object') {
 			return (
 				<ListGroupItem key={id}>
-					<PostListItem {...itemProps}/>
+					<PostListItem {...itemProps} deleteItem={() => {
+						deleteItem(id);
+					}}/>
 				</ListGroupItem>
 			)
 		} else {

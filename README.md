@@ -3,6 +3,13 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/63.jpg)
+```
+newsFeed
+   1. add function deleteItem
+   2. add Alert
+   3. add function addItem
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/62.jpg)
 ```
 newsFeed
