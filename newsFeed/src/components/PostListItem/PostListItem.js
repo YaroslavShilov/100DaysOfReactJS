@@ -4,29 +4,18 @@ import {Button, Input, InputGroup} from "reactstrap";
 import Alert from "../Alert/Alert";
 
 
-const PostListItem = ({label, important = false, deleteItem}) => {
+const PostListItem = ({
+	label, important = false, like = false, 
+	deleteItem, onToggleLiked, onToggleImportant
+																							}) => {
 	
 	const [state, setState] = useState({
-		important,
-		like: false,
 		label,
 		change: false,
 		alert: false,
 		
 	})
 	
-	const onImportant = () => {
-		setState({
-			...state,
-			important: !state.important,
-		})
-	}
-	const onLike = () => {
-		setState({
-			...state,
-			like: !state.like,
-		})
-	}
 	const onEdit = () => {
 		setState({
 			...state,
@@ -42,8 +31,8 @@ const PostListItem = ({label, important = false, deleteItem}) => {
 	
 	//BEGIN classNames
 	let classNames = 'app-list-item d-flex justify-content-between';
-	if(state.important) classNames += ' important';
-	if(state.like) classNames += ' like';
+	if(important) classNames += ' important';
+	if(like) classNames += ' like';
 	//END classNames
 	
 	
@@ -68,7 +57,7 @@ const PostListItem = ({label, important = false, deleteItem}) => {
 		)
 	} else {
 		content = (
-			<span className="app-list-item-label" onClick={onLike}>
+			<span className="app-list-item-label" onClick={onToggleLiked}>
 				{state.label}
 			</span>
 		)
@@ -111,7 +100,7 @@ const PostListItem = ({label, important = false, deleteItem}) => {
 				<button 
 					type='button' 
 					className={'btn-star btn-sm'}
-					onClick={onImportant}
+					onClick={onToggleImportant}
 				>
 					<i className={'fa fa-star'}/>
 				</button>

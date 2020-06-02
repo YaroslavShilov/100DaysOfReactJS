@@ -3,10 +3,15 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/65.jpg)
+```
+newsFeed
+   1. change state in PostListItem
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/64.jpg)
 ```
 newsFeed
-   1. 
+   1. refactoring
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/63.jpg)

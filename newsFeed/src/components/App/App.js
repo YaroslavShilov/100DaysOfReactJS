@@ -8,9 +8,9 @@ import PostAddForm from "../PostAddForm/PostAddForm";
 
 const App = (props) => {
 	const data = [
-		{id: 1, label: 'Going to learn React', important: true},
-		{id: 2, label: 'That is so good', important: false},
-		{id: 3, label: 'I need a break...', important: false},
+		{id: 1, label: 'Going to learn React', important: true, like: false},
+		{id: 2, label: 'That is so good', important: false, like: false},
+		{id: 3, label: 'I need a break...', important: false, like: false},
 		1,
 		'test',
 	]
@@ -39,6 +39,24 @@ const App = (props) => {
 		})
 	}
 
+	const onToggleImportant = (id) => {
+		
+	}
+	
+	const onToggleLiked = (id) => {
+		const changePost = {...state.data.find(post => post.id === id)};
+		changePost.like = !changePost.like;
+		const changeData = state.data.filter(post => post.id !== id);
+		
+		setState(({data}) => {
+			const index = data.findIndex(elem => elem.id === id);
+			
+			const old = data[index];
+			const newItem = {...old, like: !old.like}
+			
+		})
+	}
+
 	return (
 		<div className={'app'}>
 			<Header/>
@@ -46,7 +64,12 @@ const App = (props) => {
 				<SearchPanel/>
 				<PostStatusFilter/>
 			</div>
-			<PostList posts={state.data} deleteItem={deleteItem}/>
+			<PostList 
+				posts={state.data} 
+				deleteItem={deleteItem}
+				onToggleImportant={onToggleImportant}
+				onToggleLiked={onToggleLiked}
+			/>
 			<PostAddForm
 				onAdd={addItem}
 			/>
