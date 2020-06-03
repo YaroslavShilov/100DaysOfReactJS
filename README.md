@@ -3,6 +3,13 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/66.jpg)
+```
+newsFeed
+   1. add toggleImportant
+   2. add toggleLike
+   3. postAddForm ready
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/65.jpg)
 ```
 newsFeed

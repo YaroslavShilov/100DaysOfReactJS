@@ -17,6 +17,7 @@ const App = (props) => {
 	
 	const [state, setState] = useState({
 		data,
+		term: '',
 	})
 
 
@@ -38,28 +39,49 @@ const App = (props) => {
 			data: [...state.data, newItem]
 		})
 	}
-
-	const onToggleImportant = (id) => {
-		
-	}
 	
-	const onToggleLiked = (id) => {
-		const changePost = {...state.data.find(post => post.id === id)};
-		changePost.like = !changePost.like;
-		const changeData = state.data.filter(post => post.id !== id);
-		
+	const changeProper = (id, property) => {
 		setState(({data}) => {
 			const index = data.findIndex(elem => elem.id === id);
-			
+
 			const old = data[index];
-			const newItem = {...old, like: !old.like}
-			
+			const newItem = {...old, [property]: !old[property]}
+
+			const newArr = [...data.slice(0, index), newItem, ...data.slice(index+1)]
+
+			return {...state, data: newArr}
+
 		})
 	}
 
+	const onToggleImportant = (id) => {
+		changeProper(id, 'important')
+	}
+	
+	const onToggleLiked = (id) => {
+		changeProper(id, 'like')
+	}
+	
+	const searchPost = (items, term) => {
+		if(term.length === 0) {
+			return items;
+		}
+		
+		items.filter((post) => {
+			return post.label.indexOf(term) > -1
+		})
+	}
+
+	const liked = state.data.filter(post => post.like).length
+	const allPosts = state.data.filter(post => typeof(post) === "object").length;
+	
+	
 	return (
 		<div className={'app'}>
-			<Header/>
+			<Header
+				liked={liked}
+				allPosts={allPosts}
+			/>
 			<div className={'search-panel d-flex'}>
 				<SearchPanel/>
 				<PostStatusFilter/>
