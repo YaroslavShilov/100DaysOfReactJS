@@ -16,8 +16,9 @@ const App = (props) => {
 	]
 	
 	const [state, setState] = useState({
-		data,
+		data: data.filter(post => typeof(post) === 'object'),
 		term: '',
+		filter: 'all',
 	})
 
 
@@ -67,13 +68,37 @@ const App = (props) => {
 			return items;
 		}
 		
-		items.filter((post) => {
-			return post.label.indexOf(term) > -1
+		return items.filter((post) => {
+			
+			const postLabel = post.label.toUpperCase();
+			const termUpper = term.toUpperCase();
+			
+			return postLabel.indexOf(termUpper) > -1
 		})
+	}
+	
+	const onUpdateSearch = (term) => {
+		setState({...state, term})
+	}
+	
+	const filterPost = (items, filter) => {
+		switch(filter) {
+			case 'like':
+				return items.filter(post => post.like === true)
+			default:
+				return items
+		}
+	}
+	
+	const onFilterSelect = (filter) => {
+		setState({...state, filter})
 	}
 
 	const liked = state.data.filter(post => post.like).length
-	const allPosts = state.data.filter(post => typeof(post) === "object").length;
+	const allPosts = state.data.length;
+	const visiblePosts = filterPost(searchPost(state.data, state.term), state.filter);
+	
+
 	
 	
 	return (
@@ -83,11 +108,14 @@ const App = (props) => {
 				allPosts={allPosts}
 			/>
 			<div className={'search-panel d-flex'}>
-				<SearchPanel/>
-				<PostStatusFilter/>
+				<SearchPanel onUpdateSearch={onUpdateSearch}/>
+				<PostStatusFilter
+					filter={state.filter}
+					onFilterSelect={onFilterSelect}
+				/>
 			</div>
 			<PostList 
-				posts={state.data} 
+				posts={visiblePosts} 
 				deleteItem={deleteItem}
 				onToggleImportant={onToggleImportant}
 				onToggleLiked={onToggleLiked}

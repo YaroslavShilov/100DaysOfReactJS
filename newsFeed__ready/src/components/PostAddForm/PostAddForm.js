@@ -10,11 +10,15 @@ const PostAddForm = ({onAdd}) => {
 	
 	const onSubmit = (e) => {
 		e.preventDefault();
-		onAdd(state.value)
-		setState({
-			...state,
-			value: '',
-		})
+		const withoutWhitespace = state.value.replace(/\s/g, '')
+		
+		if(withoutWhitespace.length !== 0) {
+			onAdd(state.value)
+			setState({
+				...state,
+				value: '',
+			})
+		}
 	}
 	
 	const onValueChange = (e) => {

@@ -3,6 +3,19 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/67.jpg)
+```
+newsFeed - ready
+
+GameOfThrones
+   1. use styled-components
+   2. charDetails
+   3. errorMessage
+   4. header
+   5. itemList
+   6. loader
+   7. randomChar
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/66.jpg)
 ```
 newsFeed
