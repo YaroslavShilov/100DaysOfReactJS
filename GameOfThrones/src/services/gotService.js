@@ -13,11 +13,16 @@ export default class GotService {
 	
 	async getAllCharacters() {
 		const characters = await this.getResource('/characters?page=5&pageSize=10');
-		return characters.map(this._transformCharacter)
+		return characters.map((char) => {
+				char.id = char.url.split('characters/')[1];
+				return this._transformCharacter(char)
+			}
+		)
 	}
 	
 	async getCharacter(id) {
 		const character = await this.getResource(`/characters/${id}`);
+		character.id = id;
 		return this._transformCharacter(character);
 	}
 
@@ -40,14 +45,15 @@ export default class GotService {
 	checkObj(obj) {
 		for (let key in obj) {
 			if(obj[key] === '') {
-				obj[key] = 'unknown'
+				obj[key] = 'unknown :('
 			}
 		}
 		return obj;
 	}
 	
-	_transformCharacter(char) {
+	_transformCharacter = (char) => {
 		return this.checkObj({
+			id: char.id,
 			name: char.name,
 			gender: char.gender,
 			born: char.born,
@@ -56,8 +62,9 @@ export default class GotService {
 		})
 	}
 	
-	_transformHouse(house) {
+	_transformHouse = (house) => {
 		return this.checkObj({
+			id: house.id,
 			name: house.name,
 			region: house.region,
 			words: house.words,
@@ -67,8 +74,9 @@ export default class GotService {
 		});
 	}
 	
-	_transformBook(book) {
+	_transformBook = (book) => {
 		return this.checkObj({
+			id: book.id,
 			name: book.name,
 			numberOfPages: book.numberOfPages,
 			publisher: book.publisher,

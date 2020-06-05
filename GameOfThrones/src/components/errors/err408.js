@@ -2,16 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Error = styled.p`
-	margin: 0;
 	padding: 20px;
 	font-size: 20px;
 	text-align: center;
 `
 
-const ErrorMessage = () => {
+const Error408 = () => {
 	return (
-		<Error>something goes wrong</Error>
+		<Error>Error408</Error>
 	);
 }
 
-export default ErrorMessage
+export default Error408

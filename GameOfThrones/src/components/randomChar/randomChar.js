@@ -47,15 +47,20 @@ const View = ({char}) => {
 
 
 export default class RandomChar extends Component {
-	constructor() {
-		super();
-		this.updateChar();
-	}
 	
 	state = {
 		char: {},
 		loading: true,
 		error: false,
+	}
+	
+	componentDidMount() {
+		this.updateChar();
+		this.timerId = setInterval(this.updateChar, 6000);
+	}
+
+	componentWillUnmount() {
+		clearInterval(this.timerId)
 	}
 
 	gotService = new gotService();
@@ -71,7 +76,7 @@ export default class RandomChar extends Component {
 		})
 	}
 
-	updateChar() {
+	updateChar = () => {
 		const id = Math.floor(Math.random()*140 + 25);//25-140
 		this.gotService.getCharacter(id)
 			.then(this.onCharLoaded)
