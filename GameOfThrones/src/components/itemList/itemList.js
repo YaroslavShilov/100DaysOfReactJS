@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import gotService from "../../services/gotService";
 import Loader from "../loader/loader";
 import ErrorMessage from "../errorMessage/errorMessage";
+import nextId from "react-id-generator";
 
 const ItemUL = styled.ul`
 	background-color: #fff;
@@ -14,19 +14,19 @@ const ItemLI = styled.li`
 
 export default class ItemList extends Component {
 	
-	gotService = new gotService();
-	
 	state = {
-		charList: null,
+		itemList: null,
 		error: false,
 		loading: true,
 	}
 	
 	componentDidMount() {
-		this.gotService.getAllCharacters()
-			.then((charList) => {
+		
+		const {getData} = this.props;
+		getData()
+			.then((itemList) => {
 				this.setState({
-					charList,
+					itemList,
 					loading: false,
 					error: false
 				})
@@ -40,14 +40,18 @@ export default class ItemList extends Component {
 	}
 	
 	renderItems = (arr) => {
-		return arr.map((item, inx) => {
+		return arr.map((item) => {
+			
+			const {id} = item;
+			const label = this.props.renderItem(item)
+			
 			return (
 				<ItemLI 
-					key={item.id} 
+					key={nextId()} 
 					className="list-group-item"
-					onClick={() => this.props.onCharSelected(item.id)}
+					onClick={() => this.props.onCharSelected(id)}
 				>
-					{item.name}
+					{label}
 				</ItemLI>
 			)
 		})
@@ -55,11 +59,11 @@ export default class ItemList extends Component {
 
 	render() {
 		
-		const {charList, error, loading} = this.state;
+		const {itemList, error, loading} = this.state;
 		
 		const errorMessage = error && <ErrorMessage/>
 		const loader = loading && <Loader/>
-		const content = !(errorMessage || loader) && this.renderItems(charList)
+		const content = !(errorMessage || loader) && this.renderItems(itemList)
 	
 		return (
 			<ItemUL className="list-group">

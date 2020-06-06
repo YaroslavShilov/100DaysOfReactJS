@@ -89,19 +89,19 @@ const View = ({name, gender, born, died, culture}) => {
 		<h4>{name}</h4>
 		<ul className="list-group list-group-flush">
 			<li className="list-group-item d-flex justify-content-between">
-				<span className="term">Gender</span>
+				<strong className="term">Gender</strong>
 				<span>{gender}</span>
 			</li>
 			<li className="list-group-item d-flex justify-content-between">
-				<span className="term">Born</span>
+				<strong className="term">Born</strong>
 				<span>{born}</span>
 			</li>
 			<li className="list-group-item d-flex justify-content-between">
-				<span className="term">Died</span>
+				<strong className="term">Died</strong>
 				<span>{died}</span>
 			</li>
 			<li className="list-group-item d-flex justify-content-between">
-				<span className="term">Culture</span>
+				<strong className="term">Culture</strong>
 				<span>{culture}</span>
 			</li>
 		</ul>

@@ -3,7 +3,7 @@ export default class GotService {
 		this._apiBase = 'https://www.anapioficeandfire.com/api';
 	}
 	
-	async getResource(url) {
+	getResource = async (url) => {
 		const res = await fetch(`${this._apiBase}${url}`);
 		if(!res.ok) {
 			throw new Error(`Couldn't fetch ${url}, received ${res.status}`);
@@ -11,7 +11,7 @@ export default class GotService {
 		return await res.json();
 	}
 	
-	async getAllCharacters() {
+	getAllCharacters = async () => {
 		const characters = await this.getResource('/characters?page=5&pageSize=10');
 		return characters.map((char) => {
 				char.id = char.url.split('characters/')[1];
@@ -20,29 +20,29 @@ export default class GotService {
 		)
 	}
 	
-	async getCharacter(id) {
+	getCharacter = async (id) => {
 		const character = await this.getResource(`/characters/${id}`);
 		character.id = id;
 		return this._transformCharacter(character);
 	}
 
-	getAllBooks() {
+	getAllBooks = () => {
 		return this.getResource('/books/');
 	}
 
-	getBook(id) {
+	getBook = (id) => {
 		return this.getResource(`/books/${id}/`);
 	}
 
-	getAllHouses() {
+	getAllHouses = () => {
 		return this.getResource('/houses/');
 	}
 
-	getHouse(id) {
+	getHouse = (id) => {
 		return this.getResource(`/houses/${id}/`);
 	}
 	
-	checkObj(obj) {
+	checkObj = (obj) => {
 		for (let key in obj) {
 			if(obj[key] === '') {
 				obj[key] = 'unknown :('

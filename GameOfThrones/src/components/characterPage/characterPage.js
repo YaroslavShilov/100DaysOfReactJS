@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
-import {Col, Row} from "reactstrap";
 import ItemList from "../itemList";
 import CharDetails from "../charDetails";
 import ErrorMessage from "../errorMessage/errorMessage";
+import gotService from "../../services/gotService";
+import RowBlock from "../rowBlock/rowBlock";
 
 class CharacterPage extends Component {
+	
+	gotService = new gotService();
 	
 	state = {
 		selectedChar: null,
@@ -32,15 +35,22 @@ class CharacterPage extends Component {
 			</div>
 		);
 		
+		const itemList = (
+			<ItemList
+				onCharSelected={this.onCharSelected}
+				getData={this.gotService.getAllCharacters}
+				renderItem={(item) => item.name}
+			/>
+		)
+		
+		const charDetails = (
+			<CharDetails 
+				charId={this.state.selectedChar}
+			/>
+		)
+		
 		return (
-			<Row>
-				<Col md='6'>
-					<ItemList onCharSelected={this.onCharSelected}/>
-				</Col>
-				<Col md='6'>
-					<CharDetails charId={this.state.selectedChar}/>
-				</Col>
-			</Row>
+			<RowBlock left={itemList} right={charDetails}/>
 		);
 	}
 }
