@@ -1,58 +1,64 @@
 import React, {Component} from 'react';
 import ItemList from "../itemList";
-import CharDetails from "../charDetails";
+import ItemDetails from "../itemDetails";
 import ErrorMessage from "../errorMessage/errorMessage";
 import gotService from "../../services/gotService";
 import RowBlock from "../rowBlock/rowBlock";
 
-class CharacterPage extends Component {
-	
+class PageContainer extends Component {
+
 	gotService = new gotService();
-	
+
 	state = {
-		selectedChar: null,
+		selectedItem: null,
 	}
 
-	onCharSelected = (id) => {
+	onItemSelected = (id) => {
 		this.setState({
-			selectedChar: id,
+			selectedItem: id,
 			error: false,
 		})
 	}
 
 	componentDidCatch() {
-		console.log('error')
 		this.setState({
 			error: true
 		})
 	}
 	
+	getData = () => {
+		if(this.props.type === 'character') return this.gotService.getAllCharacters
+		else if(this.props.type === 'book') return this.gotService.getAllBooks
+		else if(this.props.type === 'house') return this.gotService.getAllHouses
+	}
+
 	render() {
-		
+
 		if(this.state.error) return (
 			<div style={{backgroundColor: 'white'}}>
 				<ErrorMessage/>
 			</div>
 		);
 		
+
 		const itemList = (
 			<ItemList
-				onCharSelected={this.onCharSelected}
-				getData={this.gotService.getAllCharacters}
+				onItemSelected={this.onItemSelected}
+				getData={this.getData()}
 				renderItem={(item) => item.name}
 			/>
 		)
-		
+
 		const charDetails = (
-			<CharDetails 
-				charId={this.state.selectedChar}
-			/>
+			<ItemDetails itemId={this.state.selectedItem} label={this.props.type}>
+				{this.props.children}
+			</ItemDetails>
 		)
-		
+
 		return (
 			<RowBlock left={itemList} right={charDetails}/>
 		);
 	}
 }
 
-export default CharacterPage
+export default PageContainer

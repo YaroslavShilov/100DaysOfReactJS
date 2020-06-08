@@ -3,6 +3,17 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/71.jpg)
+```
+GameofThrones
+   1. add pages
+```
+
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/70.jpg)
+```
+try to fix bugs
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/69.jpg)
 ```
 GameOfThrones

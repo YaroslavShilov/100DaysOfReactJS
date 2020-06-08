@@ -26,20 +26,32 @@ export default class GotService {
 		return this._transformCharacter(character);
 	}
 
-	getAllBooks = () => {
-		return this.getResource('/books/');
+	getAllBooks = async () => {
+		const books = await this.getResource('/books/');
+		return books.map((book) => {
+			book.id = book.url.split('books/')[1];
+			return this._transformBook(book);
+		})
 	}
 
-	getBook = (id) => {
-		return this.getResource(`/books/${id}/`);
+	getBook = async (id) => {
+		const book = await this.getResource(`/books/${id}`);
+		book.id = id;
+		return this._transformBook(book);
 	}
 
-	getAllHouses = () => {
-		return this.getResource('/houses/');
+	getAllHouses = async () => {
+		const houses = await this.getResource('/houses/');
+		return houses.map(house => {
+			house.id = house.url.split('houses/')[1];
+			return this._transformHouse(house);
+		})
 	}
 
-	getHouse = (id) => {
-		return this.getResource(`/houses/${id}/`);
+	getHouse = async (id) => {
+		const house = this.getResource(`/houses/${id}/`);
+		house.id = id;
+		return this._transformHouse(house);
 	}
 	
 	checkObj = (obj) => {

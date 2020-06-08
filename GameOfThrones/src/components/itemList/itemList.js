@@ -49,7 +49,7 @@ export default class ItemList extends Component {
 				<ItemLI 
 					key={nextId()} 
 					className="list-group-item"
-					onClick={() => this.props.onCharSelected(id)}
+					onClick={() => this.props.onItemSelected(id)}
 				>
 					{label}
 				</ItemLI>
@@ -58,7 +58,6 @@ export default class ItemList extends Component {
 	}
 
 	render() {
-		
 		const {itemList, error, loading} = this.state;
 		
 		const errorMessage = error && <ErrorMessage/>
