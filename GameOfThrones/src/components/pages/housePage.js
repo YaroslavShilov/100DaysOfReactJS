@@ -7,7 +7,7 @@ const HousePage = () => (
 		<Field field={'region'} label={'Region'} />
 		<Field field={'words'} label={'Words'} />
 		<Field field={'titles'} label={'Titles'} />
-		<Field field={'overlord'} label={'Overlord'} />
+		{/*<Field field={'overlord'} label={'Overlord'} />*/}
 		<Field field={'ancertralWeapons'} label={'Ancertral weapons'} />
 	</PageContainer>
 )

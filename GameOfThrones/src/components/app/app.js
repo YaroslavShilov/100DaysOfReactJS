@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Row, Container, Button} from 'reactstrap';
 import Header from '../header';
-import RandomChar from '../randomChar';
+import RandomItem from '../randomItem';
 import ErrorMessage from "../errorMessage/errorMessage";
 import CharacterPage from "../pages/characterPage";
 import gotService from "../../services/gotService";
@@ -52,7 +52,7 @@ class App extends React.Component {
 					</Row>
 					<Row>
 						<Col lg={{size: 5, offset: 0}}>
-							{this.state.randomBlock && <RandomChar/>}
+							{this.state.randomBlock && <RandomItem/>}
 						</Col>
 					</Row>
 					

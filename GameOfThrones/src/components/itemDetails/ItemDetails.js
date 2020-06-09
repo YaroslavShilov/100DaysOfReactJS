@@ -84,7 +84,7 @@ export default class ItemDetails extends Component {
 		const previewMessage = preview && <Preview>Please select a {this.props.label}</Preview>
 		const loader = loading && <Loader/>
 		const errorMessage = error && <ErrorMessage/>
-		let content = null 
+		let content = null
 		
 		if(!(loading || error || preview)) {
 			content = (

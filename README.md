@@ -2,6 +2,12 @@
 
 ---
 ---
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/72.jpg)
+```
+GameofThrones
+   1. fix bug in gotService getHouse
+   2. refactor randomChar => randomItem
+```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/71.jpg)
 ```

@@ -49,6 +49,7 @@ class PageContainer extends Component {
 			/>
 		)
 
+		
 		const charDetails = (
 			<ItemDetails itemId={this.state.selectedItem} label={this.props.type}>
 				{this.props.children}
