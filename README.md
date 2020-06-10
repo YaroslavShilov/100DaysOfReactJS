@@ -2,6 +2,18 @@
 
 ---
 ---
+
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/73.jpg)
+```
+GameofThrones - ready
+   1. add react router dom
+
+JustCount
+   1. using React - ready
+
+ReduxApp - start
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/72.jpg)
 ```
 GameofThrones
