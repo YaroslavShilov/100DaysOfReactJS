@@ -3,6 +3,12 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/74.jpg)
+```
+ReduxApp
+   1. 
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/73.jpg)
 ```
 GameofThrones - ready
