@@ -3,10 +3,44 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/79.jpg)
+```
+ReduxApp__ready
+```
+
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/78.jpg)
+```
+Count-New-Words
+   1. add search into input 'add word'
+   2. add length of items
+   3. add editItem
+   4. change LastButtons
+
+JustCount
+   1. add upload and download number
+```
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/77.jpg)
+```
+Count-New-Words
+   1. add search
+   2. add rating
+```
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/76.jpg)
+```
+-
+```
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/75.jpg)
+```
+Count-New-Words - ready
+```
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/74.jpg)
 ```
 ReduxApp
-   1. 
+   1. work with only redux 
+
+JustCount
+   1. add redux
+   2. start using fetch for db.json 
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/73.jpg)

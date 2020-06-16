@@ -13,6 +13,7 @@ const ButtonBlock = styled.button`
 	padding: 0;
 	border-radius: 4px;
 	border: 0;
+	box-shadow: 0 0 0 0 rgba(0,0,0, .9); 
 	cursor: pointer;
 	transition: all 170ms ease;
 	:focus {
@@ -29,9 +30,9 @@ const ButtonBlock = styled.button`
 	}
 `;
 
-const Button = ({color, click, children}) => {	
+const Button = ({color, onClick = '', children}) => {	
 	return (
-		<ButtonBlock style={{backgroundColor: `${color}`}} onClick={click}>
+		<ButtonBlock style={{backgroundColor: `${color}`}} onClick={onClick}>
 			<img src={children} alt={'icon'}/>
 		</ButtonBlock>
 	);
