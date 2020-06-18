@@ -3,6 +3,16 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/81.jpg)
+```
+Todolist_v2 - ready
+```
+
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/80.jpg)
+```
+Coffee house
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/79.jpg)
 ```
 ReduxApp__ready
