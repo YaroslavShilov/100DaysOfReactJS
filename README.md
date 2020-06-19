@@ -3,9 +3,18 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/82.jpg)
+```
+Todolist_v2 - fixed bug CSSTransition
+
+
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/81.jpg)
 ```
 Todolist_v2 - ready
+
+Coffee house
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/80.jpg)
