@@ -1,7 +1,7 @@
 import React from 'react';
 import Routes from "./pages/Routes";
 import {BrowserRouter as Router} from "react-router-dom";
-import TopBar from "./pages/components/TopBar";
+import TopBar from "./components/TopBar";
 
 function App() {
 	console.log('app')
