@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
-import {Link} from "react-router-dom";
+import React, {useEffect, useState} from 'react';
+import {Link, Redirect} from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
+import useLocalStorage from "../../hooks/useLocalStorage";
 
 const Authentication = (props) => {
 	const isLogin = props.match.path === '/login';
@@ -12,7 +13,12 @@ const Authentication = (props) => {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const [username, setUsername] = useState('')
-	const [{response, isLoading, error}, doFetch] = useFetch(apiUrl);
+	const [isSuccessfullSubmit, setIsSuccessfullSubmit] = useState(false);
+	const [{response, isLoading}, doFetch] = useFetch(apiUrl);
+	const [token, setToken] = useLocalStorage('token')
+
+
+	console.log('token', token)
 	
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -26,7 +32,16 @@ const Authentication = (props) => {
 		})
 	}
 	
+	useEffect(() => {
+		if(!response) return
+		setToken(response.user.token)
+		setIsSuccessfullSubmit(true);
+		// eslint-disable-next-line
+	}, [response])
 	
+	if (isSuccessfullSubmit) {
+		return <Redirect to={'/'} />
+	}
 	
 	return (
 		<div className={"auth-page"}>
@@ -76,7 +91,7 @@ const Authentication = (props) => {
 								</fieldset>
 								
 								<button className={"btn btn-lg btn-primary pull-xs-right"} type={"submit"} disabled={isLoading}>
-									Sign in
+									{!isLogin ? "Sign up" : "Sign in"}
 								</button>
 							</fieldset>
 						</form>

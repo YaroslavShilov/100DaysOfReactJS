@@ -3,6 +3,13 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/91.jpg)
+```
+SocialNetwork:
+   1. Redirect
+   2. localStorage hook
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/90.jpg)
 ```
 SocialNetwork:
