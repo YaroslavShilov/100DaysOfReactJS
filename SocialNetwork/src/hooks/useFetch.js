@@ -28,8 +28,7 @@ export default url => {
 				setIsLoading(false)
 				setError(err.response.data)
 			})
-		// eslint-disable-next-line
-	}, [isLoading])
+	}, [isLoading, options, url])
 	
 	return [{isLoading, response, error}, doFetch];
 }

@@ -3,6 +3,13 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/92.jpg)
+```
+SocialNetwork:
+   1. add dependencies in useEffect
+   2. add context
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/91.jpg)
 ```
 SocialNetwork:

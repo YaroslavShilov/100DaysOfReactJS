@@ -7,8 +7,7 @@ export default (key, initialValue = '') => {
 	
 	useEffect(() => {
 		localStorage.setItem(key, value)
-		// eslint-disable-next-line
-	}, [value])
+	}, [value, key])
 	
 	return [value, setValue];
 }

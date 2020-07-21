@@ -1,7 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useContext} from 'react';
 import {Link, Redirect} from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import useLocalStorage from "../../hooks/useLocalStorage";
+import {CurrentUserContext} from "../../context/currentUser";
+import BackendErrorMessages from "../../components/BackendErrorMessages";
 
 const Authentication = (props) => {
 	const isLogin = props.match.path === '/login';
@@ -14,11 +16,12 @@ const Authentication = (props) => {
 	const [password, setPassword] = useState('')
 	const [username, setUsername] = useState('')
 	const [isSuccessfullSubmit, setIsSuccessfullSubmit] = useState(false);
-	const [{response, isLoading}, doFetch] = useFetch(apiUrl);
+	const [{response, isLoading, error}, doFetch] = useFetch(apiUrl);
 	const [token, setToken] = useLocalStorage('token')
+	const [currentUserState, setCurrentUserState] = useContext(CurrentUserContext);
 
 
-	console.log('token', token)
+	console.log('token', currentUserState)
 	
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -35,9 +38,14 @@ const Authentication = (props) => {
 	useEffect(() => {
 		if(!response) return
 		setToken(response.user.token)
-		setIsSuccessfullSubmit(true);
-		// eslint-disable-next-line
-	}, [response])
+		setIsSuccessfullSubmit(true)
+		setCurrentUserState(state => ({
+			...state,
+			isLoggedIn: true,
+			isLoading: false,
+			currentUser: response.user
+		}))
+	}, [response, setToken])
 	
 	if (isSuccessfullSubmit) {
 		return <Redirect to={'/'} />
@@ -54,6 +62,7 @@ const Authentication = (props) => {
 						</p>
 						
 						<form onSubmit={handleSubmit}>
+							{error && <BackendErrorMessages backendErrors={error.errors} />}
 							<fieldset>
 								{!isLogin && (
 									<fieldset className={"form-group"}>
