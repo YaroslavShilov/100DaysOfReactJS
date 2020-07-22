@@ -3,17 +3,19 @@ import Routes from "./pages/Routes";
 import {BrowserRouter as Router} from "react-router-dom";
 import TopBar from "./components/TopBar";
 import {CurrentUserProvider} from "./context/currentUser";
+import CurrentUserChecker from "./components/currentUserChecker";
 
 function App() {
-	console.log('app')
-  return (
-    <CurrentUserProvider>
-	    <Router>
-		    <TopBar/>
-		    <Routes/>
-	    </Router>
-    </CurrentUserProvider>
-  );
+	return (
+		<CurrentUserProvider>
+			<CurrentUserChecker>
+				<Router>
+					<TopBar/>
+					<Routes/>
+				</Router>
+			</CurrentUserChecker>
+		</CurrentUserProvider>
+	);
 }
 
 export default App;

@@ -60,6 +60,7 @@ let mapStateToProps = state => (
 		totalUsersCount: state.usersPage.totalUsersCount,
 		currentPage: state.usersPage.currentPage,
 		isFetching: state.usersPage.isFetching,
+		followingInProgress: state.usersPage.followingInProgress
 	}
 );
 
@@ -70,6 +71,7 @@ let mapDispatchToProps = {
 	setCurrentPage,
 	setTotalUsersCount,
 	toggleIsFetching,
+	toggleFollowingInProgress,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(UsersContainer);

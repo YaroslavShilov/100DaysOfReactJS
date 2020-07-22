@@ -3,6 +3,21 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/93.jpg)
+```
+SocialNetwork:
+   1. add showing errors
+   2. add saving and login using token
+
+CoffeeHouse
+   1. add page 404
+   2. add adaptive (min: 380px)
+
+Course_1 - I came back
+  1. lesson 64 10:50 ready
+  2. progress: 28/52hrs
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/92.jpg)
 ```
 SocialNetwork:
@@ -32,7 +47,7 @@ SocialNetwork:
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/88.jpg)
 ```
-SocialNetwork - little code
+SocialNetwork - some code
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/87.jpg)

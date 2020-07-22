@@ -17,11 +17,9 @@ const Authentication = (props) => {
 	const [username, setUsername] = useState('')
 	const [isSuccessfullSubmit, setIsSuccessfullSubmit] = useState(false);
 	const [{response, isLoading, error}, doFetch] = useFetch(apiUrl);
-	const [token, setToken] = useLocalStorage('token')
+	const [, setToken] = useLocalStorage('token')
 	const [currentUserState, setCurrentUserState] = useContext(CurrentUserContext);
-
-
-	console.log('token', currentUserState)
+	console.log('test', currentUserState);
 	
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -45,7 +43,7 @@ const Authentication = (props) => {
 			isLoading: false,
 			currentUser: response.user
 		}))
-	}, [response, setToken])
+	}, [response, setToken, setCurrentUserState])
 	
 	if (isSuccessfullSubmit) {
 		return <Redirect to={'/'} />
@@ -72,7 +70,6 @@ const Authentication = (props) => {
 											placeholder={"Username"}
 											value={username}
 											onChange={e => setUsername(e.target.value)}
-											required
 										/>
 									</fieldset>
 								)}
@@ -84,7 +81,6 @@ const Authentication = (props) => {
 										placeholder={"Email"}
 										value={email}
 										onChange={e => setEmail(e.target.value)}
-										required
 									/>
 								</fieldset>
 								
@@ -95,7 +91,6 @@ const Authentication = (props) => {
 										placeholder={"Password"}
 										value={password}
 										onChange={e => setPassword(e.target.value)}
-										required
 									/>
 								</fieldset>
 								

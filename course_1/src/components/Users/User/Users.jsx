@@ -26,49 +26,57 @@ let Users = (props) => {
 			</ul>
 
 			{
-				props.users.map(i => (
-					<section key={i.id} className={s.user}>
+				props.users.map(user => (
+					<section key={user.id} className={s.user}>
 						<aside className={s.user_avatar}>
-							<NavLink to={'/profile/' + i.id}>
+							<NavLink to={'/profile/' + user.id}>
 								<img src={
-									i.photos.small !== null ? i.photos.small : userPhoto
+									user.photos.small !== null ? user.photos.small : userPhoto
 								} alt="avatar"/>
 							</NavLink>
 							<p>
-								{i.followed ?
-									<button onClick={() => {
-
-										axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${i.id}`, {
+								{user.followed ?
+									
+									<button disabled={props.followingInProgress} onClick={() => {
+										
+										props.toggleFollowingInProgress(true);
+										
+										axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${user.id}`, {
 											withCredentials: true,
 											headers: {
 												"API-KEY": "245f4fb1-f95a-47ec-b534-edb4329d7ea7"
 											},
-										}).then(response =>
-										{
+										}).then(response => {
 											if(response.data.resultCode === 0) {
-												props.unfollow(i.id);
+												props.unfollow(user.id);
 											}
+
+											props.toggleFollowingInProgress(false);
 
 										}).catch((err)=>console.log(err));
 									}}>Unfollow</button> :
-									<button onClick={() => {
+									
+									<button disabled={props.followingInProgress} onClick={() => {
 
-										axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${i.id}`, {}, {
+										props.toggleFollowingInProgress(true);
+										
+										axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${user.id}`, {}, {
 											withCredentials: true,
 											headers: {
 												"API-KEY": "245f4fb1-f95a-47ec-b534-edb4329d7ea7"
 											},
-										}).then(response => 
-										{
+										}).then(response => {
 											console.log(response);
 											if(response.data.resultCode === 0) {
-												props.follow(i.id);
+												props.follow(user.id);
 											}
+											props.toggleFollowingInProgress(false);
 												
 										}).catch((err)=>console.log(err));
 										
 									
 									}}>follow</button>
+									
 								}
 
 							</p>
@@ -76,8 +84,8 @@ let Users = (props) => {
 
 						<div className={s.user_main}>
 							<div className={s.user_cont}>
-								<h2 className={s.user_name}>{i.name}</h2>
-								<blockquote className={s.user_quote}>{i.status}</blockquote>
+								<h2 className={s.user_name}>{user.name}</h2>
+								<blockquote className={s.user_quote}>{user.status}</blockquote>
 							</div>
 							<div className={s.user_cities}>
 								<p>{"i.location.city"}</p>

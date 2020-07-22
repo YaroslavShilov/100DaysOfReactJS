@@ -6,7 +6,6 @@ import Authentication from "./Authentication/Authentication";
 
 
 const Routes = () => {
-	console.log('routes')
 	return (
 		<Switch>
 			<Route path={'/article/:slug'} component={Article}/>
