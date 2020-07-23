@@ -53,7 +53,11 @@
 	font-weight: bold;
 	transition: all 0.5s ease;
 	box-shadow: 0 0 0 0 black;
+}
 
+.user_avatar button:disabled {
+	background-color: aqua;
+	color: black;
 }
 
 .user_avatar button:hover {

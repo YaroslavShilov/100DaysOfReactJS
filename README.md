@@ -3,19 +3,31 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/94.jpg)
+```
+SocialNetwork:
+   1. add useCallback
+   2. change menu if you're logged
+   3. add Feed
+
+Course_1:
+   1. lesson 66 / 100
+   2. time: 00:00
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/93.jpg)
 ```
 SocialNetwork:
    1. add showing errors
    2. add saving and login using token
 
-CoffeeHouse
+CoffeeHouse - ready
    1. add page 404
    2. add adaptive (min: 380px)
 
 Course_1 - I came back
-  1. lesson 64 10:50 ready
-  2. progress: 28/52hrs
+   1. lesson 64 10:50 ready
+   2. progress: 28/52hrs
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/92.jpg)

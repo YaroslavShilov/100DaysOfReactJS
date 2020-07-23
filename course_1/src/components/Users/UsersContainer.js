@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
 import {
-	follow, setCurrentPage, setTotalUsersCount, 
-	setUsers, toggleIsFetching, unfollow
+	follow, setCurrentPage, setTotalUsersCount,
+	setUsers, toggleFollowingInProgress, toggleIsFetching, unfollow
 }
 	from "../../redux/users-reducer";
 import Users from "./User/Users";
@@ -48,6 +48,8 @@ class UsersContainer extends Component {
 				pageSize = {props.pageSize}
 				users = {props.users}
 				onPageChanged={this.onPageChanged}
+				toggleFollowingInProgress={props.toggleFollowingInProgress}
+				followingInProgress={props.followingInProgress}
 			/>
 		</>
 	}

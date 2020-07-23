@@ -23,8 +23,7 @@ const CurrentUserChecker = ({children}) => {
 			...state,
 			isLoading: true,
 		}))
-		// eslint-disable-next-line
-	}, [])
+	}, [token, setCurrentUserState, doFetch])
 	
 	useEffect(() => {
 		if(!response) return
@@ -35,8 +34,7 @@ const CurrentUserChecker = ({children}) => {
 			isLoading: false,
 			currentUser: response.user
 		}))
-		// eslint-disable-next-line
-	}, [response])
+	}, [response, setCurrentUserState])
 	
 	return children;
 }
