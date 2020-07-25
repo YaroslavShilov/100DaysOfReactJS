@@ -3,12 +3,15 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/96.jpg)
+```
+SocialNetwork:
+   1. add pagination
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/95.jpg)
 ```
 CoffeeHouse - fix bugs
-
-SocialNetwork:
-   1. add pagination
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/94.jpg)

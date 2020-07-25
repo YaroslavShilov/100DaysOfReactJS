@@ -17,7 +17,6 @@ const CurrentUserChecker = ({children}) => {
 			return
 		}
 		
-		console.log('init');
 		doFetch();
 		setCurrentUserState(state => ({
 			...state,
