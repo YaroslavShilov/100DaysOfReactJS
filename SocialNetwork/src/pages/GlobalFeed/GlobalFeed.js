@@ -4,6 +4,9 @@ import Feed from "../../components/Feed";
 import Pagination from "../../components/Pagination";
 import {getPagination, limit} from "../../utils";
 import {stringify} from 'query-string'
+import PopularTags from "../../components/PopularTags";
+import Loading from "../../components/Loading";
+import ErrorMessage from "../../components/ErrorMessage";
 
 const GlobalFeed = ({location, match}) => {
 	
@@ -37,8 +40,8 @@ const GlobalFeed = ({location, match}) => {
 				<div className="row">
 					
 					<div className="col-md-9">
-						{isLoading && <p>Loading...</p>}
-						{error && <p>Some error happened</p>}
+						{isLoading && <Loading/>}
+						{error && <ErrorMessage/>}
 						{!isLoading && response && (
 							<>
 								<Feed articles={response.articles}/>
@@ -49,7 +52,7 @@ const GlobalFeed = ({location, match}) => {
 					</div>
 					
 					<div className="col-md-3">
-						Popular Tags
+						<PopularTags/>
 					</div>
 					
 				</div>
