@@ -3,6 +3,12 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/98.jpg)
+```
+SocialNetwork:
+   1. switch between feeds
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/97.jpg)
 ```
 SocialNetwork:
