@@ -3,6 +3,14 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/99.jpg)
+```
+SocialNetwork:
+   1. add YourFeed
+   2. change page Article
+   3. refactoring and adding useReducer
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/98.jpg)
 ```
 SocialNetwork:
