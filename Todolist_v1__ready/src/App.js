@@ -17,7 +17,9 @@ export default () => {
 	* передаём в базоый стейт в редюсере локальные данные или [] если локсторе пуст
 	* 
 	 */
-	const [state, dispatch] = useReducer(reducer, JSON.parse(localStorage.getItem('todos') || [])); 
+	
+	
+	const [state, dispatch] = useReducer(reducer, JSON.parse(localStorage.getItem('todos')) || []); 
 	
 	const [todoTitle, setTodoTitle] = useState('');
 	useEffect(() => {

@@ -18,7 +18,7 @@ export default ({active, pages, getMovies}) => {
 		<nav aria-label="Page navigation example">
 			<ul className="pagination">
 				<li className="page-item">
-					<a className="page-link" href={'#'} onClick={(e) => changePage(e, active-1)}>Previous</a>
+					<a className="page-link" href={'/'} onClick={(e) => changePage(e, active-1)}>Previous</a>
 				</li>
 				<li className={'page-item active'}>
 					<span className="page-link">{active}</span>
@@ -27,7 +27,7 @@ export default ({active, pages, getMovies}) => {
 					<span className="page-link">{pages}</span>
 				</li>
 				<li className="page-item">
-					<a className="page-link" href={'#'} onClick={(e) => changePage(e, active+1)}>Next</a>
+					<a className="page-link" href={'/'} onClick={(e) => changePage(e, active+1)}>Next</a>
 				</li>
 			</ul>
 		</nav>

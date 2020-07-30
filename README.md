@@ -3,6 +3,11 @@
 ---
 ---
 
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/100.jpg)
+```
+Find and fix different bugs
+```
+
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/99.jpg)
 ```
 SocialNetwork:

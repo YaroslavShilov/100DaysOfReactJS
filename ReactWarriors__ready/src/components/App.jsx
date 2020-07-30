@@ -56,7 +56,8 @@ export default () => {
 	useEffect(() => {
 		getMovies(state.activePage);
 		getPages();
-	}, [ ])
+		// eslint-disable-next-line
+	}, [])
 
 	useEffect(() => {
 		prevSortBy !== state.sort_by && getMovies(state.activePage)

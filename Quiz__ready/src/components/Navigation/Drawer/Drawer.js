@@ -32,8 +32,6 @@ export class Drawer extends React.Component {
 			{label: 'List', to: '/', exact: true},
 		]
 		
-		console.log(this.props.isAuthenticated)
-		
 		if(this.props.isAuthenticated) {
 			links.push({label: 'Create test', to: '/quiz-creater', exact: false})
 			links.push({label: 'Logout', to: '/logout', exact: false})

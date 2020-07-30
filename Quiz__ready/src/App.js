@@ -13,6 +13,7 @@ function App(props) {
 	
 	useEffect(() => {
 		props.autoLogin()
+		// eslint-disable-next-line
 	}, [])
 	
 	let routes = (
