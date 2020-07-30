@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react';
-import useFetch from "../../hooks/useFetch";
-import Feed from "../../components/Feed";
-import Pagination from "../../components/Pagination";
-import {getPagination, limit} from "../../utils";
+import useFetch from "../hooks/useFetch";
+import Feed from "../components/Feed";
+import Pagination from "../components/Pagination";
+import {getPagination, limit} from "../utils";
 import {stringify} from 'query-string'
-import PopularTags from "../../components/PopularTags";
-import Loading from "../../components/Loading";
-import ErrorMessage from "../../components/ErrorMessage";
-import FeedToggler from "../../components/FeedToggler";
+import PopularTags from "../components/PopularTags";
+import Loading from "../components/Loading";
+import ErrorMessage from "../components/ErrorMessage";
+import FeedToggler from "../components/FeedToggler";
 
 const GlobalFeed = ({location, match}) => {
 	

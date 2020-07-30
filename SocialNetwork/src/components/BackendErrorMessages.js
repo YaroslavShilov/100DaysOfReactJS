@@ -6,8 +6,6 @@ const BackendErrorMessages = ({backendErrors}) => {
 		name => `${name} ${backendErrors[name].join(' ')}`
 	);
 	
-	console.log(errorMessages)
-	
 	return (
 		<ul className={'error-messages'}>
 			{errorMessages.map(errorMessage => <li key={errorMessage}> {errorMessage} </li>)}

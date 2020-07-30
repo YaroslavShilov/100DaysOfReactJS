@@ -23,7 +23,7 @@ const Feed = ({articles}) => {
 													
 						</div>
 						
-						<Link to={`/article/${slug}`} className={'preview-link'}>
+						<Link to={`/articles/${slug}`} className={'preview-link'}>
 							<h1>{title}</h1>
 							<p>{description}</p>
 							<span>Read more...</span>

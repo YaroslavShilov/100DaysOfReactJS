@@ -6,6 +6,13 @@
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/100.jpg)
 ```
 Find and fix different bugs
+
+SocialNetwork:
+   1. add EditArticle
+   2. add ArticleForm
+   3. add button EditArticle
+   4. add button DeleteArticle
+   5. add page Settings
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/99.jpg)
