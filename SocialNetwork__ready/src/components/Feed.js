@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import TagList from "./TagList";
+import AddToFavorites from "./AddToFavorites";
 
 const Feed = ({articles}) => {
 	return (
 		<section>
 			{
-				articles.map(({author, createdAt, tagList, title, slug, description}) => (
+				articles.map(({author, createdAt, tagList, title, slug, description, favorited, favoritesCount}) => (
 					<article className={'article-preview'} key={createdAt}>
 						<div className="article-meta">
 							
@@ -20,7 +21,14 @@ const Feed = ({articles}) => {
 								</Link>
 								<span className={'date'}>{createdAt}</span>
 							</div>
-													
+							
+							<div className="pull-xs-right">
+								<AddToFavorites
+									isFavorited={favorited}
+									favoritesCount={favoritesCount}
+									articleSlug={slug}
+								/>
+							</div>
 						</div>
 						
 						<Link to={`/articles/${slug}`} className={'preview-link'}>

@@ -8,12 +8,15 @@ import YourFeed from "./YourFeed";
 import CreateArticle from "./CreateArticle";
 import EditArticle from "./EditArticle";
 import Settings from "./Settings";
+import UserProfile from "./UserProfile";
 
 
 const Routes = () => {
 	return (
 		<Switch>
 			<Route path={'/settings'} component={Settings}/>
+			<Route path={'/profiles/:slug'} component={UserProfile}/>
+			<Route path={'/profiles/:slug/favorites'} component={UserProfile}/>
 			<Route path={'/articles/:slug/edit'} component={EditArticle}/>
 			<Route path={'/articles/new'} component={CreateArticle}/>
 			<Route path={'/articles/:slug'} component={Article}/>
