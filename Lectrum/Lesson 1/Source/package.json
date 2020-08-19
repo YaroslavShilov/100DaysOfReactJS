@@ -1,0 +1,15 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andrii Mulyk <amulyk@lectrum.io>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn compile && yarn execute",
+    "compile": "tsc ./index.ts",
+    "execute": "node ./index.js"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
+}
