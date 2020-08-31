@@ -1,5 +1,5 @@
 // String
 let color: string = "blue";
-color = 'red';
+color = 123;
 
 console.log(color);
