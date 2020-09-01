@@ -5,10 +5,6 @@ import {Lesson5} from "./components/Lesson5";
 import {Lesson6} from "./components/Lesson6";
 import {Lesson7} from "./components/Lesson7";
 import {Lesson8} from "./components/Lesson8";
-import {Lesson9} from "./components/Lesson9";
-import {Lesson10} from "./components/Lesson10";
-import {Lesson11} from "./components/Lesson11";
-import {Lesson12} from "./components/Lesson12";
 
 const App = () => {
 	return (
@@ -23,15 +19,8 @@ const App = () => {
 			<hr/>
 			<Lesson7/>
 			<hr/>
-			<Lesson8/>
+			{/*<Lesson8/>*/}
 			<hr/>
-			<Lesson9/>
-			<hr/>
-			<Lesson10/>
-			<hr/>
-			<Lesson11/>
-			<hr/>
-			<Lesson12/>
 			
 		</>
 	)

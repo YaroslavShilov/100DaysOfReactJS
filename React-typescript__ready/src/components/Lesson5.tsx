@@ -1,6 +1,24 @@
 import React, {Component} from 'react';
 
-const POSITIONS = [
+type Position = {
+	id: string,
+	value: string,
+	title: string,
+}
+
+type FormState = {
+	inputText: string,
+	textareaText: string,
+	selectText: string,
+	tester: string,
+	showData: {
+		name: string,
+		text: string,
+		position: string,
+	}
+}
+
+const POSITIONS: Array<Position> = [
 	{
 		id: 'fb',
 		value: 'Front-end Developer',
@@ -13,11 +31,11 @@ const POSITIONS = [
 	}
 ];
 
-const DEFaULT_SELECT_VALUE = POSITIONS[0].value;
-const styles = { display: 'block', marginBottom: '10px'};
+const DEFaULT_SELECT_VALUE:string = POSITIONS[0].value;
+const styles: React.CSSProperties = { display: 'block', marginBottom: '10px'};
 
 
-export class Lesson5 extends Component {
+export class Lesson5 extends Component<{}, FormState> {
 	state = {
 		inputText: '',
 		textareaText: '',
@@ -30,22 +48,24 @@ export class Lesson5 extends Component {
 		}
 	}
 
-	handleInputChange = (e) => {
+	private rootRef = React.createRef<HTMLSelectElement>();
+
+	handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
 		const { target: {value : inputText} } = e;
 		this.setState({ inputText });
 	}
 
-	handleTextareaChange = (e) => {
+	handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>): void => {
 		const {target: {value: textareaText} } = e;
 		this.setState({textareaText})
 	}
 
-	handleSelectChange = (e) => {
+	handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>): void => {
 		const { target: { value: selectText } } = e;
 		this.setState({selectText});
 	}
 
-	handleShow = (e) => {
+	handleShow = (e: React.MouseEvent<HTMLButtonElement>): void => {
 		e.preventDefault();
 		const { inputText, textareaText, selectText } = this.state;
 
@@ -82,6 +102,31 @@ export class Lesson5 extends Component {
 							onChange={this.handleInputChange}
 						/>
 					</label>
+
+					<label style={styles}>
+						Text:
+						<textarea
+							value={textareaText}
+							onChange={this.handleTextareaChange}
+						/>
+					</label>
+
+					<select
+						style={styles}
+						value={selectText}
+						onChange={this.handleSelectChange}
+						ref={this.rootRef}
+					>
+						{POSITIONS.map(({id, value, title}) => (
+							<option
+								key={id}
+								value={value}
+							>
+								{title}
+							</option>
+						))}
+
+					</select>
 				</form>
 			</>
 		)
