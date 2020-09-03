@@ -34,7 +34,6 @@ class UsersContainer extends Component {
 				pageSize = {props.pageSize}
 				users = {props.users}
 				onPageChanged={this.onPageChanged}
-				toggleFollowingInProgress={props.toggleFollowingInProgress}
 				followingInProgress={props.followingInProgress}
 			/>
 		</>
