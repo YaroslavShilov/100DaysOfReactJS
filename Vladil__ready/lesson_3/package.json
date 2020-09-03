@@ -1,0 +1,9 @@
+{
+  "name": "lesson_3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  }
+}
