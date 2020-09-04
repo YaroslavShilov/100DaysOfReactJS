@@ -16,9 +16,17 @@ export const usersAPI = {
 		return instance.get(`users?page=${currentPage}&count=${pageSize}`).then(response => response.data);
 	},
 	follow(userId) {
-		return instance.post(`https://social-network.samuraijs.com/api/1.0/follow/${userId}`)
+		return instance.post(`follow/${userId}`)
 	},
 	unFollow(userId) {
-		return instance.delete(`https://social-network.samuraijs.com/api/1.0/follow/${userId}`)
+		return instance.delete(`follow/${userId}`)
+	},
+	getProfile(userId) {
+		return instance.get(`profile/${userId}`);
 	},
 };
+
+
+export const authAPI = {
+	me: () => instance.get(`auth/me`),
+}
