@@ -41,6 +41,5 @@ export const getAuthUserDate = () => (dispatch) => {
 			let {login, id: userId, email} = response.data.data;
 			dispatch(setAuthUserData(userId, email, login));
 		}
-
 	});
 }

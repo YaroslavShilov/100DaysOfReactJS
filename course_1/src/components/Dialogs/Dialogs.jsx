@@ -7,7 +7,7 @@ const Dialogs = (props) => {
 	const dialogsPage = props.dialogsPage;
 	const dialogsData = dialogsPage.dialogs
 		.map(i =><DialogItem name={i.name} id={i.id} key={i.id}/>);
-	
+
 	return (
 		<div className={s.dialogs}>
 			<div className={s.dialogsItems}>

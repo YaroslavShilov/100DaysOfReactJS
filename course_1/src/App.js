@@ -6,25 +6,21 @@ import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import {Route} from 'react-router-dom';
 import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
+import {Login} from "./components/Login/Login";
 
-//**TODO: lesson 66 time: 30:16**//
+//**TODO: lesson 71 time: 20:00**//
 
 const App = () => {
 	return (
 
 		<div className={s.appWrapper}>
-			<Header />
-			<Navbar />
+			<Header/>
+			<Navbar/>
 			<div className={s.appWrapper_container}>
-				<Route path="/dialogs" render={() =>
-					<DialogsContainer/>
-				}/>
-				<Route path="/profile/:userId?" render={() =>
-					<ProfileContainer/>
-				}/>
-				<Route path="/users" render={() =>
-					<UsersContainer/>
-				}/>
+				<Route path="/dialogs" component={DialogsContainer}/>
+				<Route path="/profile/:userId?" component={ProfileContainer}/>
+				<Route path="/users" component={UsersContainer}/>
+				<Route path={'/login'} component={Login}/>
 			</div>
 		</div>
 	);
