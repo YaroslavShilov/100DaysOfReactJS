@@ -23,9 +23,10 @@ export class ProfileStatus extends React.Component {
 		this.setState({status: e.target.value})
 	}
 
-	componentDidMount() {
-		const status = this.props.status ? this.props.status : '-----'
-		this.setState({status})
+	componentDidUpdate(prevProps, prevState) {
+		if(prevProps.status !== this.props.status) {
+			this.setState({status: this.props.status})
+		}
 	}
 
 	render() {
@@ -44,7 +45,7 @@ export class ProfileStatus extends React.Component {
 					: <div>
 							<span
 								onDoubleClick={this.activateEditMode}
-							>{this.state.status}</span>
+							>{!this.state.status ? '---' : this.state.status}</span>
 					</div>
 				}
 

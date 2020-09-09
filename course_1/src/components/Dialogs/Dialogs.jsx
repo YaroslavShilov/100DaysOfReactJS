@@ -5,8 +5,7 @@ import DialogItem from "./DialogItem/DialogItem";
 
 const Dialogs = (props) => {
 	const dialogsPage = props.dialogsPage;
-	const dialogsData = dialogsPage.dialogs
-		.map(i =><DialogItem name={i.name} id={i.id} key={i.id}/>);
+	const dialogsData = dialogsPage.dialogs.map(i =><DialogItem name={i.name} id={i.id} key={i.id}/>);
 
 	return (
 		<div className={s.dialogs}>
@@ -19,8 +18,7 @@ const Dialogs = (props) => {
 			<Messages
 				newMessagesBody={dialogsPage.newMessagesBody}
 				messages={dialogsPage.messages}
-				uppDateNewMessageBody={props.uppDateNewMessageBody}
-				sendMessageCreator={props.sendMessageCreator}
+				sendMessage={props.sendMessage}
 			/>
 		</div>
 	)
