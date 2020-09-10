@@ -46,15 +46,18 @@ export const getAuthUserDate = () => (dispatch) => {
 }
 
 export const login = (email, password, rememberMe) => (dispatch) => {
-	const action = stopSubmit("login", {email: 'Email is wrong', password: 'password error'});
-	dispatch(action)
 
-	return;
 	authAPI.login(email, password, rememberMe).then(response => {
 		if(response.data.resultCode === 0 ) {
 			dispatch(getAuthUserDate());
 		} else {
+			const errorMessage =
+				response.data.messages.length > 0
+					? response.data.messages[0]
+					: 'Email or password is wrong'
 
+			const action = stopSubmit("login", {_error: errorMessage});
+			dispatch(action)
 		}
 	})
 }
