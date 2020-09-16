@@ -5,9 +5,8 @@ import {
 	followSuccess, requestUsers, setCurrentPage, toggleFollowingInProgress, unFollow, unFollowSuccess
 }
 	from "../../redux/users-reducer";
-import Users from "./User/Users";
+import Users from "./Users";
 import {Preloader} from "../common/Preloader/Preloader";
-//import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
 import {getCurrentPage, getFollowingInProgress, getIsFetching, getPageSize, getTotalUsersCount, getUsers} from "../../redux/users-selectors";
 
@@ -68,5 +67,4 @@ let mapDispatchToProps = {
 
 export default compose(
 	connect(mapStateToProps, mapDispatchToProps),
-	//withAuthRedirect
 )(UsersContainer);

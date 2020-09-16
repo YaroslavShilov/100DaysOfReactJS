@@ -1,0 +1,17 @@
+.paginator {
+	list-style: none;
+	display: flex;
+	padding: 10px 0;
+	margin: 0;
+}
+.paginator li {
+	border-bottom: 1px solid transparent;
+	padding: 0 2px;
+	margin: 0 10px 0 0;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.paginator li:hover,
+.paginator .active {
+	border-bottom-color: #000;
+}

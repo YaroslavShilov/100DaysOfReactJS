@@ -1,23 +1,6 @@
 .user_wrap {
 	padding: 20px;
 }
-.user_pagination {
-	list-style: none;
-	display: flex;
-	padding: 10px 0;
-	margin: 0;
-}
-.user_pagination li {
-	border-bottom: 1px solid transparent;
-	padding: 0 2px;
-	margin: 0 10px 0 0;
-	cursor: pointer;
-	transition: all 0.5s ease;
-}
-.user_pagination li:hover,
-.user_pagination .active {
-	border-bottom-color: #000;
-}
 .user {
 	max-width: 500px;
 	display: flex;

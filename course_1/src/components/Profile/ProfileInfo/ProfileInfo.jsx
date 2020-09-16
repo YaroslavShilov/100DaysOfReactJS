@@ -3,8 +3,8 @@ import s from './ProfileInfo.module.css';
 import {Preloader} from "../../common/Preloader/Preloader";
 import {ProfileStatus} from "../ProfileStatus/ProfileStatus";
 
-const ProfileInfo = (props) => {
-	if(!props.profile) {
+const ProfileInfo = ({profile, status, updateUserStatus}) => {
+	if(!profile) {
 		return <Preloader />
 	}
   return (
@@ -13,14 +13,14 @@ const ProfileInfo = (props) => {
 				<img src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350' alt="bg"/>
 		  </div>*/}
 		  <div className={s.descriptionBlock}>
-			  <img src={props.profile.photos.large} alt="avatar"/>
+			  <img src={profile.photos.large} alt="avatar"/>
 				<ProfileStatus
-					status={props.status}
-					updateUserStatus={props.updateUserStatus}
+					status={status}
+					updateUserStatus={updateUserStatus}
 				/>
-			  <h2>Мой ник: {props.profile.fullName}</h2>
-			  <h3>Обо мне: {props.profile.aboutMe}</h3>
-			  <h4>Поиск работы: {props.profile.lookingForAJobDescription}</h4>
+			  <h2>Мой ник: {profile.fullName}</h2>
+			  <h3>Обо мне: {profile.aboutMe}</h3>
+			  <h4>Поиск работы: {profile.lookingForAJobDescription}</h4>
 		  </div>
 	  </div>
   )

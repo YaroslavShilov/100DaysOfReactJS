@@ -12,7 +12,7 @@ import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
 import {Preloader} from "./components/common/Preloader/Preloader";
 
-//**TODO: lesson 79 time: 00:00**//
+//**TODO: lesson 90 time: 00:00**//
 
 class App extends React.Component {
 
@@ -26,7 +26,6 @@ class App extends React.Component {
 		if(!this.props.initialized) return <Preloader/>
 
 		return (
-
 			<div className={s.appWrapper}>
 				<Header/>
 				<Navbar/>
