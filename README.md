@@ -3,23 +3,18 @@
 ---
 ---
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/101.jpg)
-```
-SocialNetwork - ready
-   1. add favorite
-   2. add user profile
-```
-
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/100.jpg)
 ```
 Find and fix different bugs
 
-SocialNetwork:
+SocialNetwork - ready
    1. add EditArticle
    2. add ArticleForm
    3. add button EditArticle
    4. add button DeleteArticle
    5. add page Settings
+   6. add favorite
+   7. add user profile
 ```
 
 ![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/99.jpg)

@@ -41,7 +41,7 @@ it('after deleting length of messages should be decrement', () => {
 })
 
 it("after deleting length shouldn't be decrement if id is incorrect", () => {
-	let action = deletePost(1000); // this id isn't real
+	let action = deletePost(1000000); // this id isn't real
 	let newState = profileReducer(initialState, action);
 
 	expect(newState.posts.length).toBe(5)

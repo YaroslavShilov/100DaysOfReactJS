@@ -34,11 +34,9 @@ export const ProfileStatus = (props) => {
 						autoFocus
 					/>
 				</div>
-				: <div>
-					<span
+				: <p
 						onDoubleClick={activateEditMode}
-					>{!status ? '---' : status}</span>
-				</div>
+					>{!status ? '---' : status}</p>
 			}
 
 
