@@ -11,9 +11,9 @@ const TOGGLE_IS_FOLLOWING_PROGRESS = 'TOGGLE_IS_FOLLOWING_PROGRESS';
 
 let initialState = {
 	users: [],
-	pageSize: 5,
+	pageSize: 10,
 	totalUsersCount: 0,
-	currentPage: 5,
+	currentPage: 1,
 	isFetching: false,
 	followingInProgress: [],
 };
@@ -48,18 +48,17 @@ export const usersReducer = (state = initialState, action) => {
 			};
 
 		case SET_TOTAL_USERS_COUNT:
-			let totalUsersCount = 0;
-			action.totalUsersCount > 70 ? totalUsersCount = 70 : totalUsersCount = action.totalUsersCount;
-
 			return {
 				...state,
-				totalUsersCount,
+				totalUsersCount: action.totalUsersCount,
 			};
+
 		case TOGGLE_IS_FETCHING:
 			return {
 				...state,
 				isFetching: action.isFetching,
 			};
+
 		case TOGGLE_IS_FOLLOWING_PROGRESS:
 			return {
 				...state,

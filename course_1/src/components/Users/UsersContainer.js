@@ -9,6 +9,7 @@ import Users from "./Users";
 import {Preloader} from "../common/Preloader/Preloader";
 import {compose} from "redux";
 import {getCurrentPage, getFollowingInProgress, getIsFetching, getPageSize, getTotalUsersCount, getUsers} from "../../redux/users-selectors";
+import {Paginator} from "../common/Paginator/Paginator";
 
 class UsersContainer extends Component {
 
@@ -26,18 +27,26 @@ class UsersContainer extends Component {
 		const props = this.props;
 
 		return <>
-			{this.props.isFetching ? <Preloader /> : null}
-		
-			<Users
-				currentPage = {props.currentPage}
-				follow = {props.follow}
-				unFollow = {props.unFollow}
-				totalUsersCount = {props.totalUsersCount}
-				pageSize = {props.pageSize}
-				users = {props.users}
+			<Paginator
+				totalItemsCount={props.totalUsersCount}
+				pageSize={props.pageSize}
+				currentPage={props.currentPage}
 				onPageChanged={this.onPageChanged}
-				followingInProgress={props.followingInProgress}
 			/>
+
+			{this.props.isFetching
+				? <Preloader />
+				: <Users
+					currentPage = {props.currentPage}
+					follow = {props.follow}
+					unFollow = {props.unFollow}
+					totalUsersCount = {props.totalUsersCount}
+					pageSize = {props.pageSize}
+					users = {props.users}
+					onPageChanged={this.onPageChanged}
+					followingInProgress={props.followingInProgress}
+				/>
+			}
 		</>
 	}
 }

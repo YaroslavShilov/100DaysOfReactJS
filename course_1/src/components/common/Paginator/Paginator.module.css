@@ -1,13 +1,13 @@
 .paginator {
 	list-style: none;
 	display: flex;
-	padding: 10px 0;
+	padding: 30px 20px 10px;
 	margin: 0;
 }
 .paginator li {
 	border-bottom: 1px solid transparent;
 	padding: 0 2px;
-	margin: 0 10px 0 0;
+	margin: 0 5px;
 	cursor: pointer;
 	transition: all 0.5s ease;
 }
