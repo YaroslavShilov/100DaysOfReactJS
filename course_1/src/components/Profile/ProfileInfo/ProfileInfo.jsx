@@ -4,19 +4,30 @@ import {Preloader} from "../../common/Preloader/Preloader";
 import {ProfileStatus} from "../ProfileStatus/ProfileStatus";
 import userPhoto from "../../../assets/images/avatar.jpg";
 
-const ProfileInfo = ({profile, status, updateUserStatus}) => {
+const ProfileInfo = ({profile, status, updateUserStatus, isOwner, savePhoto}) => {
 	if(!profile) {
 		return <Preloader />
 	}
-	const profilePhoto = profile.photos.large ? profile.photos.large : userPhoto;
+
+	const onMainPhotoSelected = (e) => {
+		const files = e.target.files
+		if(files.length) {
+			savePhoto(files[0])
+		}
+	}
 
   return (
 	  <div>
-		  {/*<div>
-				<img src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350' alt="bg"/>
-		  </div>*/}
 		  <div className={s.descriptionBlock}>
-			  <img src={profilePhoto} alt="avatar"/>
+			  <img src={profile.photos.large || userPhoto} alt="avatar"/>
+			  {isOwner &&
+				  <div>
+					  <input
+						  type={'file'}
+						  onChange={onMainPhotoSelected}
+					  />
+				  </div>
+			  }
 				<ProfileStatus
 					status={status}
 					updateUserStatus={updateUserStatus}
