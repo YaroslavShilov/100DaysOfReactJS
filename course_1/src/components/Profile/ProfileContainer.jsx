@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Profile from "./Profile";
-import {getUserProfile, getUserStatus, savePhoto, updateUserStatus} from "../../redux/profile-reducer";
+import {getUserProfile, getUserStatus, savePhoto, saveProfile, updateUserStatus} from "../../redux/profile-reducer";
 import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
 //import {withAuthRedirect} from "../../hoc/withAuthRedirect";
@@ -39,6 +39,7 @@ class ProfileContainer extends Component {
 				profile={this.props.profile}
 				updateUserStatus={this.props.updateUserStatus}
 				savePhoto={this.props.savePhoto}
+				saveProfile={this.props.saveProfile}
 			/>
 		)
 	}
@@ -56,6 +57,7 @@ let mapDispatchToProps = {
 	getUserProfile,
 	updateUserStatus,
 	savePhoto,
+	saveProfile,
 }
 
 

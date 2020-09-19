@@ -7,9 +7,12 @@ import React from "react";
 const LoginForm = ({handleSubmit, error}) => {
 	return (
 		<form onSubmit={handleSubmit}>
-				{createField("Login", "email", [requiredField], Input)}
-				{createField("Password", "password", [requiredField],Input, {type: "password"})}
-				{createField(null, "rememberMe", [], Input, {type: "checkbox"}, "rememberMe")}
+			{createField("Login", "email", [requiredField], Input)}
+
+			{createField("Password", "password", [requiredField], Input, {type: "password"})}
+
+			{createField(null, "rememberMe", [], Input, {type: "checkbox"}, "rememberMe")}
+
 			{error &&
 				<div className={s.formSummaryError}>
 					{error}

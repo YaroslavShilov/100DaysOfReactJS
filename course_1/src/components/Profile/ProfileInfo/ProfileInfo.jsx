@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './ProfileInfo.module.css';
 import {Preloader} from "../../common/Preloader/Preloader";
-import {ProfileStatus} from "../ProfileStatus/ProfileStatus";
 import userPhoto from "../../../assets/images/avatar.jpg";
+import {ProfileData} from "./ProfileData";
+import ProfileDataForm from "./ProfileDataForm";
 
-const ProfileInfo = ({profile, status, updateUserStatus, isOwner, savePhoto}) => {
+const ProfileInfo = ({profile, status, updateUserStatus, isOwner, savePhoto, saveProfile}) => {
+	const [editMode, setEditMode] = useState(false);
+
 	if(!profile) {
 		return <Preloader />
 	}
@@ -15,6 +18,15 @@ const ProfileInfo = ({profile, status, updateUserStatus, isOwner, savePhoto}) =>
 			savePhoto(files[0])
 		}
 	}
+
+	const goToEditMode = () => setEditMode(true)
+
+	const onSubmit = (formData) => {
+		saveProfile(formData)
+			.then(() => setEditMode(false));
+	}
+
+	console.log(profile)
 
   return (
 	  <div>
@@ -28,13 +40,25 @@ const ProfileInfo = ({profile, status, updateUserStatus, isOwner, savePhoto}) =>
 					  />
 				  </div>
 			  }
-				<ProfileStatus
-					status={status}
-					updateUserStatus={updateUserStatus}
-				/>
-			  <h2>Мой ник: {profile.fullName}</h2>
-			  <h3>Обо мне: {profile.aboutMe}</h3>
-			  <h4>Поиск работы: {profile.lookingForAJobDescription}</h4>
+
+
+			  {editMode
+				  ? <ProfileDataForm
+					    initialValues={profile}
+					    onSubmit={onSubmit}
+						  status={status}
+						  updateUserStatus={updateUserStatus}
+					    profile={profile}
+					  />
+			  	: <ProfileData
+						  profile={profile}
+						  status={status}
+						  updateUserStatus={updateUserStatus}
+						  isOwner={isOwner}
+						  goToEditMode={goToEditMode}
+					  />
+			  }
+
 		  </div>
 	  </div>
   )

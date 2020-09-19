@@ -14,6 +14,8 @@ const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsCo
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 const UsersContainer = React.lazy(() => import('./components/Users/UsersContainer'));
 
+//**TODO: 35:00 **//
+
 class App extends React.Component {
 
 	componentDidMount() {
