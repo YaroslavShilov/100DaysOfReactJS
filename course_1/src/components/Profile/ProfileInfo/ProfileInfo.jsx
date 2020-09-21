@@ -26,8 +26,6 @@ const ProfileInfo = ({profile, status, updateUserStatus, isOwner, savePhoto, sav
 			.then(() => setEditMode(false));
 	}
 
-	console.log(profile)
-
   return (
 	  <div>
 		  <div className={s.descriptionBlock}>

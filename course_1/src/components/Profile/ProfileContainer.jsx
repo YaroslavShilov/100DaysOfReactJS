@@ -64,5 +64,4 @@ let mapDispatchToProps = {
 export default compose(
 	connect(mapStateToProps, mapDispatchToProps),
 	withRouter,
-	//withAuthRedirect
 )(ProfileContainer)
