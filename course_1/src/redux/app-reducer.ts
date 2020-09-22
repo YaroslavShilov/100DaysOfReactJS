@@ -7,7 +7,7 @@ let initialState = {
 	globalError: false
 }
 
-export const appReducer = (state = initialState, action) => {
+export const appReducer = (state = initialState, action: any) => {
 	switch(action.type) {
 		case INITIALIZED_SUCCESS:
 			return {
@@ -21,7 +21,7 @@ export const appReducer = (state = initialState, action) => {
 
 export const initializedSuccess = () => ({type: INITIALIZED_SUCCESS})
 
-export const initializeApp = () => (dispatch) => {
+export const initializeApp = () => (dispatch: any) => {
 	let promise = dispatch(getAuthUserDate());
 
 	Promise.all([promise]).then(() => {

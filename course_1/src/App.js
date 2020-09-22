@@ -16,7 +16,6 @@ const UsersContainer = React.lazy(() => import('./components/Users/UsersContaine
 
 class App extends React.Component {
 	catchAllUnhandleErrors = (reason, promise) => {
-		alert("error")
 		console.error('error', reason)
 	}
 
