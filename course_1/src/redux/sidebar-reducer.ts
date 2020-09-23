@@ -1,8 +1,10 @@
-const initialState = {};
+const initialState = {
+  hello: "fake" as string,
+};
 
 type InitialStateType = typeof initialState;
 
-const sidebarReducer = (
+export const sidebarReducer = (
   state = initialState,
   action: any
 ): InitialStateType => {
