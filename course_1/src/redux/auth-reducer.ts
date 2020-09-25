@@ -5,6 +5,9 @@ import {
   securityAPI,
 } from "../api/api";
 import { stopSubmit } from "redux-form";
+import { Dispatch } from "redux";
+import { ThunkAction } from "redux-thunk";
+import { AppStateType } from "./redux-store";
 
 const SET_USER_DATA = "auth/SET_USER_DATA";
 const GET_CAPTCHA_URL_SUCCESS = "auth/GET_CAPTCHA_URL_SUCCESS";
@@ -17,11 +20,17 @@ let initialState = {
   captchaUrl: null as string | null, // if it's null, then captcha isn't required
 };
 
+type ActionsTypes = SetAuthUserDataType | GetCaptchaUrlSuccessType;
+
+//type GetStateType = () => AppStateType;
+type DispatchType = Dispatch<ActionsTypes>;
+type ThunkType = ThunkAction<Promise<any>, AppStateType, unknown, ActionsTypes>;
+
 export type InitialStateType = typeof initialState;
 
 export const authReducer = (
   state = initialState,
-  action: any
+  action: ActionsTypes
 ): InitialStateType => {
   switch (action.type) {
     case SET_USER_DATA:
@@ -61,7 +70,7 @@ const setAuthUserData = (
   },
 });
 
-export const getAuthUserDate = () => async (dispatch: any) => {
+export const getAuthUserDate = (): ThunkType => async (dispatch) => {
   const meData = await authAPI.me();
   if (meData.resultCode === ResultCodesEnum.Success) {
     let { login, id: userId, email } = meData.data;
@@ -74,7 +83,7 @@ export const login = (
   password: string,
   rememberMe: boolean,
   captcha: string
-) => async (dispatch: any) => {
+): ThunkType => async (dispatch: any) => {
   const loginData = await authAPI.login(email, password, rememberMe, captcha);
   if (loginData.resultCode === ResultCodesEnum.Success) {
     //success, get auth data
@@ -94,9 +103,9 @@ export const login = (
   }
 };
 
-export const logout = () => async (dispatch: any) => {
+export const logout = (): ThunkType => async (dispatch: any) => {
   const response = await authAPI.logout();
-  if (response.data.resultCode === 0) {
+  if (response.data.resultCode === ResultCodesEnum.Success) {
     dispatch(setAuthUserData(null, null, null, false));
   }
 };
@@ -115,7 +124,7 @@ const getCaptchaUrlSuccess = (
   payload: { captchaUrl },
 });
 
-export const getCaptchaUrl = () => async (dispatch: any) => {
+export const getCaptchaUrl = (): ThunkType => async (dispatch: any) => {
   const response = await securityAPI.getCaptchaUrl();
   const captchaUrl = response.data.url;
   dispatch(getCaptchaUrlSuccess(captchaUrl));

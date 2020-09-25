@@ -91,6 +91,10 @@ type ActionsTypes =
   | toggleIsFetchingType
   | toggleFollowingInProgressType;
 
+//type GetStateType = () => AppStateType;
+type DispatchType = Dispatch<ActionsTypes>;
+type ThunkType = ThunkAction<Promise<any>, AppStateType, unknown, ActionsTypes>;
+
 type followSuccessType = {
   type: typeof FOLLOW;
   userId: number;
@@ -162,10 +166,6 @@ export const toggleFollowingInProgress = (
   isFetching,
   userId,
 });
-
-//type GetStateType = () => AppStateType;
-type DispatchType = Dispatch<ActionsTypes>;
-type ThunkType = ThunkAction<Promise<any>, AppStateType, unknown, ActionsTypes>;
 
 export const requestUsers = (
   page: number,
