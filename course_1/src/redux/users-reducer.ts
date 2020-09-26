@@ -1,9 +1,9 @@
-import { usersAPI } from "../api/api";
 import { updateObjectInArray } from "../utils/object-helpers";
 import { UserType } from "../types/types";
 import { AppStateType, InferActionsTypes } from "./redux-store";
 import { Dispatch } from "redux";
 import { ThunkAction } from "redux-thunk";
+import { usersAPI } from "../api/users-api";
 
 const initialState = {
   users: [] as Array<UserType>,

@@ -1,6 +1,7 @@
-import { profileAPI } from "../api/api";
 import { stopSubmit } from "redux-form";
 import { PhotosType, PostType, ProfileType } from "../types/types";
+import { profileAPI } from "../api/profile-api";
+import { ResultCodesEnum } from "../api/api";
 
 const ADD_POST = "ADD-POST";
 const SET_USER_PROFILE = "SET_USER_PROFILE";
@@ -120,25 +121,26 @@ const setUserStatus = (status: string): setUserStatusType => ({
 
 export const getUserProfile = (userId: number) => async (dispatch: any) => {
   const response = await profileAPI.getProfile(userId);
-  dispatch(setUserProfile(response.data));
+  dispatch(setUserProfile(response));
 };
 
 export const getUserStatus = (userId: number) => async (dispatch: any) => {
   const response = await profileAPI.getStatus(userId);
-  dispatch(setUserStatus(response.data));
+  dispatch(setUserStatus(response));
 };
 
 export const updateUserStatus = (status: string) => async (dispatch: any) => {
   try {
     const response = await profileAPI.updateStatus(status);
-    if (response.data.resultCode === 0) dispatch(setUserStatus(status));
+    if (response.resultCode === ResultCodesEnum)
+      dispatch(setUserStatus(status));
   } catch (error) {}
 };
 
 export const savePhoto = (file: any) => async (dispatch: any) => {
   const response = await profileAPI.savePhoto(file);
-  if (response.data.resultCode === 0) {
-    dispatch(savePhotoSuccess(response.data.data.photos));
+  if (response.resultCode === ResultCodesEnum) {
+    dispatch(savePhotoSuccess(response.data.photos));
   }
 };
 
@@ -147,13 +149,13 @@ export const saveProfile = (profile: ProfileType) => async (
   getState: any
 ) => {
   const response = await profileAPI.saveProfile(profile);
-  if (response.data.resultCode === 0) {
+  if (response.resultCode === ResultCodesEnum) {
     const userId = getState().auth.userId;
     dispatch(getUserProfile(userId));
   } else {
     const errorMessage =
-      response.data.messages.length > 0
-        ? response.data.messages[0]
+      response.messages.length > 0
+        ? response.messages[0]
         : "Something is wrong";
 
     const action = stopSubmit("edit-profile", { _error: errorMessage });
