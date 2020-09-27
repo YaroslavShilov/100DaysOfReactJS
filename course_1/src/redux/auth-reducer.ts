@@ -122,7 +122,7 @@ const getCaptchaUrlSuccess = (
 });
 
 export const getCaptchaUrl = (): ThunkType => async (dispatch: any) => {
-  const response = await securityAPI.getCaptchaUrl();
-  const captchaUrl = response.data.url;
+  const data = await securityAPI.getCaptchaUrl();
+  const captchaUrl = data.url;
   dispatch(getCaptchaUrlSuccess(captchaUrl));
 };

@@ -132,14 +132,14 @@ export const getUserStatus = (userId: number) => async (dispatch: any) => {
 export const updateUserStatus = (status: string) => async (dispatch: any) => {
   try {
     const response = await profileAPI.updateStatus(status);
-    if (response.resultCode === ResultCodesEnum)
+    if (response.resultCode === ResultCodesEnum.Success)
       dispatch(setUserStatus(status));
   } catch (error) {}
 };
 
 export const savePhoto = (file: any) => async (dispatch: any) => {
   const response = await profileAPI.savePhoto(file);
-  if (response.resultCode === ResultCodesEnum) {
+  if (response.resultCode === ResultCodesEnum.Success) {
     dispatch(savePhotoSuccess(response.data.photos));
   }
 };
@@ -149,7 +149,7 @@ export const saveProfile = (profile: ProfileType) => async (
   getState: any
 ) => {
   const response = await profileAPI.saveProfile(profile);
-  if (response.resultCode === ResultCodesEnum) {
+  if (response.resultCode === ResultCodesEnum.Success) {
     const userId = getState().auth.userId;
     dispatch(getUserProfile(userId));
   } else {
