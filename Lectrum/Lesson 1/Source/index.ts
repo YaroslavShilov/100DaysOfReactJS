@@ -1,1 +1,1 @@
-import './1-basic-types';
+import './6-generics';
