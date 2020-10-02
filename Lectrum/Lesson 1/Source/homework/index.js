@@ -1,3 +1,3 @@
 "use strict";
 exports.__esModule = true;
-require("./homework");
+require("./test");
