@@ -118,6 +118,7 @@ export const actions = {
       userId,
     } as const),
 };
+
 export const requestUsers = (
   page: number,
   pageSize: number

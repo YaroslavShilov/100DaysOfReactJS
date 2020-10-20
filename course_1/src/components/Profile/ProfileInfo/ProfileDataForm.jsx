@@ -26,7 +26,7 @@ const ProfileDataForm = ({status, updateUserStatus, handleSubmit, profile, error
 
 			<div>
 				<strong>About me: </strong>
-				{createField('About me', 'aboutMe', [], Textarea )}
+				{createField('Index me', 'aboutMe', [], Textarea )}
 			</div>
 
 			<div>

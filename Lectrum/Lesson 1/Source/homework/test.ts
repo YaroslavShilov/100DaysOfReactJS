@@ -43,10 +43,7 @@ const getNewList: GetNewList = (
 	lists,
 ) => {
 	return lists.map((list: Readonly<ListType>) => {
-		list = {
-			id: 1,
-			tasks: [...list.tasks]
-		}
+		list.find(list)
 		return list
 	})
 }
