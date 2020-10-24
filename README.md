@@ -1,9 +1,9 @@
-![Image of 100DaysOfReactJS](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/logo.jpg)
+![Image of 100DaysOfCode](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfCode/master/titles/logo.jpg)
 
 ---
 ---
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/100.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/100.jpg)
 ```
 Find and fix different bugs
 
@@ -17,7 +17,7 @@ SocialNetwork - ready
    7. add user profile
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/99.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/99.jpg)
 ```
 SocialNetwork:
    1. add YourFeed
@@ -25,30 +25,30 @@ SocialNetwork:
    3. refactoring and adding useReducer
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/98.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/98.jpg)
 ```
 SocialNetwork:
    1. switch between feeds
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/97.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/97.jpg)
 ```
 SocialNetwork:
    1. add popularTags
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/96.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/96.jpg)
 ```
 SocialNetwork:
    1. add pagination
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/95.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/95.jpg)
 ```
 CoffeeHouse - fix bugs
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/94.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/94.jpg)
 ```
 SocialNetwork:
    1. add useCallback
@@ -60,7 +60,7 @@ Course_1:
    2. time: 00:00
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/93.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/93.jpg)
 ```
 SocialNetwork:
    1. add showing errors
@@ -75,90 +75,90 @@ Course_1 - I came back
    2. progress: 28/52hrs
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/92.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/92.jpg)
 ```
 SocialNetwork:
    1. add dependencies in useEffect
    2. add context
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/91.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/91.jpg)
 ```
 SocialNetwork:
    1. Redirect
    2. localStorage hook
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/90.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/90.jpg)
 ```
 SocialNetwork:
    1. create a custom hook
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/89.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/89.jpg)
 ```
 SocialNetwork:
    1. useEffect
    2. axios
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/88.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/88.jpg)
 ```
 SocialNetwork - some code
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/87.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/87.jpg)
 ```
 SocialNetwork
 
 CoffeeHouse
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/86.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/86.jpg)
 ```
 Nothing
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/85.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/85.jpg)
 ```
 CountNewWord
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/84.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/84.jpg)
 ```
 CountNewWord
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/83.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/83.jpg)
 ```
 Coffee house
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/82.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/82.jpg)
 ```
 Todolist_v2 - fixed bug CSSTransition
 
 Coffee house
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/81.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/81.jpg)
 ```
 Todolist_v2 - ready
 
 Coffee house
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/80.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/80.jpg)
 ```
 Coffee house
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/79.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/79.jpg)
 ```
 ReduxApp__ready
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/78.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/78.jpg)
 ```
 Count-New-Words
    1. add search into input 'add word'
@@ -169,21 +169,21 @@ Count-New-Words
 JustCount
    1. add upload and download number
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/77.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/77.jpg)
 ```
 Count-New-Words
    1. add search
    2. add rating
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/76.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/76.jpg)
 ```
 -
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/75.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/75.jpg)
 ```
 Count-New-Words - ready
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/74.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/74.jpg)
 ```
 ReduxApp
    1. work with only redux 
@@ -193,7 +193,7 @@ JustCount
    2. start using fetch for db.json 
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/73.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/73.jpg)
 ```
 GameofThrones - ready
    1. add react router dom
@@ -204,32 +204,32 @@ JustCount
 ReduxApp - start
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/72.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/72.jpg)
 ```
 GameofThrones
    1. fix bug in gotService getHouse
    2. refactor randomChar => randomItem
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/71.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/71.jpg)
 ```
 GameofThrones
    1. add pages
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/70.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/70.jpg)
 ```
 try to fix bugs
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/69.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/69.jpg)
 ```
 GameOfThrones
    1. refactoring
    2. add rowBlock
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/68.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/68.jpg)
 ```
 GameOfThrones
    1. add CharacterPage
@@ -237,7 +237,7 @@ GameOfThrones
    3. used lifecycle hooks
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/67.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/67.jpg)
 ```
 newsFeed - ready
 
@@ -250,48 +250,48 @@ GameOfThrones
    6. loader
    7. randomChar
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/66.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/66.jpg)
 ```
 newsFeed
    1. add toggleImportant
    2. add toggleLike
    3. postAddForm ready
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/65.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/65.jpg)
 ```
 newsFeed
    1. change state in PostListItem
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/64.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/64.jpg)
 ```
 newsFeed
    1. refactoring
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/63.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/63.jpg)
 ```
 newsFeed
    1. add function deleteItem
    2. add Alert
    3. add function addItem
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/62.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/62.jpg)
 ```
 newsFeed
    1. different work
    2. reactStrap
    3. styled-component
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/61.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/61.jpg)
 ```
 work on newsFeed
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/60.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/60.jpg)
 ```
 create newsFeed
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/59.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/59.jpg)
 ```
 Animation - ready
 
@@ -305,7 +305,7 @@ react-hoc
    2. hoc
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/58.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/58.jpg)
 ```
 GithubSearch - ready
 
@@ -318,7 +318,7 @@ Quiz:
    3. application is finished
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/57.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/57.jpg)
 ```
 Chronology - ready
 
@@ -326,13 +326,13 @@ Quiz:
    1. reducer for create quiz
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/56.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/56.jpg)
 ```
 Chronology:
    1. refactor using reducers
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/55.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/55.jpg)
 ```
 Quiz:
    1. refactor using reducers
@@ -341,7 +341,7 @@ Chronology:
    1. refactor using reducers
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/54.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/54.jpg)
 ```
 Quiz:
    1. mapStateToProps
@@ -352,7 +352,7 @@ Quiz:
    6. redux-thunk & middleware
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/53.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/53.jpg)
 ```
 Quiz:
    1. add function add Question
@@ -365,7 +365,7 @@ Quiz:
    8. add reducer
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/52.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/52.jpg)
 ```
 Quiz:
    1. add Form
@@ -373,7 +373,7 @@ Quiz:
    3. start form for create test
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/51.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/51.jpg)
 ```
 Quiz:
    1. add Pages
@@ -384,7 +384,7 @@ Chronology
    2. finished style of Item
    3. add footer
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/50.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/50.jpg)
 ```
 Quiz:
    1. add FinishedQuiz component
@@ -396,21 +396,21 @@ Chronology
 ```
 
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/49.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/49.jpg)
 ```
 Chronology
    1. add Logo
    2. add body bg
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/48.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/48.jpg)
 ```
 Chronology 
    1. refactoring
    2. add context
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/47.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/47.jpg)
 ```
 Others
    1. code splitting
@@ -422,7 +422,7 @@ Chronology
    2. I could get state and change components 
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/46.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/46.jpg)
 ```
 Others
    1. thinking in react
@@ -433,7 +433,7 @@ Todolist v2 - some code
    (I decided to finish this app later)
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/45.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/45.jpg)
 ```
 Others
    1. composition vs inheritance
@@ -442,7 +442,7 @@ Others
 Todolist v2 - start
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/44.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/44.jpg)
 ```
 Others
    1. lifting state up
@@ -450,17 +450,17 @@ Others
 ReactWarriors - ready
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/43.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/43.jpg)
 ```
 Others
    1. lifting state up
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/41-42.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/41-42.jpg)
 ```
 ReactWarriors - refactoring using hooks
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/40.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/40.jpg)
 ```
 Others
    1. forms
@@ -474,7 +474,7 @@ Todolist_hooks - this app is ready
 Chronology - create reducer
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/39.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/39.jpg)
 ```
 Chronology - I can't get state in async method of object with this state
 
@@ -486,7 +486,7 @@ Others
 ReactWarriors
    1. add Sort movies
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/38.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/38.jpg)
 ```
 Chronology - I could add Comics from API :)
 
@@ -500,7 +500,7 @@ ReactWarriors
 Weather - this app is ready
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/37.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/37.jpg)
 ```
 Chronology - try to add Comics
 
@@ -514,32 +514,32 @@ ReactWarriors
 Weather - try to use OpenWeather API
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/36.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/36.jpg)
 ```
 I was ill
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/35.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/35.jpg)
 ```
 Chronology - add props into Chronology.jsx but I don't know how to change state. Try to do it
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/34.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/34.jpg)
 ```
 Chronology - add props into Chronology.jsx but I don't know how to change state. Try to do it
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/33.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/33.jpg)
 ```
 Chronology - try to getComics and change state
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/32.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/32.jpg)
 ```  
 Start working on Chronology
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/31.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/31.jpg)
 ```  
 Course_2 ready - It was a bad course
 
@@ -547,12 +547,12 @@ Others
    1. Prototype
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/30.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/30.jpg)
 ```  
 StarDB lesson 7_6 ready
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/29.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/29.jpg)
 ```  
 StarDB lesson 7_3 ready
 
@@ -574,7 +574,7 @@ Others
     1.4. finally{}
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/28.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/28.jpg)
 ```
 StarDB lesson 7_1 ready
 
@@ -587,20 +587,20 @@ Course_1 - my level isn't enough to move on
   2. progress: 28/52hrs
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/27.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/27.jpg)
 ```
 ReactWarriors
   1. some code
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/26.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/26.jpg)
 ```
 StarDB:
   1. design
   2. random planet
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/25.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/25.jpg)
 ```
 StarDB:
   1. FetchAPI
@@ -613,7 +613,7 @@ Course_1:
   4. auth/me
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/24.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/24.jpg)
 ```
 To-Do_List:
   1. add form for new item
@@ -622,7 +622,7 @@ To-Do_List:
   4. this project is ready
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/23.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/23.jpg)
 ```
 To-Do_List:
   1. add button and function for addItem
@@ -635,7 +635,7 @@ Video_course
      (so far the first profile) 
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/22.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/22.jpg)
 ```
 To-Do_List:
   1. create state
@@ -653,7 +653,7 @@ Video_course
   4. merge UsersAPIComponent and UsersContainer
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/21.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/21.jpg)
 
 ```
 React
@@ -663,13 +663,13 @@ React
   4. extends React.Component
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/20.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/20.jpg)
 ```
 React
   1. some code for ToDo_List
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/19.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/19.jpg)
 ```
 Other themes
   1. Repeat terms
@@ -677,7 +677,7 @@ React
   1. some code for ToDo_List
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/18.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/18.jpg)
 
 ```
 Other themes
@@ -688,7 +688,7 @@ React
 ```
 
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/17.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/17.jpg)
 
 ```
 Other themes
@@ -700,7 +700,7 @@ Other themes
   6. Shallow copy
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/16.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/16.jpg)
 ```
 React
   1. container component
@@ -711,7 +711,7 @@ React
   6. sendMessageCreator
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/15.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/15.jpg)
 ```
 1. JavaScript
 	1. Homework
@@ -781,7 +781,7 @@ alert(Object.getOwnPropertyNames(User.prototype)); // constructor, sayHi
 
 >В отличие от обычных функций, конструктор класса не может быть вызван без new
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/14.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/14.jpg)
 ```
 1. JavaScript
 	1. OOP
@@ -868,7 +868,7 @@ vasya = {
 }
 */
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/13.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/13.jpg)
 ```
 1. JavaScript - Array
 ```
@@ -878,7 +878,7 @@ vasya = {
   2. Action type
   3. Lesson 39 ready
 ```
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/12.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/12.jpg)
 ```
 1. JavaScript 
 	1. Home work
@@ -1026,7 +1026,7 @@ alert( carriedSum(1)(2) ); // 3
 
 
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/11.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/11.jpg)
 ## Регулярные выражения <a name="regularExpressions"></a>
 **Регулярные выражения** - средство для поиска и замены в строке 
 
@@ -1235,7 +1235,7 @@ let name = function() {
 > Не имеет своего *this*
 
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/10.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/10.jpg)
 
 ```
 1. JavaScript
@@ -1256,7 +1256,7 @@ let name = function() {
    
 ```
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/9.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/9.jpg)
 
 ```
 1. JavaScript
@@ -1281,7 +1281,7 @@ let name = function() {
 ```
    
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/8.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/8.jpg)
 
 	* Video course. Lesson 22 ready
  - [x] Read about JavaScript fundamentals before learning React
@@ -1289,18 +1289,18 @@ let name = function() {
  - [x] Experiment with ES6 object initializer
 
  
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/7.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/7.jpg)
 
 	* Video course. Lesson 16 ready
 
  
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/6.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/6.jpg)
 
  - [x] Read about ES6 classes
  
  
  
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/5.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/5.jpg)
 
 
 	* Video course. Lesson 13 ready
@@ -1310,7 +1310,7 @@ let name = function() {
 
  
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/4.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/4.jpg)
 
 	* Video course. Lesson 10 ready
 	* Start work on 'hackernews'
@@ -1319,13 +1319,13 @@ let name = function() {
  - [x] read more about React components, elements and instances
 
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/3.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/3.jpg)
 
     * Finished a theme about tic-tac-toe game
     * Started my simple page
     
     
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/2.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/2.jpg)
 
 - [x] Prototypical Inheritance -> ES6 Class
     ```javascript
@@ -1357,7 +1357,7 @@ let name = function() {
     * install react project tic-tac-toe
 
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/1.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/1.jpg)
 
  I've recalled:
 - [x] Functions
@@ -1400,7 +1400,7 @@ let name = function() {
 
 
 
-![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysOfReactJS/master/titles/0.jpg)
+![Image of days](https://raw.githubusercontent.com/YaroslavShilov/100DaysofCode/master/titles/0.jpg)
  First of all, I need to recall JavaScript especially:
 - [ ] Functions
 - [ ] bind(), apply(), and call()
