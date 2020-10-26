@@ -1,0 +1,21 @@
+include ../tools/_var
+include ../tools/_mixin
+
+doctypehtml
+html(lang='ru')
+	include ../tools/head
+	body
+		h1.vis-hid Заголовок сайта
+		
+		include ../blocks/loader
+		include ../blocks/header
+			
+		
+		
+		//-aside.anch
+		main
+			block content
+		//-aside
+
+		include ../blocks/footer
+		
