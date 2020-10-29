@@ -1,7 +1,7 @@
 $out: 1px solid red !important;
 $time: 0.5s ease-in-out;
 
-$accent: #f065od;
+$accent: #f0650d;
 $dark: #293a43;
 $light: #ededed;
 $gray: #4b5a65;
@@ -12,9 +12,11 @@ $introReg: 'IntroRegular', sans-serif;
 
 .vis-hid {
 	position: absolute;
+	
 	width: 1px;
 	height: 1px;
 	margin: -1px;
+	
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
@@ -59,6 +61,66 @@ $introReg: 'IntroRegular', sans-serif;
 
 /*BEGIN .gb-btn*/
 .gb-btn {
+	position: relative;
+	
+	display: inline-block;
+	padding: 15px 45px;
+	border: none;
+	
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	
+	background-color: $accent;
+	border-radius: 2px;
+	text-decoration: none;
+	outline: none;
+	
+	transition: background-color .1s ease;
+	
+	cursor: pointer;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		
+		width: 100%;
+		height: 4px;
+		
+		background-color: darken($accent, 50%);
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+		opacity: .18;
+		
+		transition: background-color .2s ease;
+	}
+	
+	&:focus,
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	&:hover {
+		background-color: lighten($accent, 5%);
+		
+		&:after {
+			opacity: .22;
+		}
+	}
+	
+	&:active {
+		background-color: darken($accent, 5%);
+		
+		&:after {
+			opacity: .32;
+		}
+	}
 	
 }
 /*END.gb-btn*/
@@ -88,14 +150,19 @@ $introReg: 'IntroRegular', sans-serif;
 .textarea {
 	width: 100%;
 	min-height: 44px;
-	outline: none;
-	cursor: text;
+	
 	text-align: left;
+	
+	outline: none;
+	
+	cursor: text;
+	
 	&:focus {
 		box-shadow: 0 1px 2px rgba(163, 240, 187, 0.2);
 		border: 2px solid #74cc8f;
 		outline: none;
 	}
+	
 	&:empty:before {
 		content: attr(data-placeholder);
 		color: #000;
