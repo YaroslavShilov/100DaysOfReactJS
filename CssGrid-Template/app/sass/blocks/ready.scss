@@ -1,0 +1,28 @@
+.ready {
+	background-color: $light;
+	
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	&_left {
+		padding: 60px 60px 60px 0;
+		
+		font-size: 18px;
+		line-height: 1.5;
+		
+		border-right: 1px solid #dadada;
+		
+		h2 {
+			margin: 0 0 30px;
+		}
+		
+		p {
+			padding: 15px 0;
+		}
+	}
+	
+	&_right {
+		padding: 30px 0 0 40px;
+	}
+}

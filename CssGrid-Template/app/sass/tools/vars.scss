@@ -44,12 +44,33 @@ $introReg: 'IntroRegular', sans-serif;
 }
 /*END.tit-padd*/
 
+/*BEGIN .grid */
+.grid {
+  display: grid;
+}
+/*END .grid */
 
 /*BEGIN .wrap*/
 .wrap {
-	
+	max-width: 1200px;
+	padding: 0 $gutter;
+	margin: auto;
 }
 /*END.wrap*/
+
+/*BEGIN .landing-section */
+.landing-section {
+  padding: 80px 0;
+	
+	h2 {
+		font-size: 34px;
+		font-weight: 800;
+		line-height: 1.2;
+		
+		color: $dark;
+	}
+}
+/*END .landing-section */
 
 
 /*BEGIN .gb-titl*/
@@ -64,14 +85,12 @@ $introReg: 'IntroRegular', sans-serif;
 	position: relative;
 	
 	display: inline-block;
-	padding: 15px 45px;
+	padding: 15px 60px;
 	border: none;
 	
-	font-size: 13px;
-	font-weight: 600;
-	letter-spacing: 3px;
+	font: 20px $reg;
+	font-weight: 800;
 	text-align: center;
-	text-transform: uppercase;
 	color: #fff;
 	
 	background-color: $accent;
@@ -79,7 +98,7 @@ $introReg: 'IntroRegular', sans-serif;
 	text-decoration: none;
 	outline: none;
 	
-	transition: background-color .1s ease;
+	transition: all .1s ease;
 	
 	cursor: pointer;
 	
@@ -97,7 +116,7 @@ $introReg: 'IntroRegular', sans-serif;
 		border-bottom-left-radius: 2px;
 		opacity: .18;
 		
-		transition: background-color .2s ease;
+		transition: all .2s ease;
 	}
 	
 	&:focus,
@@ -122,9 +141,41 @@ $introReg: 'IntroRegular', sans-serif;
 		}
 	}
 	
+	&.__gray {
+		background-color: $gray;
+		
+		&:after {
+			background-color: darken($gray, 15%);
+		}
+		
+		&:hover {
+			background-color: lighten($gray, 5%);
+			
+			&:after {
+				opacity: .22;
+			}
+		}
+		&:active {
+			background-color: darken($gray, 5%);
+			
+			&:after {
+				opacity: .32;
+			}
+		}
+		
+	}
+	
 }
 /*END.gb-btn*/
 
+
+/*BEGIN .buttoncase */
+.buttoncase {
+	padding: $gutter $gutter 50px;
+	
+	text-align: center;
+}
+/*END .buttoncase */
 
 /*BEGIN .gb-lk*/
 .gb-lk {
@@ -145,29 +196,3 @@ $introReg: 'IntroRegular', sans-serif;
 	
 }
 /*END.sl-arr*/
-
-/*BEGIN ->  .textarea*/
-.textarea {
-	width: 100%;
-	min-height: 44px;
-	
-	text-align: left;
-	
-	outline: none;
-	
-	cursor: text;
-	
-	&:focus {
-		box-shadow: 0 1px 2px rgba(163, 240, 187, 0.2);
-		border: 2px solid #74cc8f;
-		outline: none;
-	}
-	
-	&:empty:before {
-		content: attr(data-placeholder);
-		color: #000;
-		font: 17px Arial, sans-serif;
-		text-align: left;
-	}
-}
-/*END -> .textarea*/

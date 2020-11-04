@@ -1,0 +1,68 @@
+.portfolio {
+	
+	&_items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 10px;
+		padding: 10px;
+	}
+	
+	
+	&_item {
+		position: relative;
+		display: grid;
+		align-content: center;
+		min-height: 31.5vh;
+		padding: $gutter;
+		
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		
+		background-size: cover;
+		background-position: center;
+		color: #fff;
+		
+		transition: all .5s ease;
+		
+		&:nth-child(1) {
+			grid-column: 1 / span 2;
+		}
+		
+		&:nth-child(5) {
+			grid-column: 2 / span 2;
+		}
+		
+		&:nth-child(6) {
+			grid-column: 4;
+			grid-row: 2 / span 2;
+		}
+		
+		> * {
+			z-index: 1;
+		}
+		
+		&:hover {
+			color: $accent;
+			
+			&:before {
+				opacity: .85;
+			}
+		}
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 0;
+			
+			background-color: $dark;
+			opacity: .65;
+			
+			transition: all .5s ease;
+		}
+	}/*END portfolio_item*/
+}
