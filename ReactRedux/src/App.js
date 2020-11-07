@@ -1,7 +1,14 @@
 import React from "react";
+import { Provider } from "react-redux";
+import { ReduxComponent } from "./components/ReduxComponent";
+import { store } from "./store/store";
 
 function App() {
-  return <div className="App">hello</div>;
+  return (
+    <Provider store={store}>
+      <ReduxComponent />
+    </Provider>
+  );
 }
 
 export default App;
