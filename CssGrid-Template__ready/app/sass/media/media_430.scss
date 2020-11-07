@@ -1,0 +1,13 @@
+/* BEGIN max-width: 430px; */
+@media only screen and (max-width: 430px) {
+	
+	.header_content h1 {
+		font-size: 40px;
+	}
+	
+	.form form {
+		grid-template-columns: 1fr;
+	}
+
+}
+/* END max-width: 430px; */

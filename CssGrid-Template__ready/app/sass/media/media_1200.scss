@@ -1,0 +1,14 @@
+/* BEGIN max-width: 1200px; */
+@media only screen and (max-width: 1200px) {
+	
+	.blog_items {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	.blog_item:nth-child(4),
+	.blog_item:nth-child(3) {
+		grid-column: initial;
+	}
+
+}
+/* END max-width: 1200px; */

@@ -1,0 +1,50 @@
+/* BEGIN max-width: 992px; */
+@media only screen and (max-width: 992px) {
+	
+	.gb-btn {
+		font-size: 18px;
+	}
+	
+	.header_content {
+		padding: 40px 20px;
+	}
+	
+	.header_content h1 {
+		font-size: 50px;
+		line-height: 1.3;
+	}
+	
+	.portfolio_items {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	.portfolio_item {
+		min-height: 40vh;
+		
+		font-size: 16px;
+	}
+	
+	.portfolio_item:nth-child(4) {
+		grid-column: 2 / span 2;
+	}
+	
+	.portfolio_item:nth-child(5) {
+		grid-column: initial;
+		grid-row: initial;
+	}
+	
+	.portfolio_item:nth-child(6) {
+		grid-column: initial;
+		grid-row: initial;
+	}
+	
+	.portfolio_item:nth-child(7) {
+		grid-column: 3;
+		grid-row: 3 / span 2;
+	}
+	
+	.blog_items {
+		grid-template-columns: repeat(2, 2fr);
+	}
+}
+/* END max-width: 992px; */

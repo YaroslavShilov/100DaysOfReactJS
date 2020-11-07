@@ -1,0 +1,29 @@
+.footer {
+	padding: 60px 0 50px;
+	
+	text-align: center;
+	color: #4e5355;
+	
+	background-color: darken($dark, 8%);
+	
+	&_logo {
+		font-family: $introReg;
+		font-size: 22px;
+		line-height: 1.16;
+		
+		span {
+			display: block;
+			
+			font-size: 27px;
+			color: #707476;
+		}
+	}
+	
+	&_copy {
+		margin-top: 20px;
+		
+		font-size: 20px;
+		font-weight: bold;
+		color: #494d50;
+	}
+}/*END footer*/

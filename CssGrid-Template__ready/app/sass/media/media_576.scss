@@ -1,0 +1,37 @@
+/* BEGIN max-width: 576px; */
+@media only screen and (max-width: 576px) {
+	
+	.portfolio_items {
+		grid-template-columns: 1fr;
+	}
+	
+	.portfolio_item {
+		min-height: 50vh;
+	}
+	
+	.portfolio_item:nth-child(1),
+	.portfolio_item:nth-child(4),
+	.portfolio_item:nth-child(5),
+	.portfolio_item:nth-child(6),
+	.portfolio_item:nth-child(7) {
+		grid-row: initial;
+		grid-column: initial;
+	}
+	
+	.footer {
+		&_logo {
+			font-size: 18px;
+		}
+		
+		&_logo span {
+			font-size: 24px;
+		}
+		
+		&_copy {
+			margin-top: 10px;
+			
+			font-size: 18px;
+		}
+	}
+}
+/* END max-width: 576px; */

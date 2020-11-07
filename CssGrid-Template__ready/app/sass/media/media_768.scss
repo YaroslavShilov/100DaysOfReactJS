@@ -1,0 +1,47 @@
+/* BEGIN max-width: 768px; */
+@media only screen and (max-width: 768px) {
+	
+	.landing-section {
+		padding: 50px 0;
+		
+		h2 {
+			margin-bottom: 20px;
+			
+			font-size: 28px;
+			text-align: center;
+		}
+	}
+	
+	.ready .grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.ready_left {
+		padding: 0;
+		
+		border: none;
+		
+		p {
+			padding: 5px 0;
+		}
+	}
+	
+	.form form {
+		grid-gap: 10px;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.blog_items {
+		grid-template-columns: 1fr;
+	}
+	
+	.blog_item {
+		grid-template-rows: 200px 1fr;
+	}
+	
+	.blog_item-cont {
+		padding: 20px;
+	}
+
+}
+/* END max-width: 768px; */
