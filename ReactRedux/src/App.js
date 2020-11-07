@@ -1,11 +1,13 @@
 import React from "react";
+import { Provider } from "react-redux";
+import { Connected } from "./components/Connected";
+import { store } from "./store/store";
 
 function App() {
   return (
-    <div className="App">
-      <input type="text" placeholder={"First name"} />
-      <input type="text" placeholder={"Second name"} />
-    </div>
+    <Provider store={store}>
+      <Connected />
+    </Provider>
   );
 }
 
