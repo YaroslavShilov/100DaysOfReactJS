@@ -1,13 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import "./styles.css";
+import { createStore } from "./createStore";
+import { rootReducer } from "./redux/rootReducer";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+const counter = document.getElementById("counter");
+const addBtn = document.getElementById("add");
+const subBtn = document.getElementById("sub");
+const asyncBtn = document.getElementById("async");
+const themeBtn = document.getElementById("theme");
 
-reportWebVitals();
+const store = createStore(rootReducer, {
+  counter: 0,
+});
+
+addBtn.addEventListener("click", () => {});
+
+subBtn.addEventListener("click", () => {});
+
+asyncBtn.addEventListener("click", () => {});
+
+themeBtn.addEventListener("click", () => {});
