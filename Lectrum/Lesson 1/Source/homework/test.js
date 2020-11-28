@@ -21,13 +21,9 @@ var Lists = [
     // ..... other lists with tasks
 ];
 console.log('Lists before map', Lists);
-var getNewList = function (lists, listId, taskId) {
+var getNewList = function (lists) {
     return lists.map(function (list) {
-        if (list.id === listId) {
-            var foundTask = list.tasks.find(function (task) { return task.id === taskId; });
-            if (foundTask)
-                foundTask.completed = true;
-        }
+        list.find(list);
         return list;
     });
 };
